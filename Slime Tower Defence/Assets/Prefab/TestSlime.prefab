@@ -91,7 +91,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929294154072071735}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 1929294154331318482}
   - component: {fileID: 1929294154331318481}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: AttackPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -379,5 +379,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDetect: {fileID: 1929294154072071692}
-  bullet: {fileID: 0}
+  bulletPrefab: {fileID: 1246987399585908641, guid: 0621a8193aa188a4988341d8722cf36c, type: 3}
   attackSpeed: 0
