@@ -13,15 +13,19 @@ public class Tower : MonoBehaviour
 
     GameObject targetEnemy = null; // 적 정보
 
-    public float attackSpeed = 10f; // 공격 속도
+    public float attackSpeed = 2f; // 공격 속도
+
+    float timer = 0;
 
     void Start()
     {
-
+        
     }
 
     void Update()
     {
+        timer += Time.deltaTime;
+
         // 적이 범위안에 있는지를 매번 체크
         if (enemyDetect.EnemyDetectCheck())
         {
@@ -33,6 +37,12 @@ public class Tower : MonoBehaviour
         }
     }
 
+    IEnumerator AttackCheck()
+    {
+        yield return new WaitForSeconds(attackSpeed);
+
+    }
+
     // 공격을 위한 함수
     void Attack(GameObject target)
     {
@@ -40,13 +50,15 @@ public class Tower : MonoBehaviour
 
         if (isAttack) // 공격이 가능한지 확인
         {
-            isAttack = false; // 공격이 이미 실행 중이므로 막기
+            //isAttack = false; // 공격이 이미 실행 중이므로 막기
 
             RotateToTarget(target); // 적 바라보기
-            GameObject bullet = Instantiate(bulletPrefab); // 공격 프리팹 생성
+            GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x,
+                transform.position.y, transform.position.z), Quaternion.identity); // 공격 프리팹 생성
+
             bullet.GetComponent<Bullet>().SetTarget(target); // 공격 프리팹에 적 정보 전달
 
-            isAttack = true; // 공격 종료
+            //isAttack = true; // 공격 종료
         }
 
     }

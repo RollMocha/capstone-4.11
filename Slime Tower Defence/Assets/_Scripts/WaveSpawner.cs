@@ -5,10 +5,11 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour//적 생성하는 코드
 {
 
-    public Transform enemyPrefab_1;//Monster_1Prefab의 Transform
-    public Transform enemyPrefab_2;//Monster_2Prefab의 Transform
-    public Transform spawnPoint;//MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
-    public float timeBetweenWaves = 5f;//적들이 생성되는 시간 간격
+
+    public Transform enemyPrefab_1; //Monster_1Prefab의 Transform
+    public Transform enemyPrefab_2; //Monster_2Prefab의 Transform
+    public Transform spawnPoint; //MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
+    public float timeBetweenWaves = 5f; //적들이 생성되는 시간 간격
 
     private float countdown = 2f;//시간
 
