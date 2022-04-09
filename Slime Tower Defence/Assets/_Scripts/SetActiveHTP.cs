@@ -5,13 +5,17 @@ using UnityEngine;
 //HowToPlay 오브젝트 활성화/ 비활성화
 public class SetActiveHTP : MonoBehaviour
 {
-    public void ClickHTPButton()
+    public GameObject HowToPlayobj;
+
+    public void ClickHTPButton()//HowToPlayButton 클릭시
     {
-        //HowToPlay오브젝트 활성화
+        HowToPlayobj.SetActive(true); 
+        //HowToPlayDiscribe오브젝트 활성화
     }
 
-    public void ClickHTP()
+    public void ClickHTP()//HowToPlayDescribe 클릭시
     {
-        //HowToPlay오브젝트 비활성화
+        HowToPlayobj.SetActive(false);
+        //HowToPlayDiscribe오브젝트 비활성화
     }
 }
