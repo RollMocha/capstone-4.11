@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 37465306}
   - component: {fileID: 37465305}
   m_Layer: 0
-  m_Name: MapTlie (77)
+  m_Name: MapTile (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 42674621}
   - component: {fileID: 42674620}
   m_Layer: 0
-  m_Name: MapTlie (36)
+  m_Name: MapTile (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 72241568}
   - component: {fileID: 72241567}
   m_Layer: 0
-  m_Name: MapTlie (80)
+  m_Name: MapTile (80)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 84798391}
   - component: {fileID: 84798390}
   m_Layer: 0
-  m_Name: MapTlie (59)
+  m_Name: MapTile (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -804,7 +804,7 @@ GameObject:
   - component: {fileID: 89583094}
   - component: {fileID: 89583093}
   m_Layer: 0
-  m_Name: MapTlie (53)
+  m_Name: MapTile (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -978,7 +978,7 @@ GameObject:
   - component: {fileID: 107301466}
   - component: {fileID: 107301465}
   m_Layer: 0
-  m_Name: MapTlie (61)
+  m_Name: MapTile (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1073,7 +1073,7 @@ GameObject:
   - component: {fileID: 118742150}
   - component: {fileID: 118742149}
   m_Layer: 0
-  m_Name: MapTlie (12)
+  m_Name: MapTile (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1168,7 +1168,7 @@ GameObject:
   - component: {fileID: 121155885}
   - component: {fileID: 121155884}
   m_Layer: 0
-  m_Name: MapTlie (47)
+  m_Name: MapTile (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1384,7 +1384,7 @@ GameObject:
   - component: {fileID: 141775083}
   - component: {fileID: 141775082}
   m_Layer: 0
-  m_Name: MapTlie (4)
+  m_Name: MapTile (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,7 +1479,7 @@ GameObject:
   - component: {fileID: 171402106}
   - component: {fileID: 171402105}
   m_Layer: 0
-  m_Name: MapTlie (84)
+  m_Name: MapTile (84)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1507,7 +1507,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171402103}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1574,7 +1574,7 @@ GameObject:
   - component: {fileID: 185419150}
   - component: {fileID: 185419149}
   m_Layer: 0
-  m_Name: MapTlie (58)
+  m_Name: MapTile (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1669,7 +1669,7 @@ GameObject:
   - component: {fileID: 188668340}
   - component: {fileID: 188668339}
   m_Layer: 0
-  m_Name: MapTlie (54)
+  m_Name: MapTile (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1764,7 +1764,7 @@ GameObject:
   - component: {fileID: 190845292}
   - component: {fileID: 190845291}
   m_Layer: 0
-  m_Name: MapTlie (40)
+  m_Name: MapTile (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1859,7 +1859,7 @@ GameObject:
   - component: {fileID: 217810196}
   - component: {fileID: 217810195}
   m_Layer: 0
-  m_Name: MapTlie (37)
+  m_Name: MapTile (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1954,7 +1954,7 @@ GameObject:
   - component: {fileID: 240566431}
   - component: {fileID: 240566430}
   m_Layer: 0
-  m_Name: MapTlie (68)
+  m_Name: MapTile (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2049,7 +2049,7 @@ GameObject:
   - component: {fileID: 249361278}
   - component: {fileID: 249361277}
   m_Layer: 0
-  m_Name: MapTlie (95)
+  m_Name: MapTile (95)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2225,7 +2225,7 @@ GameObject:
   - component: {fileID: 274418265}
   - component: {fileID: 274418264}
   m_Layer: 0
-  m_Name: MapTlie (14)
+  m_Name: MapTile (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2399,7 +2399,7 @@ GameObject:
   - component: {fileID: 299840490}
   - component: {fileID: 299840489}
   m_Layer: 0
-  m_Name: MapTlie (2)
+  m_Name: MapTile (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2494,7 +2494,7 @@ GameObject:
   - component: {fileID: 308516109}
   - component: {fileID: 308516108}
   m_Layer: 0
-  m_Name: MapTlie (33)
+  m_Name: MapTile (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2589,7 +2589,7 @@ GameObject:
   - component: {fileID: 318279892}
   - component: {fileID: 318279891}
   m_Layer: 0
-  m_Name: MapTlie (11)
+  m_Name: MapTile (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2833,7 +2833,7 @@ GameObject:
   - component: {fileID: 343589169}
   - component: {fileID: 343589168}
   m_Layer: 0
-  m_Name: MapTlie (43)
+  m_Name: MapTile (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2928,7 +2928,7 @@ GameObject:
   - component: {fileID: 351139407}
   - component: {fileID: 351139406}
   m_Layer: 0
-  m_Name: MapTlie (26)
+  m_Name: MapTile (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3023,7 +3023,7 @@ GameObject:
   - component: {fileID: 375729919}
   - component: {fileID: 375729918}
   m_Layer: 0
-  m_Name: MapTlie (23)
+  m_Name: MapTile (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3118,7 +3118,7 @@ GameObject:
   - component: {fileID: 378668954}
   - component: {fileID: 378668953}
   m_Layer: 0
-  m_Name: MapTlie (78)
+  m_Name: MapTile (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3509,7 +3509,7 @@ GameObject:
   - component: {fileID: 460558660}
   - component: {fileID: 460558659}
   m_Layer: 0
-  m_Name: MapTlie (97)
+  m_Name: MapTile (97)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3831,7 +3831,7 @@ GameObject:
   - component: {fileID: 500994553}
   - component: {fileID: 500994552}
   m_Layer: 0
-  m_Name: MapTlie (60)
+  m_Name: MapTile (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3926,7 +3926,7 @@ GameObject:
   - component: {fileID: 522781159}
   - component: {fileID: 522781158}
   m_Layer: 0
-  m_Name: MapTlie (24)
+  m_Name: MapTile (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4021,7 +4021,7 @@ GameObject:
   - component: {fileID: 525806076}
   - component: {fileID: 525806075}
   m_Layer: 0
-  m_Name: MapTlie (28)
+  m_Name: MapTile (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4116,7 +4116,7 @@ GameObject:
   - component: {fileID: 544297537}
   - component: {fileID: 544297536}
   m_Layer: 0
-  m_Name: MapTlie (32)
+  m_Name: MapTile (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4211,7 +4211,7 @@ GameObject:
   - component: {fileID: 548120881}
   - component: {fileID: 548120880}
   m_Layer: 0
-  m_Name: MapTlie (19)
+  m_Name: MapTile (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4342,7 +4342,7 @@ GameObject:
   - component: {fileID: 669432024}
   - component: {fileID: 669432023}
   m_Layer: 0
-  m_Name: MapTlie (42)
+  m_Name: MapTile (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4437,7 +4437,7 @@ GameObject:
   - component: {fileID: 696988039}
   - component: {fileID: 696988038}
   m_Layer: 0
-  m_Name: MapTlie (31)
+  m_Name: MapTile (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4870,7 +4870,7 @@ GameObject:
   - component: {fileID: 717605350}
   - component: {fileID: 717605349}
   m_Layer: 0
-  m_Name: MapTlie (70)
+  m_Name: MapTile (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4965,7 +4965,7 @@ GameObject:
   - component: {fileID: 741206172}
   - component: {fileID: 741206171}
   m_Layer: 0
-  m_Name: MapTlie (52)
+  m_Name: MapTile (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5060,7 +5060,7 @@ GameObject:
   - component: {fileID: 757325029}
   - component: {fileID: 757325028}
   m_Layer: 0
-  m_Name: MapTlie (69)
+  m_Name: MapTile (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5155,7 +5155,7 @@ GameObject:
   - component: {fileID: 781429089}
   - component: {fileID: 781429088}
   m_Layer: 0
-  m_Name: MapTlie (1)
+  m_Name: MapTile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5250,7 +5250,7 @@ GameObject:
   - component: {fileID: 783009179}
   - component: {fileID: 783009178}
   m_Layer: 0
-  m_Name: MapTlie (21)
+  m_Name: MapTile (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5345,7 +5345,7 @@ GameObject:
   - component: {fileID: 813881714}
   - component: {fileID: 813881713}
   m_Layer: 0
-  m_Name: MapTlie (18)
+  m_Name: MapTile (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5561,7 +5561,7 @@ GameObject:
   - component: {fileID: 829076028}
   - component: {fileID: 829076027}
   m_Layer: 0
-  m_Name: MapTlie (96)
+  m_Name: MapTile (96)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5777,7 +5777,7 @@ GameObject:
   - component: {fileID: 862826861}
   - component: {fileID: 862826860}
   m_Layer: 0
-  m_Name: MapTlie (94)
+  m_Name: MapTile (94)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5872,7 +5872,7 @@ GameObject:
   - component: {fileID: 879021821}
   - component: {fileID: 879021820}
   m_Layer: 0
-  m_Name: MapTlie (45)
+  m_Name: MapTile (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5967,7 +5967,7 @@ GameObject:
   - component: {fileID: 879605014}
   - component: {fileID: 879605013}
   m_Layer: 0
-  m_Name: MapTlie (65)
+  m_Name: MapTile (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6062,7 +6062,7 @@ GameObject:
   - component: {fileID: 925965885}
   - component: {fileID: 925965884}
   m_Layer: 0
-  m_Name: MapTlie (74)
+  m_Name: MapTile (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6157,7 +6157,7 @@ GameObject:
   - component: {fileID: 933508897}
   - component: {fileID: 933508896}
   m_Layer: 0
-  m_Name: MapTlie (51)
+  m_Name: MapTile (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6526,8 +6526,9 @@ GameObject:
   - component: {fileID: 994392489}
   - component: {fileID: 994392488}
   - component: {fileID: 994392487}
+  - component: {fileID: 994392491}
   m_Layer: 0
-  m_Name: MapTlie (9)
+  m_Name: MapTile (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6565,7 +6566,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ccf053f02dbbad949b985cc0c67dbcfd, type: 2}
+  - {fileID: 2100000, guid: cef3d8210b204bb4cb513bcec5564dfc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6609,6 +6610,18 @@ Transform:
   m_Father: {fileID: 1229488601}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &994392491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994392486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e508dae8a0c02c44abbaf872eb1db2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1010268288
 GameObject:
   m_ObjectHideFlags: 0
@@ -6652,7 +6665,7 @@ GameObject:
   - component: {fileID: 1016290276}
   - component: {fileID: 1016290275}
   m_Layer: 0
-  m_Name: MapTlie (83)
+  m_Name: MapTile (83)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6842,7 +6855,7 @@ GameObject:
   - component: {fileID: 1028922979}
   - component: {fileID: 1028922978}
   m_Layer: 0
-  m_Name: MapTlie (41)
+  m_Name: MapTile (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6937,7 +6950,7 @@ GameObject:
   - component: {fileID: 1030973281}
   - component: {fileID: 1030973280}
   m_Layer: 0
-  m_Name: MapTlie (6)
+  m_Name: MapTile (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7073,7 +7086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055686842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36, y: 3, z: -45}
+  m_LocalPosition: {x: 36, y: 0, z: -45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7092,7 +7105,7 @@ GameObject:
   - component: {fileID: 1059743512}
   - component: {fileID: 1059743511}
   m_Layer: 0
-  m_Name: MapTlie (66)
+  m_Name: MapTile (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7187,7 +7200,7 @@ GameObject:
   - component: {fileID: 1067777663}
   - component: {fileID: 1067777662}
   m_Layer: 0
-  m_Name: MapTlie (50)
+  m_Name: MapTile (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7282,7 +7295,7 @@ GameObject:
   - component: {fileID: 1070990777}
   - component: {fileID: 1070990776}
   m_Layer: 0
-  m_Name: MapTlie (89)
+  m_Name: MapTile (89)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7498,7 +7511,7 @@ GameObject:
   - component: {fileID: 1101559879}
   - component: {fileID: 1101559878}
   m_Layer: 0
-  m_Name: MapTlie (30)
+  m_Name: MapTile (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7761,7 +7774,7 @@ GameObject:
   - component: {fileID: 1132098546}
   - component: {fileID: 1132098545}
   m_Layer: 0
-  m_Name: MapTlie (99)
+  m_Name: MapTile (99)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7965,7 +7978,7 @@ GameObject:
   - component: {fileID: 1155032024}
   - component: {fileID: 1155032023}
   m_Layer: 0
-  m_Name: MapTlie (38)
+  m_Name: MapTile (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8139,7 +8152,7 @@ GameObject:
   - component: {fileID: 1162490868}
   - component: {fileID: 1162490867}
   m_Layer: 0
-  m_Name: MapTlie (91)
+  m_Name: MapTile (91)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8313,7 +8326,7 @@ GameObject:
   - component: {fileID: 1197580632}
   - component: {fileID: 1197580631}
   m_Layer: 0
-  m_Name: MapTlie (7)
+  m_Name: MapTile (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8408,7 +8421,7 @@ GameObject:
   - component: {fileID: 1199493324}
   - component: {fileID: 1199493323}
   m_Layer: 0
-  m_Name: MapTlie (10)
+  m_Name: MapTile (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8533,7 +8546,7 @@ GameObject:
   - component: {fileID: 1202475611}
   - component: {fileID: 1202475610}
   m_Layer: 0
-  m_Name: MapTlie (48)
+  m_Name: MapTile (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8628,7 +8641,7 @@ GameObject:
   - component: {fileID: 1203115194}
   - component: {fileID: 1203115193}
   m_Layer: 0
-  m_Name: MapTlie (39)
+  m_Name: MapTile (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8723,7 +8736,7 @@ GameObject:
   - component: {fileID: 1206403637}
   - component: {fileID: 1206403636}
   m_Layer: 0
-  m_Name: MapTlie (93)
+  m_Name: MapTile (93)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9027,7 +9040,7 @@ GameObject:
   - component: {fileID: 1233236393}
   - component: {fileID: 1233236392}
   m_Layer: 0
-  m_Name: MapTlie (67)
+  m_Name: MapTile (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9122,7 +9135,7 @@ GameObject:
   - component: {fileID: 1240503915}
   - component: {fileID: 1240503914}
   m_Layer: 0
-  m_Name: MapTlie (3)
+  m_Name: MapTile (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9217,7 +9230,7 @@ GameObject:
   - component: {fileID: 1250039221}
   - component: {fileID: 1250039220}
   m_Layer: 0
-  m_Name: MapTlie (16)
+  m_Name: MapTile (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9433,7 +9446,7 @@ GameObject:
   - component: {fileID: 1266039872}
   - component: {fileID: 1266039871}
   m_Layer: 0
-  m_Name: MapTlie (22)
+  m_Name: MapTile (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9528,7 +9541,7 @@ GameObject:
   - component: {fileID: 1289833788}
   - component: {fileID: 1289833787}
   m_Layer: 0
-  m_Name: MapTlie (44)
+  m_Name: MapTile (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9719,7 +9732,7 @@ GameObject:
   - component: {fileID: 1316798431}
   - component: {fileID: 1316798430}
   m_Layer: 0
-  m_Name: MapTlie (25)
+  m_Name: MapTile (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9814,7 +9827,7 @@ GameObject:
   - component: {fileID: 1317500365}
   - component: {fileID: 1317500364}
   m_Layer: 0
-  m_Name: MapTlie (15)
+  m_Name: MapTile (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10058,7 +10071,7 @@ GameObject:
   - component: {fileID: 1342444022}
   - component: {fileID: 1342444021}
   m_Layer: 0
-  m_Name: MapTlie (56)
+  m_Name: MapTile (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10153,7 +10166,7 @@ GameObject:
   - component: {fileID: 1380391383}
   - component: {fileID: 1380391382}
   m_Layer: 0
-  m_Name: MapTlie (8)
+  m_Name: MapTile (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10344,7 +10357,7 @@ GameObject:
   - component: {fileID: 1393539320}
   - component: {fileID: 1393539319}
   m_Layer: 0
-  m_Name: MapTlie (63)
+  m_Name: MapTile (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10439,7 +10452,7 @@ GameObject:
   - component: {fileID: 1400810924}
   - component: {fileID: 1400810923}
   m_Layer: 0
-  m_Name: MapTlie (35)
+  m_Name: MapTile (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10589,7 +10602,7 @@ GameObject:
   - component: {fileID: 1449545374}
   - component: {fileID: 1449545373}
   m_Layer: 0
-  m_Name: MapTlie (49)
+  m_Name: MapTile (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10684,7 +10697,7 @@ GameObject:
   - component: {fileID: 1460397695}
   - component: {fileID: 1460397694}
   m_Layer: 0
-  m_Name: MapTlie (27)
+  m_Name: MapTile (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10779,7 +10792,7 @@ GameObject:
   - component: {fileID: 1466129649}
   - component: {fileID: 1466129648}
   m_Layer: 0
-  m_Name: MapTlie (76)
+  m_Name: MapTile (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10874,7 +10887,7 @@ GameObject:
   - component: {fileID: 1526533997}
   - component: {fileID: 1526533996}
   m_Layer: 0
-  m_Name: MapTlie (81)
+  m_Name: MapTile (81)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10967,6 +10980,7 @@ GameObject:
   - component: {fileID: 1533283411}
   - component: {fileID: 1533283413}
   - component: {fileID: 1533283412}
+  - component: {fileID: 1533283414}
   m_Layer: 5
   m_Name: PlayerHP_UI
   m_TagString: Untagged
@@ -11035,6 +11049,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533283410}
   m_CullTransparentMesh: 1
+--- !u!114 &1533283414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533283410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29c73d7133461ab4db146925555e072a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHP: 20
+  PlayerHP: {fileID: 1533283412}
 --- !u!1 &1534576254
 GameObject:
   m_ObjectHideFlags: 0
@@ -11127,7 +11155,7 @@ GameObject:
   - component: {fileID: 1540451278}
   - component: {fileID: 1540451277}
   m_Layer: 0
-  m_Name: MapTlie (90)
+  m_Name: MapTile (90)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11222,7 +11250,7 @@ GameObject:
   - component: {fileID: 1553809022}
   - component: {fileID: 1553809021}
   m_Layer: 0
-  m_Name: MapTlie (34)
+  m_Name: MapTile (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11317,7 +11345,7 @@ GameObject:
   - component: {fileID: 1570317541}
   - component: {fileID: 1570317540}
   m_Layer: 0
-  m_Name: MapTlie (86)
+  m_Name: MapTile (86)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11411,8 +11439,9 @@ GameObject:
   - component: {fileID: 1602101116}
   - component: {fileID: 1602101115}
   - component: {fileID: 1602101114}
+  - component: {fileID: 1602101117}
   m_Layer: 0
-  m_Name: MapTlie (64)
+  m_Name: MapTile (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11464,7 +11493,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ccf053f02dbbad949b985cc0c67dbcfd, type: 2}
+  - {fileID: 2100000, guid: cef3d8210b204bb4cb513bcec5564dfc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11494,6 +11523,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602101112}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1602101117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602101112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e508dae8a0c02c44abbaf872eb1db2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1604203256
 GameObject:
   m_ObjectHideFlags: 0
@@ -11553,7 +11594,7 @@ GameObject:
   - component: {fileID: 1605565235}
   - component: {fileID: 1605565234}
   m_Layer: 0
-  m_Name: MapTlie (92)
+  m_Name: MapTile (92)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11708,7 +11749,7 @@ GameObject:
   - component: {fileID: 1698779300}
   - component: {fileID: 1698779299}
   m_Layer: 0
-  m_Name: MapTlie (46)
+  m_Name: MapTile (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11991,7 +12032,7 @@ GameObject:
   - component: {fileID: 1742363730}
   - component: {fileID: 1742363729}
   m_Layer: 0
-  m_Name: MapTlie (29)
+  m_Name: MapTile (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12086,7 +12127,7 @@ GameObject:
   - component: {fileID: 1767494574}
   - component: {fileID: 1767494573}
   m_Layer: 0
-  m_Name: MapTlie (98)
+  m_Name: MapTile (98)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12181,7 +12222,7 @@ GameObject:
   - component: {fileID: 1779139842}
   - component: {fileID: 1779139841}
   m_Layer: 0
-  m_Name: MapTlie (55)
+  m_Name: MapTile (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12464,7 +12505,7 @@ GameObject:
   - component: {fileID: 1833905713}
   - component: {fileID: 1833905712}
   m_Layer: 0
-  m_Name: MapTlie (71)
+  m_Name: MapTile (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12559,7 +12600,7 @@ GameObject:
   - component: {fileID: 1874107713}
   - component: {fileID: 1874107712}
   m_Layer: 0
-  m_Name: MapTlie (88)
+  m_Name: MapTile (88)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12654,7 +12695,7 @@ GameObject:
   - component: {fileID: 1882405926}
   - component: {fileID: 1882405925}
   m_Layer: 0
-  m_Name: MapTlie (87)
+  m_Name: MapTile (87)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12749,7 +12790,7 @@ GameObject:
   - component: {fileID: 1883899457}
   - component: {fileID: 1883899456}
   m_Layer: 0
-  m_Name: MapTlie (13)
+  m_Name: MapTile (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12844,7 +12885,7 @@ GameObject:
   - component: {fileID: 1884278432}
   - component: {fileID: 1884278431}
   m_Layer: 0
-  m_Name: MapTlie (85)
+  m_Name: MapTile (85)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12939,7 +12980,7 @@ GameObject:
   - component: {fileID: 1896006431}
   - component: {fileID: 1896006430}
   m_Layer: 0
-  m_Name: MapTlie (62)
+  m_Name: MapTile (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13034,7 +13075,7 @@ GameObject:
   - component: {fileID: 1902624399}
   - component: {fileID: 1902624398}
   m_Layer: 0
-  m_Name: MapTlie (20)
+  m_Name: MapTile (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13129,7 +13170,7 @@ GameObject:
   - component: {fileID: 1904704730}
   - component: {fileID: 1904704729}
   m_Layer: 0
-  m_Name: MapTlie (75)
+  m_Name: MapTile (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13224,7 +13265,7 @@ GameObject:
   - component: {fileID: 1918054955}
   - component: {fileID: 1918054954}
   m_Layer: 0
-  m_Name: MapTlie (79)
+  m_Name: MapTile (79)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13859,7 +13900,7 @@ GameObject:
   - component: {fileID: 2057185424}
   - component: {fileID: 2057185423}
   m_Layer: 0
-  m_Name: MapTlie (73)
+  m_Name: MapTile (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13954,7 +13995,7 @@ GameObject:
   - component: {fileID: 2057319096}
   - component: {fileID: 2057319095}
   m_Layer: 0
-  m_Name: MapTlie (57)
+  m_Name: MapTile (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14049,7 +14090,7 @@ GameObject:
   - component: {fileID: 2062222657}
   - component: {fileID: 2062222656}
   m_Layer: 0
-  m_Name: MapTlie (72)
+  m_Name: MapTile (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14144,7 +14185,7 @@ GameObject:
   - component: {fileID: 2071445442}
   - component: {fileID: 2071445441}
   m_Layer: 0
-  m_Name: MapTlie (5)
+  m_Name: MapTile (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14239,7 +14280,7 @@ GameObject:
   - component: {fileID: 2092009077}
   - component: {fileID: 2092009076}
   m_Layer: 0
-  m_Name: MapTlie (82)
+  m_Name: MapTile (82)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14334,7 +14375,7 @@ GameObject:
   - component: {fileID: 2092778661}
   - component: {fileID: 2092778660}
   m_Layer: 0
-  m_Name: MapTlie (17)
+  m_Name: MapTile (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
