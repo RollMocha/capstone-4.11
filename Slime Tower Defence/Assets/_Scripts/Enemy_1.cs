@@ -5,11 +5,15 @@ using UnityEngine;
 
 public class Enemy_1 : MonoBehaviour
 {
-    public float speed = 10f;//몬스터 속도
-    public float destroy_time = 0.1f;//최종도착과 디스폰 사이 시간
-
     private Transform target;//Transform
     private int wavepointIndex = 0;//OneWaypoints의 인덱스
+    private static int fruitsindex = 3;
+
+    public int enemy_hp = 10;
+    public float speed = 10f;//몬스터 속도
+    public float destroy_time = 0f;//최종도착과 디스폰 사이 시간
+    public Transform[] fruits = new Transform[fruitsindex];//열매들
+    public int spawnrandom = 20;//열매 드랍률
 
     void Start()
     {
@@ -25,6 +29,15 @@ public class Enemy_1 : MonoBehaviour
         {
             GetNextWaypoint();//다음 목적지 탐색하는 함수
         }
+
+        destroy_time += Time.deltaTime;
+
+        if (destroy_time >= 3)
+        {
+            SpawnFruit();
+
+            Destroy(gameObject);
+        }
     }
 
     private void GetNextWaypoint()
@@ -38,5 +51,17 @@ public class Enemy_1 : MonoBehaviour
         wavepointIndex++;
         target = OneWaypoints.opoints[wavepointIndex];//목적지를 다음 목적지로 대입
 
+    }
+
+    private void SpawnFruit()
+    {
+        int random = UnityEngine.Random.Range(0, 100);//1~100까지 렌덤으로 숫자 뽑기
+
+        if (random < spawnrandom)//뽑은 숫자중 드랍률보다 낮으면
+        {
+            int fruit_random = UnityEngine.Random.Range(0, 2);//열매 3가지중 한 인덱스 뽑기
+
+            Instantiate(fruits[fruit_random], transform.position, transform.rotation);//해당 인덱스에 있는 열매를 몬스터 좌표에 소환
+        }
     }
 }
