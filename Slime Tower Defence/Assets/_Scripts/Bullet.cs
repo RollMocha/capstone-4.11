@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        Destroy(this, destroyTime); // 공격이 맞지않을 경우 알아서 사라짐
+
     }
 
     void Update()
@@ -41,9 +41,11 @@ public class Bullet : MonoBehaviour
     // 적과 부딪힐 때 사라지는 함수
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.tag == "Monster")
         {
-            Destroy(this);
+            Debug.Log("Hit Monster");
+            Destroy(this.gameObject);
         }
     }
 }
