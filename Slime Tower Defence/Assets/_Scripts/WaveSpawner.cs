@@ -27,17 +27,18 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
 
     IEnumerator SpawnWave()// waveIndex 만큼  0.3초마다 SpawnEnemy_1()과 SpawnEnemy_2를 호출
     {
-        waveIndex++;
-        for (int i = 0; i < waveIndex; i++)
+        if (HPManager.CurrentHP > 0)
         {
-            SpawnEnemy_1();
-            SpawnEnemy_2();
+            waveIndex++;
+            for (int i = 0; i < waveIndex; i++)
+            {
+                SpawnEnemy_1();
+                SpawnEnemy_2();
 
-            yield return new WaitForSeconds(0.5f);//0.5f동안 기다리는 함수
+                yield return new WaitForSeconds(0.5f);//0.5f동안 기다리는 함수
+            }
         }
-
     }
-
 
     private void SpawnEnemy_1()//Monster_1Prefab 생성
     {
