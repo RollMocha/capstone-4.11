@@ -9,6 +9,7 @@ public class HPManager : MonoBehaviour
     public int MaxHP = 20; //플레이어 최대 체력
     string CurrentHPString = CurrentHP.ToString();
 
+    public GameObject GameOverobj;
     public Text PlayerHP;
 
    void Start()
@@ -21,5 +22,14 @@ public class HPManager : MonoBehaviour
         CurrentHPString = CurrentHP.ToString();
         PlayerHP.text = "HP: " + CurrentHPString;
         //화면에 현재체력 표시
+        CheckGameOver();//게임오버 판별
+    }
+
+    void CheckGameOver() //플레이어 체력이 0 이하로 내려가면 게임오버
+    {
+        if (CurrentHP < 0)
+        {
+            GameOverobj.SetActive(true);//게임오버 버튼 및 텍스트 활성화
+        }
     }
 }
