@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   destroy_time: 0.1
---- !u!54 &-6589554500361486014
+--- !u!54 &-7411476068671586737
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

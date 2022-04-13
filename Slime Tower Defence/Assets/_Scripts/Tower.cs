@@ -32,7 +32,11 @@ public class Tower : MonoBehaviour
             targetEnemy = enemyDetect.GetTarget();
             if (targetEnemy != null)
             {
-                Attack(targetEnemy);
+                if (timer > attackSpeed)
+                {
+                    Attack(targetEnemy);
+                    timer = 0;
+                }
             }
         }
     }

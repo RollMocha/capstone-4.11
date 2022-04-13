@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2898325351693193956}
   - component: {fileID: 7001741420567548688}
   - component: {fileID: 5303728378379018937}
-  - component: {fileID: 601684796441610980}
+  - component: {fileID: -3143870781349676144}
   m_Layer: 0
   m_Name: Monster_2
   m_TagString: Monster
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   destroy_time: 0.1
---- !u!54 &601684796441610980
+--- !u!54 &-3143870781349676144
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
