@@ -11,7 +11,7 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
     public Transform spawnPoint; //MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
     public float timeBetweenWaves = 5f; //적들이 생성되는 시간 간격
 
-    private float countdown = 2f;//시간
+    public float countdown = 2f;//시간
 
     private int waveIndex = 0;//스테이지 번호 
 
@@ -35,7 +35,6 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
             {
                 SpawnEnemy_1();
                 SpawnEnemy_2();
-
                 yield return new WaitForSeconds(0.5f);//0.5f동안 기다리는 함수
             }
         }
