@@ -44,7 +44,6 @@ public class Bullet : MonoBehaviour
 
         if (other.tag == "Monster")
         {
-            Debug.Log("Hit Monster");
             Destroy(this.gameObject);
         }
     }
