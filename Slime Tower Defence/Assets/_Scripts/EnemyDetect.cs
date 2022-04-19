@@ -21,7 +21,6 @@ public class EnemyDetect : MonoBehaviour
     // 적이 범위에 들어오면 정보 추가
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.tag == "Monster")
         {
             enemyList.Add(other.gameObject);

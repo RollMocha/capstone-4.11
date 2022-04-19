@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour//적 생성하는 코드
 {
-    public Transform[] enemyPrefab_1 = new Transform[5];//Monster_1Prefab의 Transforms
-    public Transform[] enemyPrefab_2 = new Transform[5];//Monster_2Prefab의 Transforms
+    public Transform[] enemyPrefab_1;//Monster_1Prefab의 Transforms
+    public Transform[] enemyPrefab_2;//Monster_2Prefab의 Transforms
     public Transform spawnPoint; //MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
     public float timeBetweenWaves = 5f; //적들이 생성되는 시간 간격
     public float countdown = 2f;//시간
@@ -39,12 +39,12 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
 
     private void SpawnEnemy_1()//Monster_1Prefab 생성
     {
-        int enemy_random = UnityEngine.Random.Range(0, 4);
+        int enemy_random = UnityEngine.Random.Range(0, 3);
         Instantiate(enemyPrefab_1[enemy_random], spawnPoint.position, spawnPoint.rotation);
     }
     private void SpawnEnemy_2()//Monster_2Prefab 생성
     {
-        int enemy_random = UnityEngine.Random.Range(0, 4);
+        int enemy_random = UnityEngine.Random.Range(0, 3);
         Instantiate(enemyPrefab_2[enemy_random], spawnPoint.position, spawnPoint.rotation);
     }
 }

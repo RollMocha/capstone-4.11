@@ -31,7 +31,8 @@ public class Bullet : MonoBehaviour
         {
             // 적 위치로 날라감
             transform.position = 
-                Vector3.MoveTowards(this.transform.position, attackTarget.transform.position, 0.1f);
+                Vector3.MoveTowards(this.transform.position, 
+                    attackTarget.transform.position, 1f);
         }
         else
         {
