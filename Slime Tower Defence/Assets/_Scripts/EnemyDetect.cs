@@ -9,11 +9,7 @@ public class EnemyDetect : MonoBehaviour
     public Tower parentTower; // 부모의 타워
     void Start()
     {
-        Renderer renderer;
-        renderer = GetComponent<Renderer>();
-        Color color = renderer.material.color;
-        color.a = 0.3f;
-        renderer.material.color = color;
+
     }
 
     // Update is called once per frame
@@ -25,8 +21,6 @@ public class EnemyDetect : MonoBehaviour
     // 적이 범위에 들어오면 정보 추가
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("other enter tag : " + other.tag);
-
         if (other.tag == "Monster")
         {
             enemyList.Add(other.gameObject);
@@ -36,7 +30,6 @@ public class EnemyDetect : MonoBehaviour
     // 적이 범위에서 나가면 정보 제거
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("other exit tag : " + other.tag);
 
         if (other.tag == "Monster")
         {

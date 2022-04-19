@@ -29,10 +29,18 @@ public class Tower : MonoBehaviour
         // 적이 범위안에 있는지를 매번 체크
         if (enemyDetect.EnemyDetectCheck())
         {
-            targetEnemy = enemyDetect.GetTarget();
+            targetEnemy = enemyDetect.GetTarget(); // 적이 범위안에 있으면 추가
             if (targetEnemy != null)
             {
-                Attack(targetEnemy);
+                // 적을 바라봄
+                RotateToTarget(targetEnemy);
+
+                
+                if (timer > attackSpeed)
+                {
+                    Attack(targetEnemy);
+                    timer = 0;
+                }
             }
         }
     }
@@ -46,13 +54,11 @@ public class Tower : MonoBehaviour
     // 공격을 위한 함수
     void Attack(GameObject target)
     {
-        Debug.Log("Attacking"); // 공격 테스트
-
         if (isAttack) // 공격이 가능한지 확인
         {
             //isAttack = false; // 공격이 이미 실행 중이므로 막기
 
-            RotateToTarget(target); // 적 바라보기
+            //RotateToTarget(target); // 적 바라보기
             GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x,
                 transform.position.y, transform.position.z), Quaternion.identity); // 공격 프리팹 생성
 
