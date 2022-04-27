@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     GameObject attackTarget; // 공격해야할 적 정보
     public float destroyTime = 5f; // 공격이 맞지않을 경우 대비
+    public float dt = 0.1f;
 
     void Start()
     {
@@ -30,7 +31,8 @@ public class Bullet : MonoBehaviour
         {
             // 적 위치로 날라감
             transform.position = 
-                Vector3.MoveTowards(this.transform.position, attackTarget.transform.position, 0.1f);
+                Vector3.MoveTowards(this.transform.position, 
+                    attackTarget.transform.position, 1f);
         }
         else
         {
@@ -44,7 +46,7 @@ public class Bullet : MonoBehaviour
 
         if (other.tag == "Monster")
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject,dt);
         }
     }
 }
