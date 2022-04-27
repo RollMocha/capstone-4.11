@@ -8,9 +8,11 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
 {
     Transform defultTransform;
 
-    public Image data;
-    public Sprite data2;
-    public DragContainer dragContainer;
+    //public Image data;
+    //public Sprite data2;
+    //public DragContainer dragContainer;
+    public GameObject gameObject;
+
     public bool isDragging = true;
 
     public static DragExample dragExample;
@@ -27,7 +29,18 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
     // Update is called once per frame
     void Update()
     {
-        
+        /*
+        RaycastHit hit;
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            string objectName = hit.collider.gameObject.name;
+            Debug.Log(objectName);
+        }
+        */
+
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -40,19 +53,18 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
     {
         Debug.Log("Drag Start");
 
-        Vector2 touchPosition = eventData.position;
-
-        Vector3 touchPositionInWorld = Camera.main.ScreenToWorldPoint(
-            new Vector3()
-            );
-
+        /*
         if (data.sprite == null)
         {
             return;
         }
-        
+        */
+
+        /*
         dragContainer.gameObject.SetActive(true);
         dragContainer.image.sprite = data2;
+        */
+
         isDragging = true;
 
         
@@ -65,8 +77,52 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
 
         if (isDragging)
         {
-            dragContainer.transform.position = eventData.position;
+            //dragContainer.transform.position = eventData.position;
+            gameObject.transform.position = eventData.position;
             
+        }
+
+        // test
+        //RaycastHit hit;
+
+        Vector3 cameraPosition = Camera.main.transform.position;
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        RaycastHit[] raycastHits = Physics.RaycastAll(ray);
+
+        foreach (RaycastHit hit in raycastHits)
+        {
+            string objectName = hit.collider.gameObject.name;
+            //Debug.Log(objectName);
+
+            if (hit.collider.tag == "Tile")
+            {
+                GameObject hitTile = hit.collider.gameObject;
+                Renderer renderer = hitTile.GetComponentInChildren<Renderer>();
+
+                if (renderer == null)
+                {
+                    Debug.Log("renderer null");
+                }
+
+                MeshRenderer mesh = hitTile.GetComponent<MeshRenderer>();
+
+                if (mesh == null)
+                {
+                    Debug.Log("mesh null");
+                }
+
+                
+
+                Material material = renderer.material;
+                Color color = material.color;
+
+                Debug.Log(color.a);
+
+                color.a = 0.1f;
+                material.color = color;
+            }
         }
     }
 
@@ -77,6 +133,7 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
         
         if (isDragging)
         {
+            /*
             if (dragContainer.image.sprite != null)
             {
                 //data.sprite = dragContainer.image.sprite;
@@ -85,13 +142,17 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
             {
                 //data.sprite = null;
             }
+            */
 
-            this.transform.position = defultTransform.position;
+            //dragObject.transform.position = defultTransform.position;
         }
 
         isDragging = false;
+
+        /*
         dragContainer.image.sprite = null;
         dragContainer.gameObject.SetActive(false);
+        */
         
     }
 }
