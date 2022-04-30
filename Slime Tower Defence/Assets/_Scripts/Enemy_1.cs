@@ -6,56 +6,60 @@ using UnityEngine;
 public class Enemy_1 : MonoBehaviour
 {
     public int enemy_hp = 10;
-    public float speed = 10f;//¸ó½ºÅÍ ¼Óµµ
-    public float destroy_time = 0.1f;//ÃÖÁ¾µµÂø°ú µğ½ºÆù »çÀÌ ½Ã°£
+    public float speed = 10f;//ëª¬ìŠ¤í„° ì†ë„
+    public float destroy_time = 0.1f;//ìµœì¢…ë„ì°©ê³¼ ë””ìŠ¤í° ì‚¬ì´ ì‹œê°„
     public Transform[] fruits = new Transform[fruitsindex];//
     public int fruitspawnrandom = 20;
 
+    Rigidbody E1_rigidbody; //Rigidbodyë¥¼ ì €ì¥í•˜ëŠ” ë³€ìˆ˜
+    public int rotatespeed = 5; //íšŒì „ì†ë„
     private static int fruitsindex = 3;
     private Transform target;//Transform
-    private int wavepointIndex = 0;//OneWaypointsÀÇ ÀÎµ¦½º
+    private int wavepointIndex = 0;//OneWaypointsì˜ ì¸ë±ìŠ¤
 
     void Start()
     {
-        target = OneWaypoints.opoints[0];//Ã¹¹øÂ° OneWaypoint ¼³Á¤
+        target = OneWaypoints.opoints[0];//ì²«ë²ˆì§¸ OneWaypoint ì„¤ì •
+        E1_rigidbody = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        Vector3 dir = target.position - transform.position;// ¸ñÀûÁö ¹æÇâÀ» ±¸ÇÏ´Â ½Ä
-        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);//ÀÌµ¿°ü·Ã ÇÔ¼ö
 
-        if (Vector3.Distance(transform.position, target.position) <= 0.4f)//Vector3 a(transform.position)¿Í Vector3 b(target.position)ÀÇ »çÀÌÀÇ °Å¸®°¡ 0.4fº¸´Ù ³·À¸¸é...
+    }
+
+    private void FixedUpdate()
+    {
+        Vector3 dir = target.position - transform.position;// ëª©ì ì§€ ë°©í–¥ì„ êµ¬í•˜ëŠ” ì‹
+        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);//ì´ë™ê´€ë ¨ í•¨ìˆ˜
+
+        if (Vector3.Distance(transform.position, target.position) <= 0.4f)//Vector3 a(transform.position)ì™€ Vector3 b(target.position)ì˜ ì‚¬ì´ì˜ ê±°ë¦¬ê°€ 0.4fë³´ë‹¤ ë‚®ìœ¼ë©´...
         {
-            GetNextWaypoint();//´ÙÀ½ ¸ñÀûÁö Å½»öÇÏ´Â ÇÔ¼ö
+            GetNextWaypoint();//ë‹¤ìŒ ëª©ì ì§€ íƒìƒ‰í•˜ëŠ” í•¨ìˆ˜
         }
-        /*
-        destroy_time += Time.deltaTime;
 
-        if (destroy_time >= 3)
-        {
-            SpawnFruit();
-
-            Destroy(gameObject);
-        }
-        */
+        Quaternion newRotation = target.rotation;
+        E1_rigidbody.rotation = Quaternion.Slerp(E1_rigidbody.rotation, newRotation,
+            rotatespeed * Time.deltaTime);
+        //ëª¬ìŠ¤í„°ê°€ ì´ë™í•˜ëŠ” ë°©í–¥ìœ¼ë¡œ íšŒì „(ë°”ë¼ë´„)
     }
 
     private void GetNextWaypoint()
     {
-        if (wavepointIndex >= OneWaypoints.opoints.Length - 1)//ÇöÀç ¸ñÀûÁö(wavepointIndex)°¡ ¸¶Áö¸· ¸ñÀûÁö(Waypoints.points.Length -1)ÀÌ¶ó¸é
+        if (wavepointIndex >= OneWaypoints.opoints.Length - 1)//í˜„ì¬ ëª©ì ì§€(wavepointIndex)ê°€ ë§ˆì§€ë§‰ ëª©ì ì§€(Waypoints.points.Length -1)ì´ë¼ë©´
         {
-            Destroy(gameObject, destroy_time);//ÀÌ ½ºÅ©·¦Æ®¸¦ °¡Áö°í ÀÖ´Â °ÔÀÓ °´Ã¼¸¦ ÆÄ±«
+            Destroy(gameObject, destroy_time);//ì´ ìŠ¤í¬ë©íŠ¸ë¥¼ ê°€ì§€ê³  ìˆëŠ” ê²Œì„ ê°ì²´ë¥¼ íŒŒê´´
             return;
         }
 
         wavepointIndex++;
-        target = OneWaypoints.opoints[wavepointIndex];//¸ñÀûÁö¸¦ ´ÙÀ½ ¸ñÀûÁö·Î ´ëÀÔ
+        target = OneWaypoints.opoints[wavepointIndex];//ëª©ì ì§€ë¥¼ ë‹¤ìŒ ëª©ì ì§€ë¡œ ëŒ€ì…
     }
 
     private void SpawnFruit()
     {
         int random = UnityEngine.Random.Range(0, 100);
+
 
         if (random < fruitspawnrandom)
         {
