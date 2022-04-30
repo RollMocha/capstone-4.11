@@ -18,4 +18,15 @@ public class Tile : MonoBehaviour
     {
         
     }
+
+    public Vector3 GetPosition()
+    {
+        Vector3 tilePosition = this.gameObject.transform.position;
+        return tilePosition;
+    }
+
+    public bool SlimeCheck()
+    {
+        return isSlime;
+    }
 }

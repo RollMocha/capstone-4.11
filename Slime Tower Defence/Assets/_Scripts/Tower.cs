@@ -14,6 +14,7 @@ public class Tower : MonoBehaviour
     GameObject targetEnemy = null; // 적 정보
 
     public float attackSpeed = 2f; // 공격 속도
+    public float bulletSpeed = 0.1f; // 투사체 속도
 
     float timer = 0;
 
@@ -24,7 +25,7 @@ public class Tower : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
+        timer += Time.deltaTime; // 공격속도를 위해 사용
 
         // 적이 범위안에 있는지를 매번 체크
         if (enemyDetect.EnemyDetectCheck())
@@ -35,7 +36,7 @@ public class Tower : MonoBehaviour
                 // 적을 바라봄
                 RotateToTarget(targetEnemy);
 
-                
+                // 시간을 확인해서 공격 시간이 지나면 공격
                 if (timer > attackSpeed)
                 {
                     Attack(targetEnemy);
@@ -43,12 +44,6 @@ public class Tower : MonoBehaviour
                 }
             }
         }
-    }
-
-    IEnumerator AttackCheck()
-    {
-        yield return new WaitForSeconds(attackSpeed);
-
     }
 
     // 공격을 위한 함수
@@ -62,7 +57,7 @@ public class Tower : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x,
                 transform.position.y, transform.position.z), Quaternion.identity); // 공격 프리팹 생성
 
-            bullet.GetComponent<Bullet>().SetTarget(target); // 공격 프리팹에 적 정보 전달
+            bullet.GetComponent<Bullet>().SetTarget(target, bulletSpeed); // 공격 프리팹에 적 정보 전달
 
             //isAttack = true; // 공격 종료
         }
