@@ -6,21 +6,31 @@ using UnityEngine;
 public class Enemy_2 : MonoBehaviour
 {
     public int enemy_hp = 10;
-    public float speed = 10f;//¸ó½ºÅÍ ¼Óµµ
-    public float destroy_time = 0.1f;//ÃÖÁ¾µµÂø°ú µğ½ºÆù »çÀÌ ½Ã°£
+    public float speed = 10f;//ëª¬ìŠ¤í„° ì†ë„
+    public float destroy_time = 0.1f;//ìµœì¢…ë„ì°©ê³¼ ë””ìŠ¤í° ì‚¬ì´ ì‹œê°„
     public Transform[] fruits = new Transform[fruitsindex];//
     public int fruitspawnrandom = 20;
 
+    /*
+    Rigidbody E2_rigidbody; //Rigidbodyë¥¼ ì €ì¥í•˜ëŠ” ë³€ìˆ˜
+    public int rotatespeed = 5; //íšŒì „ì†ë„
+    */
+
     private static int fruitsindex = 3;
     private Transform target;//Transform
-    private int wavepointIndex = 0;//TwoWaypointsÀÇ ÀÎµ¦½º
+    private int wavepointIndex = 0;//TwoWaypointsì˜ ì¸ë±ìŠ¤
 
     void Start()
     {
-        target = TwoWaypoints.tpoints[0];//Ã¹¹øÂ° TwoWaypoint ¼³Á¤
+        target = TwoWaypoints.tpoints[0];//ì²«ë²ˆì§¸ TwoWaypoint ì„¤ì •
     }
-    //ÀÌ ÀÌÈÄ´Â OneWaypoints¶ó´Â scrpit ÂüÁ¶ÇÏ½Ã¸é µÊ
+    //ì´ ì´í›„ëŠ” OneWaypointsë¼ëŠ” scrpit ì°¸ì¡°í•˜ì‹œë©´ ë¨
     private void Update()
+    {
+
+    }
+
+    private void FixedUpdate()
     {
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
@@ -29,15 +39,11 @@ public class Enemy_2 : MonoBehaviour
         {
             GetNextWaypoint();
         }
-        /*
-        destroy_time += Time.deltaTime;
 
-        if (destroy_time >= 3)
-        {
-            SpawnFruit();
-
-            Destroy(gameObject);
-        }
+        /*Quaternion newRotation = target.rotation;
+        E2_rigidbody.rotation = Quaternion.Slerp(E2_rigidbody.rotation, newRotation,
+            rotatespeed * Time.deltaTime);
+        //ëª¬ìŠ¤í„°ê°€ ì´ë™í•˜ëŠ” ë°©í–¥ìœ¼ë¡œ íšŒì „(ë°”ë¼ë´„)
         */
     }
 
