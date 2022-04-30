@@ -26,6 +26,11 @@ public class Enemy_1 : MonoBehaviour
 
     private void Update()
     {
+
+    }
+
+    private void FixedUpdate()
+    {
         Vector3 dir = target.position - transform.position;// 목적지 방향을 구하는 식
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);//이동관련 함수
 
@@ -33,20 +38,7 @@ public class Enemy_1 : MonoBehaviour
         {
             GetNextWaypoint();//다음 목적지 탐색하는 함수
         }
-        /*
-        destroy_time += Time.deltaTime;
 
-        if (destroy_time >= 3)
-        {
-            SpawnFruit();
-
-            Destroy(gameObject);
-        }
-        */
-    }
-
-    private void FixedUpdate()
-    {
         Quaternion newRotation = target.rotation;
         E1_rigidbody.rotation = Quaternion.Slerp(E1_rigidbody.rotation, newRotation,
             rotatespeed * Time.deltaTime);

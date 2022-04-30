@@ -11,8 +11,10 @@ public class Enemy_2 : MonoBehaviour
     public Transform[] fruits = new Transform[fruitsindex];//
     public int fruitspawnrandom = 20;
 
+    /*
     Rigidbody E2_rigidbody; //Rigidbody를 저장하는 변수
     public int rotatespeed = 5; //회전속도
+    */
 
     private static int fruitsindex = 3;
     private Transform target;//Transform
@@ -25,6 +27,11 @@ public class Enemy_2 : MonoBehaviour
     //이 이후는 OneWaypoints라는 scrpit 참조하시면 됨
     private void Update()
     {
+
+    }
+
+    private void FixedUpdate()
+    {
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -32,20 +39,7 @@ public class Enemy_2 : MonoBehaviour
         {
             GetNextWaypoint();
         }
-        /*
-        destroy_time += Time.deltaTime;
 
-        if (destroy_time >= 3)
-        {
-            SpawnFruit();
-
-            Destroy(gameObject);
-        }
-        */
-    }
-
-    private void FixedUpdate()
-    {
         /*Quaternion newRotation = target.rotation;
         E2_rigidbody.rotation = Quaternion.Slerp(E2_rigidbody.rotation, newRotation,
             rotatespeed * Time.deltaTime);
