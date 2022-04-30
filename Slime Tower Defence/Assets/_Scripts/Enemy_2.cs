@@ -6,25 +6,25 @@ using UnityEngine;
 public class Enemy_2 : MonoBehaviour
 {
     public int enemy_hp = 10;
-    public float speed = 10f;//¸ó½ºÅÍ ¼Óµµ
-    public float destroy_time = 0.1f;//ÃÖÁ¾µµÂø°ú µğ½ºÆù »çÀÌ ½Ã°£
+    public float speed = 10f;//ëª¬ìŠ¤í„° ì†ë„
+    public float destroy_time = 0.1f;//ìµœì¢…ë„ì°©ê³¼ ë””ìŠ¤í° ì‚¬ì´ ì‹œê°„
     public Transform[] fruits = new Transform[fruitsindex];//
     public int fruitspawnrandom = 20;
 
     /*
-    Rigidbody E2_rigidbody; //Rigidbody¸¦ ÀúÀåÇÏ´Â º¯¼ö
-    public int rotatespeed = 5; //È¸Àü¼Óµµ
+    Rigidbody E2_rigidbody; //Rigidbodyë¥¼ ì €ì¥í•˜ëŠ” ë³€ìˆ˜
+    public int rotatespeed = 5; //íšŒì „ì†ë„
     */
 
     private static int fruitsindex = 3;
     private Transform target;//Transform
-    private int wavepointIndex = 0;//TwoWaypointsÀÇ ÀÎµ¦½º
+    private int wavepointIndex = 0;//TwoWaypointsì˜ ì¸ë±ìŠ¤
 
     void Start()
     {
-        target = TwoWaypoints.tpoints[0];//Ã¹¹øÂ° TwoWaypoint ¼³Á¤
+        target = TwoWaypoints.tpoints[0];//ì²«ë²ˆì§¸ TwoWaypoint ì„¤ì •
     }
-    //ÀÌ ÀÌÈÄ´Â OneWaypoints¶ó´Â scrpit ÂüÁ¶ÇÏ½Ã¸é µÊ
+    //ì´ ì´í›„ëŠ” OneWaypointsë¼ëŠ” scrpit ì°¸ì¡°í•˜ì‹œë©´ ë¨
     private void Update()
     {
 
@@ -43,7 +43,7 @@ public class Enemy_2 : MonoBehaviour
         /*Quaternion newRotation = target.rotation;
         E2_rigidbody.rotation = Quaternion.Slerp(E2_rigidbody.rotation, newRotation,
             rotatespeed * Time.deltaTime);
-        //¸ó½ºÅÍ°¡ ÀÌµ¿ÇÏ´Â ¹æÇâÀ¸·Î È¸Àü(¹Ù¶óº½)
+        //ëª¬ìŠ¤í„°ê°€ ì´ë™í•˜ëŠ” ë°©í–¥ìœ¼ë¡œ íšŒì „(ë°”ë¼ë´„)
         */
     }
 
