@@ -129,11 +129,12 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
                 continue;
             }
 
-            GameObject hitTile = hit.collider.gameObject; // 현재 이미지가 있는 타일
 
             // 가리킨 타일을 투명으로 변경
             // 이때 타일의 Materials의 RenderingMode를 변경할 필요가 있음
             /*
+            GameObject hitTile = hit.collider.gameObject; // 현재 이미지가 있는 타일
+
             Renderer renderer = hitTile.GetComponentInChildren<Renderer>();
 
             if (renderer == null)
@@ -173,21 +174,24 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
     // 타워 생성
     public void SpawnTower(Tile tile, GameObject tower)
     {
+        // 타일 정보가 있는지 확인
         if (tile == null)
         {
             Debug.LogError("SpawnTowerError : tile Component error");
             return;
         }
 
+        // 배치할 타워 정보가 있는지 확인
         if (tower == null)
         {
             Debug.LogError("SpawnTowerError : tower is not setting");
             return;
         }
 
+        // 배치할 타일에 타워가 있는지 확인
         if (tile.SlimeCheck())
         {
-            Debug.LogWarning("SpawnTowerError : already tile have Slime");
+            Debug.LogWarning("SpawnTowerError : already tile have tower");
             return;
         }
 

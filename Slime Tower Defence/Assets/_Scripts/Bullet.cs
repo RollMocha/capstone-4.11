@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    GameObject attackTarget; // ê³µê²©í•´ì•¼í•  ì  ì •ë³´
-    public float destroyTime = 5f; // ê³µê²©ì´ ë§ì§€ì•Šì„ ê²½ìš° ëŒ€ë¹„
+    GameObject attackTarget; // °ø°İÇØ¾ßÇÒ Àû Á¤º¸
+    public float destroyTime = 5f; // °ø°İÀÌ ¸ÂÁö¾ÊÀ» °æ¿ì ´ëºñ
     public float speed;
 
     void Start()
@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
         MoveToTarget();
     }
 
-    // ì ì˜ ì •ë³´ë¥¼ ì„¸íŒ…í•˜ëŠ” í•¨ìˆ˜
+    // ÀûÀÇ Á¤º¸¸¦ ¼¼ÆÃÇÏ´Â ÇÔ¼ö
     public void SetTarget(GameObject target, float bulletSpeed)
     {
         attackTarget = target;
@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
         
     }
 
-    // ì ì„ í–¥í•´ ë‚ ë¼ê°€ëŠ” í•¨ìˆ˜
+    // ÀûÀ» ÇâÇØ ³¯¶ó°¡´Â ÇÔ¼ö
     void MoveToTarget()
     {
         if (attackTarget == null)
@@ -39,13 +39,13 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        // ì  ìœ„ì¹˜ë¡œ ë‚ ë¼ê°
+        // Àû À§Ä¡·Î ³¯¶ó°¨
         transform.position = 
             Vector3.MoveTowards(this.transform.position, attackTarget.transform.position, speed);
 
     }
 
-    // ì ê³¼ ë¶€ë”ªí ë•Œ ì‚¬ë¼ì§€ëŠ” í•¨ìˆ˜
+    // Àû°ú ºÎµúÈú ¶§ »ç¶óÁö´Â ÇÔ¼ö
     private void OnTriggerEnter(Collider other)
     {
 

@@ -6,15 +6,15 @@ public class Tower : MonoBehaviour
 {
     float attackTimer;
 
-    bool isAttack = true; // ê³µê²©ì´ ê°€ëŠ¥í•œì§€ í™•ì¸
+    bool isAttack = true; // °ø°İÀÌ °¡´ÉÇÑÁö È®ÀÎ
 
-    public EnemyDetect enemyDetect; // ì  í™•ì¸ì„ ìœ„í•œ ì»´í¬ë„ŒíŠ¸
-    public GameObject bulletPrefab; // ê³µê²© í”„ë¦¬íŒ¹
+    public EnemyDetect enemyDetect; // Àû È®ÀÎÀ» À§ÇÑ ÄÄÆ÷³ÍÆ®
+    public GameObject bulletPrefab; // °ø°İ ÇÁ¸®ÆÕ
 
-    GameObject targetEnemy = null; // ì  ì •ë³´
+    GameObject targetEnemy = null; // Àû Á¤º¸
 
-    public float attackSpeed = 2f; // ê³µê²© ì†ë„
-    public float bulletSpeed = 0.1f; // íˆ¬ì‚¬ì²´ ì†ë„
+    public float attackSpeed = 2f; // °ø°İ ¼Óµµ
+    public float bulletSpeed = 0.1f; // Åõ»çÃ¼ ¼Óµµ
 
     float timer = 0;
 
@@ -25,17 +25,18 @@ public class Tower : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime; // ê³µê²©ì†ë„ë¥¼ ìœ„í•´ ì‚¬ìš©
+        timer += Time.deltaTime; // °ø°İ¼Óµµ¸¦ À§ÇØ »ç¿ë
 
-        // ì ì´ ë²”ìœ„ì•ˆì— ìˆëŠ”ì§€ë¥¼ ë§¤ë²ˆ ì²´í¬
+        // ÀûÀÌ ¹üÀ§¾È¿¡ ÀÖ´ÂÁö¸¦ ¸Å¹ø Ã¼Å©
         if (enemyDetect.EnemyDetectCheck())
         {
-            targetEnemy = enemyDetect.GetTarget(); // ì ì´ ë²”ìœ„ì•ˆì— ìˆìœ¼ë©´ ì¶”ê°€
+            targetEnemy = enemyDetect.GetTarget(); // ÀûÀÌ ¹üÀ§¾È¿¡ ÀÖÀ¸¸é Ãß°¡
             if (targetEnemy != null)
             {
-                // ì ì„ ë°”ë¼ë´„
+                // ÀûÀ» ¹Ù¶óº½
                 RotateToTarget(targetEnemy);
-                
+
+                // ½Ã°£À» È®ÀÎÇØ¼­ °ø°İ ½Ã°£ÀÌ Áö³ª¸é °ø°İ
                 if (timer > attackSpeed)
                 {
                     Attack(targetEnemy);
@@ -45,25 +46,25 @@ public class Tower : MonoBehaviour
         }
     }
 
-    // ê³µê²©ì„ ìœ„í•œ í•¨ìˆ˜
+    // °ø°İÀ» À§ÇÑ ÇÔ¼ö
     void Attack(GameObject target)
     {
-        if (isAttack) // ê³µê²©ì´ ê°€ëŠ¥í•œì§€ í™•ì¸
+        if (isAttack) // °ø°İÀÌ °¡´ÉÇÑÁö È®ÀÎ
         {
-            //isAttack = false; // ê³µê²©ì´ ì´ë¯¸ ì‹¤í–‰ ì¤‘ì´ë¯€ë¡œ ë§‰ê¸°
+            //isAttack = false; // °ø°İÀÌ ÀÌ¹Ì ½ÇÇà ÁßÀÌ¹Ç·Î ¸·±â
 
-            //RotateToTarget(target); // ì  ë°”ë¼ë³´ê¸°
+            //RotateToTarget(target); // Àû ¹Ù¶óº¸±â
             GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x,
-                transform.position.y, transform.position.z), Quaternion.identity); // ê³µê²© í”„ë¦¬íŒ¹ ìƒì„±
+                transform.position.y, transform.position.z), Quaternion.identity); // °ø°İ ÇÁ¸®ÆÕ »ı¼º
 
-            bullet.GetComponent<Bullet>().SetTarget(target, bulletSpeed); // ê³µê²© í”„ë¦¬íŒ¹ì— ì  ì •ë³´ ì „ë‹¬
+            bullet.GetComponent<Bullet>().SetTarget(target, bulletSpeed); // °ø°İ ÇÁ¸®ÆÕ¿¡ Àû Á¤º¸ Àü´Ş
 
-            //isAttack = true; // ê³µê²© ì¢…ë£Œ
+            //isAttack = true; // °ø°İ Á¾·á
         }
 
     }
 
-    // ì ì„ ë°”ë¼ë³´ëŠ” í•¨ìˆ˜
+    // ÀûÀ» ¹Ù¶óº¸´Â ÇÔ¼ö
     void RotateToTarget(GameObject target)
     {
         transform.LookAt(target.transform);
