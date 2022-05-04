@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     GameObject attackTarget; // 공격해야할 적 정보
     public float destroyTime = 5f; // 공격이 맞지않을 경우 대비
-    public float dt = 0.1f;
+    public float speed;
 
     void Start()
     {
@@ -19,25 +19,30 @@ public class Bullet : MonoBehaviour
     }
 
     // 적의 정보를 세팅하는 함수
-    public void SetTarget(GameObject target)
+    public void SetTarget(GameObject target, float bulletSpeed)
     {
         attackTarget = target;
+        speed = bulletSpeed;
+        
     }
 
     // 적을 향해 날라가는 함수
     void MoveToTarget()
     {
-        if (attackTarget != null)
+        if (attackTarget == null)
         {
-            // 적 위치로 날라감
-            transform.position = 
-                Vector3.MoveTowards(this.transform.position, 
-                    attackTarget.transform.position, 1f);
+            return;
         }
-        else
+
+        if (speed <= 0)
         {
-            Destroy(this);
+            return;
         }
+
+        // 적 위치로 날라감
+        transform.position = 
+            Vector3.MoveTowards(this.transform.position, attackTarget.transform.position, speed);
+
     }
 
     // 적과 부딪힐 때 사라지는 함수
@@ -46,7 +51,7 @@ public class Bullet : MonoBehaviour
 
         if (other.tag == "Monster")
         {
-            Destroy(this.gameObject,dt);
+            Destroy(this.gameObject, 0.1f);
         }
     }
 }

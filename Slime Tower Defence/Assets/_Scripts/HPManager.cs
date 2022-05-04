@@ -39,4 +39,14 @@ public class HPManager : MonoBehaviour
             GameOverobj.SetActive(true);//게임오버 버튼 및 텍스트 활성화
         }
     }
+
+    void OnTriggerEnter(Collider other) //몬스터와 충돌 감지, 플레이어 체력 감소
+    {
+        if (other.tag == "Monster" || HPManager.CurrentHP > 0)
+        {
+            Destroy(other.gameObject);
+            CurrentHP = CurrentHP - 1;
+            return;
+        }
+    }
 }

@@ -10,6 +10,7 @@ public class DeadZoneDetcet : MonoBehaviour
         {
             Destroy(other.gameObject);
             HPManager.CurrentHP = HPManager.CurrentHP - 1;
+            return;
         }
     }
 }
