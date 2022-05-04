@@ -370,6 +370,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &42674619
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +482,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &56866253
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +803,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &84798389
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +915,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &89583092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1027,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &102449361
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1218,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &118742148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1330,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &121155883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1442,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &125962477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,8 +1578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragObject: {fileID: 241334300}
-  slimePrefab: {fileID: 1553228397474006489, guid: 2c308a6bdee909a449c9b3a15d278e3f, type: 3}
-  isDragging: 1
+  slimePrefab: {fileID: 3041626291312936124, guid: 2c308a6bdee909a449c9b3a15d278e3f, type: 3}
+  isDragging: 0
   isFruit: 0
 --- !u!1 &141775081
 GameObject:
@@ -1684,6 +1692,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &171402103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,6 +1804,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &185419148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,6 +1916,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &188668338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,6 +2028,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &190845290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,6 +2140,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &217810194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,6 +2252,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &240566428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,6 +2364,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &241334300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,6 +2551,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &263643117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,6 +2744,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &274418792
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,6 +3081,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &308516107
 GameObject:
   m_ObjectHideFlags: 0
@@ -3175,6 +3193,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &318279890
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,6 +3305,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &321743357
 GameObject:
   m_ObjectHideFlags: 0
@@ -3546,6 +3566,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &351139405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3657,6 +3678,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &375729917
 GameObject:
   m_ObjectHideFlags: 0
@@ -3768,6 +3790,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &378668951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,6 +3902,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &396767121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4190,6 +4214,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &460794845
 GameObject:
   m_ObjectHideFlags: 0
@@ -4528,6 +4553,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &522781157
 GameObject:
   m_ObjectHideFlags: 0
@@ -4639,6 +4665,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &525806074
 GameObject:
   m_ObjectHideFlags: 0
@@ -4750,6 +4777,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &530390807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4918,6 +4946,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &548120879
 GameObject:
   m_ObjectHideFlags: 0
@@ -5029,6 +5058,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &669432022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5140,6 +5170,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &696988037
 GameObject:
   m_ObjectHideFlags: 0
@@ -5251,6 +5282,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5604,6 +5636,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &741206170
 GameObject:
   m_ObjectHideFlags: 0
@@ -5715,6 +5748,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &757325026
 GameObject:
   m_ObjectHideFlags: 0
@@ -5826,6 +5860,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &781429087
 GameObject:
   m_ObjectHideFlags: 0
@@ -5938,6 +5973,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &781429093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5953,6 +5989,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &783009177
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,6 +6101,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &813881712
 GameObject:
   m_ObjectHideFlags: 0
@@ -6175,6 +6213,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &822690218
 GameObject:
   m_ObjectHideFlags: 0
@@ -6187,6 +6226,7 @@ GameObject:
   - component: {fileID: 822690222}
   - component: {fileID: 822690221}
   - component: {fileID: 822690220}
+  - component: {fileID: 822690223}
   m_Layer: 5
   m_Name: ThunderSlimeButton
   m_TagString: Untagged
@@ -6296,6 +6336,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822690218}
   m_CullTransparentMesh: 1
+--- !u!114 &822690223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822690218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf7b8307296474e97ecb0559ab647b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragObject: {fileID: 241334300}
+  slimePrefab: {fileID: 1636539416029152715, guid: cf9a50f745156fe4ca134a7ae947f9c2, type: 3}
+  isDragging: 0
+  isFruit: 1
 --- !u!1 &829076025
 GameObject:
   m_ObjectHideFlags: 0
@@ -6407,6 +6463,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &862558253
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,6 +6476,7 @@ GameObject:
   - component: {fileID: 862558257}
   - component: {fileID: 862558256}
   - component: {fileID: 862558255}
+  - component: {fileID: 862558258}
   m_Layer: 5
   m_Name: FireSlimeButton
   m_TagString: Untagged
@@ -6528,6 +6586,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862558253}
   m_CullTransparentMesh: 1
+--- !u!114 &862558258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862558253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf7b8307296474e97ecb0559ab647b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragObject: {fileID: 241334300}
+  slimePrefab: {fileID: 8594517197404896342, guid: 2f977f2b369a0a14c90feff7ead23ebe, type: 3}
+  isDragging: 0
+  isFruit: 1
 --- !u!1 &862826858
 GameObject:
   m_ObjectHideFlags: 0
@@ -6639,6 +6713,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &879021819
 GameObject:
   m_ObjectHideFlags: 0
@@ -6750,6 +6825,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &879605011
 GameObject:
   m_ObjectHideFlags: 0
@@ -6861,6 +6937,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &919297398
 GameObject:
   m_ObjectHideFlags: 0
@@ -7008,6 +7085,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &933508895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7119,6 +7197,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -7326,6 +7405,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1010268288
 GameObject:
   m_ObjectHideFlags: 0
@@ -7467,6 +7547,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1026528699
 GameObject:
   m_ObjectHideFlags: 0
@@ -7578,6 +7659,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1028922977
 GameObject:
   m_ObjectHideFlags: 0
@@ -7689,6 +7771,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1030973279
 GameObject:
   m_ObjectHideFlags: 0
@@ -7800,6 +7883,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1046739423
 GameObject:
   m_ObjectHideFlags: 0
@@ -7971,6 +8055,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1067777661
 GameObject:
   m_ObjectHideFlags: 0
@@ -8082,6 +8167,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1070990774
 GameObject:
   m_ObjectHideFlags: 0
@@ -8193,6 +8279,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1095777529
 GameObject:
   m_ObjectHideFlags: 0
@@ -8205,6 +8292,7 @@ GameObject:
   - component: {fileID: 1095777533}
   - component: {fileID: 1095777532}
   - component: {fileID: 1095777531}
+  - component: {fileID: 1095777534}
   m_Layer: 5
   m_Name: IceSlimeButton
   m_TagString: Untagged
@@ -8314,6 +8402,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095777529}
   m_CullTransparentMesh: 1
+--- !u!114 &1095777534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095777529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf7b8307296474e97ecb0559ab647b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragObject: {fileID: 241334300}
+  slimePrefab: {fileID: 2191753425107744244, guid: a02ba027467c3ee42b2b51f752ad59e2, type: 3}
+  isDragging: 0
+  isFruit: 1
 --- !u!1 &1101559877
 GameObject:
   m_ObjectHideFlags: 0
@@ -8425,6 +8529,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1112729045
 GameObject:
   m_ObjectHideFlags: 0
@@ -8513,7 +8618,7 @@ GameObject:
   - component: {fileID: 1128967228}
   - component: {fileID: 1128967230}
   m_Layer: 0
-  m_Name: GameManager(1)
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8682,6 +8787,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1141995554
 GameObject:
   m_ObjectHideFlags: 0
@@ -8902,6 +9008,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1157590787
 GameObject:
   m_ObjectHideFlags: 0
@@ -9092,6 +9199,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1171189730
 GameObject:
   m_ObjectHideFlags: 0
@@ -9282,6 +9390,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1199493322
 GameObject:
   m_ObjectHideFlags: 0
@@ -9393,6 +9502,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1199574486
 GameObject:
   m_ObjectHideFlags: 0
@@ -9534,6 +9644,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1203115192
 GameObject:
   m_ObjectHideFlags: 0
@@ -9645,6 +9756,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1206403634
 GameObject:
   m_ObjectHideFlags: 0
@@ -9756,6 +9868,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1225640801
 GameObject:
   m_ObjectHideFlags: 0
@@ -10076,6 +10189,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1240503913
 GameObject:
   m_ObjectHideFlags: 0
@@ -10187,6 +10301,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1242522365
 GameObject:
   m_ObjectHideFlags: 0
@@ -10377,6 +10492,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1259415457
 GameObject:
   m_ObjectHideFlags: 0
@@ -10609,6 +10725,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1288773582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10777,6 +10894,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1316798429
 GameObject:
   m_ObjectHideFlags: 0
@@ -10888,6 +11006,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1317500363
 GameObject:
   m_ObjectHideFlags: 0
@@ -10999,6 +11118,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1340104331
 GameObject:
   m_ObjectHideFlags: 0
@@ -11259,6 +11379,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1380391381
 GameObject:
   m_ObjectHideFlags: 0
@@ -11370,6 +11491,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1388200416
 GameObject:
   m_ObjectHideFlags: 0
@@ -11577,6 +11699,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1400810922
 GameObject:
   m_ObjectHideFlags: 0
@@ -11688,6 +11811,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1412675087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11911,6 +12035,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1460397693
 GameObject:
   m_ObjectHideFlags: 0
@@ -12022,6 +12147,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1466129646
 GameObject:
   m_ObjectHideFlags: 0
@@ -12133,6 +12259,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1526533994
 GameObject:
   m_ObjectHideFlags: 0
@@ -12244,6 +12371,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1533283410
 GameObject:
   m_ObjectHideFlags: 0
@@ -12529,6 +12657,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1553809020
 GameObject:
   m_ObjectHideFlags: 0
@@ -12640,6 +12769,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1570317538
 GameObject:
   m_ObjectHideFlags: 0
@@ -12751,6 +12881,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1602101112
 GameObject:
   m_ObjectHideFlags: 0
@@ -12875,6 +13006,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1604203256
 GameObject:
   m_ObjectHideFlags: 0
@@ -13032,6 +13164,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1651185429
 GameObject:
   m_ObjectHideFlags: 0
@@ -13203,6 +13336,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1714354199
 GameObject:
   m_ObjectHideFlags: 0
@@ -13502,6 +13636,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1767494571
 GameObject:
   m_ObjectHideFlags: 0
@@ -13613,6 +13748,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1779139840
 GameObject:
   m_ObjectHideFlags: 0
@@ -13724,6 +13860,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1785206049
 GameObject:
   m_ObjectHideFlags: 0
@@ -14023,6 +14160,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1874107710
 GameObject:
   m_ObjectHideFlags: 0
@@ -14134,6 +14272,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1882405923
 GameObject:
   m_ObjectHideFlags: 0
@@ -14245,6 +14384,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1883899455
 GameObject:
   m_ObjectHideFlags: 0
@@ -14356,6 +14496,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1884278429
 GameObject:
   m_ObjectHideFlags: 0
@@ -14467,6 +14608,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1896006429
 GameObject:
   m_ObjectHideFlags: 0
@@ -14578,6 +14720,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1902624397
 GameObject:
   m_ObjectHideFlags: 0
@@ -14689,6 +14832,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1904704727
 GameObject:
   m_ObjectHideFlags: 0
@@ -14800,6 +14944,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1918054952
 GameObject:
   m_ObjectHideFlags: 0
@@ -14911,6 +15056,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1919067014
 GameObject:
   m_ObjectHideFlags: 0
@@ -15468,6 +15614,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2057319094
 GameObject:
   m_ObjectHideFlags: 0
@@ -15579,6 +15726,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2062222654
 GameObject:
   m_ObjectHideFlags: 0
@@ -15690,6 +15838,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2071445440
 GameObject:
   m_ObjectHideFlags: 0
@@ -15801,6 +15950,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2092009074
 GameObject:
   m_ObjectHideFlags: 0
@@ -15912,6 +16062,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2092778659
 GameObject:
   m_ObjectHideFlags: 0
@@ -16023,6 +16174,7 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   attachSlime: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2100935249
 GameObject:
   m_ObjectHideFlags: 0

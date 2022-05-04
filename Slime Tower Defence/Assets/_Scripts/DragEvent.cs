@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     //Transform defultTransform;
 
@@ -15,9 +15,9 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
     public GameObject dragObject; // 드래그에 쓸 오브젝트
     // 드래그에 쓸 오브젝트의 경우 GameScene_UI에 미리 배치한 뒤 SetActive를 false로 설정할 것
 
-    public GameObject slimePrefab; // 배치할 슬라임
+    public Slime slimePrefab; // 배치할 슬라임
 
-    public bool isDragging = true; // 드래그 중인지 확인
+    public bool isDragging = false; // 드래그 중인지 확인
     public bool isFruit = false; // 열매인지 확인
     
 
@@ -37,15 +37,12 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
     // 드래그 이후 드롭 이벤트 때 사용
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("Drop");
         // throw new System.NotImplementedException();
     }
 
     // 드래그 시작 시 사용
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Drag Start");
-
         if (dragObject == null)
         {
             return;
@@ -53,22 +50,7 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
 
         dragObject.SetActive(true);
 
-        /*
-        if (data.sprite == null)
-        {
-            return;
-        }
-        */
-
-        /*
-        dragContainer.dragObject.SetActive(true);
-        dragContainer.image.sprite = data2;
-        */
-
         isDragging = true;
-
-        
-        
     }
 
     // 드래그 중 프레임 단위로 호출
@@ -88,9 +70,7 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
     // 드래그 끝날 때 실행
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("Drag End");
 
-        
         // 드래그 중인지 확인
         if (!isDragging)
         {
@@ -120,9 +100,6 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
 
         foreach (RaycastHit hit in raycastHits) // 부딪힌 물체들로 반복문 실행
         {
-            string objectName = hit.collider.gameObject.name; // 테스트로 오브젝트 이름 출력
-            //Debug.Log(objectName);
-
             if (hit.collider.tag != "Tile") // 부딪힌 물체가 타일인지 확인
             {
                 // 타일이 아닐경우 다음 RaycastHit 확인
@@ -165,81 +142,93 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
                 Debug.Log("Slime Prefab is not setting");
             }
 
-            // 슬라임 생성
+            // raycast에 부딫힌 오브젝트의 Tile 정보 가져옴
             Tile targetTile = hit.collider.gameObject.GetComponent<Tile>();
-            SpawnSlime(targetTile, slimePrefab);
+
+            // 슬라임 생성 및 확인
+            if (isFruit)
+            {
+                ChangeSlime(targetTile, slimePrefab);
+            }
+            else
+            {
+                SpawnSlime(targetTile, slimePrefab);
+            }
+
             return;
         }
     }
 
-    // 슬라임 생성 함수
-    public void SpawnSlime(Tile tile, GameObject tower)
+    // 슬라임 배치
+    public void SpawnSlime(Tile tile, Slime slimePrefab)
     {
-        // 타일 정보가 있는지 확인
-        if (tile == null)
+        // 슬라임 정보가 있는지 확인
+        if (slimePrefab == null)
         {
-            Debug.LogError("SpawnTowerError : tile Component error");
-            return;
-        }
-
-        // 배치할 타워 정보가 있는지 확인
-        if (tower == null)
-        {
-            Debug.LogError("SpawnTowerError : tower is not setting");
             return;
         }
 
         // 배치할 타일에 타워가 있는지 확인
-        if (tile.SlimeCheck())
+        if (tile.CheckSlime())
         {
-            Debug.LogWarning("SpawnTowerError : already tile have tower");
+            Debug.LogWarning("Tile.SetSlime : already tile have tower");
             return;
         }
 
-        tile.isSlime = true;
-        Vector3 towerPosition = tile.GetPosition();
-
-        Instantiate(slimePrefab, new Vector3(towerPosition.x, towerPosition.y + 3f,
-            towerPosition.z), Quaternion.identity);
+        // 슬라임을 생성
+        Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
         Debug.Log("tower Set");
+
+        // 슬라임 정보 체크
+        if (attachSlime == null)
+        {
+            return;
+        }
+
+        // 타일에 설치한 타워 정보 전달
+        tile.SetSlime(attachSlime);
     }
 
-    // 열매로 슬라임 체인지
-    public void ChangeSlime(Tile tile, GameObject tower)
+    // 기존 슬라임 변경
+    public void ChangeSlime(Tile tile, Slime slimePrefab)
     {
-        // 타일 정보가 있는지 확인
-        if (tile == null)
+
+        // 배치할 슬라임 정보가 있는지 확인
+        if (slimePrefab == null)
         {
-            Debug.LogError("SpawnTowerError : tile Component error");
+            Debug.LogError("Tile.ChangeSlime : slime is not setting");
             return;
         }
 
-        // 배치할 타워 정보가 있는지 확인
-        if (tower == null)
-        {
-            Debug.LogError("SpawnTowerError : tower is not setting");
-            return;
-        }
+        Slime pastSlime = tile.GetSlime();
 
         // 배치할 타일에 타워가 있는지 확인
-        if (!tile.SlimeCheck())
+        if (pastSlime == null)
         {
-            Debug.LogWarning("SpawnTowerError : already tile have tower");
+            Debug.LogWarning("Tile.ChangeSlime : no have target");
             return;
         }
 
-        // 배치할 타일에 타워가 있는지 확인
-        if (tile.SlimeCheck())
+        // 타워가 기본이 맞는지 확인
+        if (pastSlime.state != SlimeState.DEFAULT)
         {
-            Debug.LogWarning("SpawnTowerError : already tile have tower");
+            Debug.LogWarning("Tile.ChangeSlime : slime is not default");
             return;
         }
 
-        tile.isSlime = true;
-        Vector3 towerPosition = tile.GetPosition();
+        tile.DestroySlime();
 
-        Instantiate(slimePrefab, new Vector3(towerPosition.x, towerPosition.y + 3f,
-            towerPosition.z), Quaternion.identity);
+        Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
         Debug.Log("tower Set");
+
+        // 슬라임 정보 체크
+        if (attachSlime == null)
+        {
+            return;
+        }
+
+        // 타일에 설치한 타워 정보 전달
+        tile.SetSlime(attachSlime);
     }
+
 }

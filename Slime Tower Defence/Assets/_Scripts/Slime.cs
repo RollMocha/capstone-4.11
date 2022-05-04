@@ -10,7 +10,7 @@ public enum SlimeState
     THUNDER
 };
 
-public class Tower : MonoBehaviour
+public class Slime : MonoBehaviour
 {
     float attackTimer;
 

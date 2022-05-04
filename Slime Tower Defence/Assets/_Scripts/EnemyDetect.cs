@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyDetect : MonoBehaviour
 {
     public List<GameObject> enemyList; // 적 리스트
-    public Tower parentTower; // 부모의 타워
+    public Slime parentTower; // 부모의 타워
     void Start()
     {
 

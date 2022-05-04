@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class DragContainer : MonoBehaviour
+public class SlimeSpawnManager : MonoBehaviour
 {
-    public Image image;
+    List<Slime> slimePrefabList;
+
+    static public SlimeSpawnManager slimeSpawnManager;
+
+    private void Awake()
+    {
+        slimeSpawnManager = this;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        image = GetComponent<Image>();
-        gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
