@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    Transform defultTransform;
+    //Transform defultTransform;
 
     //public Image data;
     //public Sprite data2;
@@ -18,13 +18,14 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
     public GameObject slimePrefab; // 배치할 슬라임
 
     public bool isDragging = true; // 드래그 중인지 확인
+    public bool isFruit = false; // 열매인지 확인
     
 
     // Start is called before the first frame update
     void Start()
     {
 
-        defultTransform = this.transform;
+        //defultTransform = this.transform;
     }
 
     // Update is called once per frame
@@ -164,15 +165,15 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
                 Debug.Log("Slime Prefab is not setting");
             }
 
-            // 타워 생성
+            // 슬라임 생성
             Tile targetTile = hit.collider.gameObject.GetComponent<Tile>();
-            SpawnTower(targetTile, slimePrefab);
+            SpawnSlime(targetTile, slimePrefab);
             return;
         }
     }
 
-    // 타워 생성
-    public void SpawnTower(Tile tile, GameObject tower)
+    // 슬라임 생성 함수
+    public void SpawnSlime(Tile tile, GameObject tower)
     {
         // 타일 정보가 있는지 확인
         if (tile == null)
@@ -185,6 +186,45 @@ public class DragExample : MonoBehaviour, IDropHandler, IDragHandler, IBeginDrag
         if (tower == null)
         {
             Debug.LogError("SpawnTowerError : tower is not setting");
+            return;
+        }
+
+        // 배치할 타일에 타워가 있는지 확인
+        if (tile.SlimeCheck())
+        {
+            Debug.LogWarning("SpawnTowerError : already tile have tower");
+            return;
+        }
+
+        tile.isSlime = true;
+        Vector3 towerPosition = tile.GetPosition();
+
+        Instantiate(slimePrefab, new Vector3(towerPosition.x, towerPosition.y + 3f,
+            towerPosition.z), Quaternion.identity);
+        Debug.Log("tower Set");
+    }
+
+    // 열매로 슬라임 체인지
+    public void ChangeSlime(Tile tile, GameObject tower)
+    {
+        // 타일 정보가 있는지 확인
+        if (tile == null)
+        {
+            Debug.LogError("SpawnTowerError : tile Component error");
+            return;
+        }
+
+        // 배치할 타워 정보가 있는지 확인
+        if (tower == null)
+        {
+            Debug.LogError("SpawnTowerError : tower is not setting");
+            return;
+        }
+
+        // 배치할 타일에 타워가 있는지 확인
+        if (!tile.SlimeCheck())
+        {
+            Debug.LogWarning("SpawnTowerError : already tile have tower");
             return;
         }
 

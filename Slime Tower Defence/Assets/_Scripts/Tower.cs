@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum SlimeState 
+{
+    DEFAULT,
+    ICE,
+    FIRE,
+    THUNDER
+};
+
 public class Tower : MonoBehaviour
 {
     float attackTimer;
@@ -16,7 +24,9 @@ public class Tower : MonoBehaviour
     public float attackSpeed = 2f; // 공격 속도
     public float bulletSpeed = 0.1f; // 투사체 속도
 
-    float timer = 0;
+    float timer = 0; // 공격 속도 조절을 위해 사용
+
+    public SlimeState state; // 슬라임의 종류 확인
 
     void Start()
     {
