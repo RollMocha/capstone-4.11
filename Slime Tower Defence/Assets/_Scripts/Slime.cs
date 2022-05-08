@@ -7,7 +7,10 @@ public enum SlimeState
     DEFAULT,
     ICE,
     FIRE,
-    THUNDER
+    THUNDER,
+    VINE,
+    WATER,
+    WIND
 };
 
 public class Slime : MonoBehaviour

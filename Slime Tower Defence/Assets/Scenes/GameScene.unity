@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: slime thunder
       objectReference: {fileID: 0}
+    - target: {fileID: 6399696979054326037, guid: cf9a50f745156fe4ca134a7ae947f9c2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf9a50f745156fe4ca134a7ae947f9c2, type: 3}
 --- !u!1 &28034750
@@ -4785,6 +4789,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2739227514868987189, guid: 2f977f2b369a0a14c90feff7ead23ebe, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4677126495686397718, guid: 2f977f2b369a0a14c90feff7ead23ebe, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -10777,6 +10785,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 97435426703904622, guid: a02ba027467c3ee42b2b51f752ad59e2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 829264911347710674, guid: a02ba027467c3ee42b2b51f752ad59e2, type: 3}
       propertyPath: m_Name
       value: slime ice
@@ -11867,7 +11879,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5680058389038452055, guid: 2c308a6bdee909a449c9b3a15d278e3f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4927225512764895529, guid: 2c308a6bdee909a449c9b3a15d278e3f, type: 3}
+    - {fileID: 662484632590877937, guid: 2c308a6bdee909a449c9b3a15d278e3f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2c308a6bdee909a449c9b3a15d278e3f, type: 3}
 --- !u!1 &1435044230
 GameObject:

@@ -56,12 +56,10 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
     // 드래그 중 프레임 단위로 호출
     public void OnDrag(PointerEventData eventData)
     {
-        // Debug.Log("Drag");
 
         // 드래그 중일 때 옮기는 이미지를 마우스에 따라가도록 조정
         if (isDragging)
         {
-            //dragContainer.transform.position = eventData.position;
             dragObject.transform.position = eventData.position;
             
         }
@@ -78,22 +76,16 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
             return;
         }
 
+        // 드래그 오브젝트가 설정되어 있는지 확인
         if (dragObject == null)
         {
             Debug.Log("OnEndDrag : is not Dragging");
             return;
         }
 
-        dragObject.SetActive(false);
+        dragObject.SetActive(false); // 미리 배치한 dragObject 활성화
         isDragging = false;
 
-        /*
-        dragContainer.image.sprite = null;
-        dragContainer.dragObject.SetActive(false);
-        */
-
-        // test
-        //RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // 카메라에서 나가는 선
 
         RaycastHit[] raycastHits = Physics.RaycastAll(ray); // 카메라에서 나가는 선에 부딪힌 오브젝트 모두 계산

@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class SlimeDragEvent : DragEvent
+public class SlimeDragEvent : MonoBehaviour
 {
-    public Slime dragSlime;
 
     // Start is called before the first frame update
     void Start()
@@ -20,57 +19,26 @@ public class SlimeDragEvent : DragEvent
         
     }
 
-    public new void OnBeginDrag(PointerEventData eventData)
+    // 오브젝트에 마우스 다운 되었을 경우 실행
+    private void OnMouseDown()
     {
-        Debug.Log("new Drag!");
-
-        if (dragObject == null)
+        if (Input.GetMouseButtonDown(0))
         {
-            return;
-        }
+            Debug.Log("SlimeDragEvent Mouse Down!");
 
-        dragObject.SetActive(true);
+            //카메라 위치
+            Vector3 point = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,
+                            Input.mousePosition.y, -Camera.main.transform.position.z));
 
-        isDragging = true;
+            Debug.Log("point : " + point);
 
-        // 카메라에서 나가는 선
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        // 카메라에서 나가는 선에 부딪힌 오브젝트 모두 계산
-        RaycastHit[] raycastHits = Physics.RaycastAll(ray);
-
-        foreach (RaycastHit hit in raycastHits) // 부딪힌 물체들로 반복문 실행
-        {
-            //gameObject hitTarget = hit.collider
-
-            if (hit.collider.tag != "Slime")
-            {
-                Debug.Log("this is not Slime");
-                continue;
-            }
-
-            dragSlime = hit.collider.GetComponent<Slime>();
+            //this.gameObject.transform
         }
     }
 
-    public new void OnDrag(PointerEventData eventData)
+    // 오브젝트에 마우스 업 되었을 경우 실행
+    private void OnMouseUp()
     {
-            // Debug.Log("Drag");
-
-            // 드래그 중일 때 옮기는 이미지를 마우스에 따라가도록 조정
-        if (isDragging)
-        {
-            Vector3 dragSlimePosition = new Vector3(eventData.position.x, 5f, 
-                eventData.position.y);
-
-            dragSlime.gameObject.transform.position = dragSlimePosition;
-        }
-
-
-    }
-
-    public new void OnEndDrag(PointerEventData eventData)
-    {
-
+        
     }
 }
