@@ -11,6 +11,9 @@ public class SlimeSpawnManager : MonoBehaviour
     Slime firstSlime;
     Slime secondSlime;
 
+    SlimeState firstSlimeState;
+    SlimeState secondSlimeState;
+
     static public SlimeSpawnManager slimeSpawnManager;
 
     private void Awake()
@@ -35,8 +38,31 @@ public class SlimeSpawnManager : MonoBehaviour
         slimeOnTile.Add(slime);
     }
 
+    // 상위 슬라임을 만들 조건이 되는지 확인
+    public int CheckCanBulidPromoteSlime(SlimeState firstSlimeState_, SlimeState secondSlimeState_)
+    {
+        firstSlime = null;
+        secondSlime = null;
+
+        firstSlimeState = firstSlimeState_;
+        secondSlimeState = secondSlimeState_;
+
+        FindSlimeStateAtList();
+
+        if (firstSlime == null || secondSlime == null)
+        {
+            Debug.Log("no have correct Slime in Game");
+            return -1;
+        }
+
+        Destroy(firstSlime);
+        Destroy(secondSlime);
+
+        return 1;
+    }
+
     // 상위 슬라임을 만들 때 실행
-    void FindSlimeStateAtList(SlimeState firstSlimeState, SlimeState secondSlimeState)
+    void FindSlimeStateAtList()
     {
         foreach (Slime slime in slimeOnTile)
         {
@@ -51,7 +77,6 @@ public class SlimeSpawnManager : MonoBehaviour
                 secondSlime = slime;
                 continue;
             }
-
             
         }
     }
