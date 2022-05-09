@@ -7,6 +7,7 @@ public class Enemy_2 : MonoBehaviour
 {
     public int enemy_hp = 10;
     public float speed = 10f;//몬스터 속도
+
     public float destroy_time = 0.1f;//최종도착과 디스폰 사이 시간
     public Transform[] fruits = new Transform[fruitsindex];//
     public int fruitspawnrandom = 20;
@@ -49,11 +50,11 @@ public class Enemy_2 : MonoBehaviour
 
     private void GetNextWaypoint()
     {
-        if (wavepointIndex >= TwoWaypoints.tpoints.Length - 1)
+        /*if (wavepointIndex >= TwoWaypoints.tpoints.Length - 1)
         {
             Destroy(gameObject, destroy_time);
             return;
-        }
+        }*/
 
         wavepointIndex++;
         target = TwoWaypoints.tpoints[wavepointIndex];
