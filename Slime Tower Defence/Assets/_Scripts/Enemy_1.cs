@@ -7,6 +7,7 @@ public class Enemy_1 : MonoBehaviour
 {
     public int enemy_hp = 10;
     public float speed = 10f;//몬스터 속도
+
     public float destroy_time = 0.1f;//최종도착과 디스폰 사이 시간
     public Transform[] fruits = new Transform[fruitsindex];//
     public int fruitspawnrandom = 20;
@@ -46,11 +47,11 @@ public class Enemy_1 : MonoBehaviour
 
     private void GetNextWaypoint()
     {
-        if (wavepointIndex >= OneWaypoints.opoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
+        /*if (wavepointIndex >= OneWaypoints.opoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
         {
             Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
             return;
-        }
+        }*/
 
         wavepointIndex++;
         target = OneWaypoints.opoints[wavepointIndex];//목적지를 다음 목적지로 대입
