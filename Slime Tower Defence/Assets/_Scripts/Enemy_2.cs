@@ -14,7 +14,6 @@ public class Enemy_2 : MonoBehaviour
 
     Rigidbody E2_rigidbody; //Rigidbody를 저장하는 변수
     public int rotatespeed = 5; //회전속도
-
     private static int fruitsindex = 3;
     private Transform target;//Transform
     private int wavepointIndex = 0;//TwoWaypoints의 인덱스
