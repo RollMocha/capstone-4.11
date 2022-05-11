@@ -17,16 +17,25 @@ public class Enemy_1 : MonoBehaviour
     private static int fruitsindex = 3;
     private Transform target;//Transform
     private int wavepointIndex = 0;//OneWaypoints의 인덱스
+    private int Waypoint;
+    private int wayPointCount; //이동 경로 갯수
 
-    void Start()
+    public void Start()
     {
-        target = OneWaypoints.opoints[0];//첫번째 OneWaypoint 설정
+        Waypoint = UnityEngine.Random.Range(0, 2);
+
+        switch (Waypoint)
+        {
+            case 0:
+                target = OneWaypoints.opoints[0];//첫번째 OneWaypoint 설정
+                break;
+            case 1:
+                target = TwoWaypoints.tpoints[0];//두번째 twoWaypoint 설정
+                break;
+        }
+
         E1_rigidbody = GetComponent<Rigidbody>();
-    }
-
-    private void Update()
-    {
-
+        FixedUpdate();
     }
 
     private void FixedUpdate()
@@ -47,14 +56,28 @@ public class Enemy_1 : MonoBehaviour
 
     private void GetNextWaypoint()
     {
-        /*if (wavepointIndex >= OneWaypoints.opoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
+        if(Waypoint == 0)
         {
-            Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
-            return;
-        }*/
+            if (wavepointIndex >= OneWaypoints.opoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
+            {
+                Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
+                return;
+            }
 
-        wavepointIndex++;
-        target = OneWaypoints.opoints[wavepointIndex];//목적지를 다음 목적지로 대입
+            wavepointIndex++;
+            target = OneWaypoints.opoints[wavepointIndex];//목적지를 다음 목적지로 대입
+        }
+       else if(Waypoint == 1)
+        {
+            if (wavepointIndex >= TwoWaypoints.tpoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
+            {
+                Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
+                return;
+            }
+
+            wavepointIndex++;
+            target = TwoWaypoints.tpoints[wavepointIndex];//목적지를 다음 목적지로 대입
+        }
     }
 
     private void SpawnFruit()
