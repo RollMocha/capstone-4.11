@@ -20,7 +20,7 @@ public class Tile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     // 타일의 위치정보 전달, Drag 이벤트에 사용

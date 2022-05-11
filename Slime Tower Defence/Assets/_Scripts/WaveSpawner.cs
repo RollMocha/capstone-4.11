@@ -4,47 +4,56 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour//적 생성하는 코드
 {
-    public Transform[] enemyPrefab_1;//Monster_1Prefab의 Transforms
-    public Transform[] enemyPrefab_2;//Monster_2Prefab의 Transforms
+    //public Transform[] enemyPrefab_1;//Monster_1Prefab의 Transforms
     public Transform spawnPoint; //MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
-    public float timeBetweenWaves = 5f; //적들이 생성되는 시간 간격
     public float countdown = 2f;//시간
+    public float timeBetweenWaves = 10f; //적들이 생성되는 시간 간격
 
-    private int waveIndex = 0;//스테이지 번호 
+    [SerializeField]
+    private Transform[] wayPoints;
 
-    private void Update()//5초마다 SpawnWave() 함수를 호출
+    private Wave currentWave; // 현재 웨이브 정보
+    private WaveSystem waveSystem;
+    private List<Enemy_1> enemyList_1;
+    public int currentWaveIndex;
+
+    public List<Enemy_1> EnemyList_1 => enemyList_1;
+
+    private void Awake()
     {
-        if (countdown <= 0f)//countdown이 0인 경우 SpawnWave()를 호출하고 countdown은 저희가 선언한  5f로 초기화
-        {
-            StartCoroutine(SpawnWave());
-            countdown = timeBetweenWaves;
-        }
-
-        countdown -= Time.deltaTime;
+        enemyList_1 = new List<Enemy_1>(); 
     }
 
-    IEnumerator SpawnWave()// waveIndex 만큼  0.3초마다 SpawnEnemy_1()과 SpawnEnemy_2를 호출
+
+    public void StartWave(Wave wave)
     {
-        if (HPManager.CurrentHP > 0)
+        currentWave = wave; // 매개변수로 받아온 웨이브 정보 저장
+        StartCoroutine("SpawnWave"); // 현재 웨이브 시작
+    }
+
+    private IEnumerator SpawnWave()// waveIndex 만큼  0.3초마다 SpawnEnemy_1()과 SpawnEnemy_2를 호출
+    {
+        int spawnEnemyCount = 0; // 현재 웨이브에서 생성한 적 숫자
+
+        //현재 웨이브에서 생성되어야 하는 적의 숫자만큼 적을 생성하고 코루틴 종료
+        while(spawnEnemyCount < currentWave.maxEnemyCount)
         {
-            waveIndex++;
-            for (int i = 0; i < waveIndex; i++)
+            if (HPManager.CurrentHP > 0)
             {
-                SpawnEnemy_1();
-                SpawnEnemy_2();
-                yield return new WaitForSeconds(timeBetweenWaves);//0.5f동안 기다리는 함수
+                //GameObject cl
+                int enemy_random = UnityEngine.Random.Range(0, currentWave.enemyPrefabs.Length);
+
+                if (currentWave.enemyPrefabnumbers[enemy_random] != 0)
+                {
+                    GameObject clone = Instantiate(currentWave.enemyPrefabs[enemy_random], spawnPoint.position, spawnPoint.rotation);
+                    Enemy_1 enemy_1 = clone.GetComponent<Enemy_1>();
+                    currentWave.enemyPrefabnumbers[enemy_random] -= 1;
+                    enemyList_1.Add(enemy_1);
+                    spawnEnemyCount++; // 현재 웨이브에서 생성한 적의 숫자 + 1
+                }
+
+                yield return new WaitForSeconds(currentWave.spawnTime);//spawnTime 시간 동안 기다리는 함수
             }
         }
-    }
-
-    private void SpawnEnemy_1()//Monster_1Prefab 생성
-    {
-        int enemy_random = UnityEngine.Random.Range(0, 3);
-        Instantiate(enemyPrefab_1[enemy_random], spawnPoint.position, spawnPoint.rotation);
-    }
-    private void SpawnEnemy_2()//Monster_2Prefab 생성
-    {
-        int enemy_random = UnityEngine.Random.Range(0, 3);
-        Instantiate(enemyPrefab_2[enemy_random], spawnPoint.position, spawnPoint.rotation);
     }
 }

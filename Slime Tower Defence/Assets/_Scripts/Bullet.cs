@@ -15,7 +15,19 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        MoveToTarget();
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (attackTarget == null)
+        {
+            Destroy(this.gameObject, 0.1f);
+        }
+        else
+        {
+            MoveToTarget();
+        }
     }
 
     // 적의 정보를 세팅하는 함수

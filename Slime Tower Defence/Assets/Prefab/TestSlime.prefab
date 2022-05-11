@@ -164,6 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1929294155103886610}
+  - component: {fileID: 5554667815695039379}
   m_Layer: 0
   m_Name: TestSlime
   m_TagString: Untagged
@@ -187,6 +188,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5554667815695039379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929294155103886609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77175a4d5945e7e409f35f3b9622527b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyDetect: {fileID: 1929294154072071692}
+  bulletPrefab: {fileID: 1246987399585908641, guid: 0621a8193aa188a4988341d8722cf36c, type: 3}
+  attackSpeed: 0
+  bulletSpeed: 0
+  state: 4
 --- !u!1 &1929294155194505259
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +310,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6319381696882911921}
-  - component: {fileID: 4854641782587718088}
   m_Layer: 0
   m_Name: SlimeBody
   m_TagString: Untagged
@@ -316,18 +333,3 @@ Transform:
   m_Father: {fileID: 1929294155103886610}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4854641782587718088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8433307053042678706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77175a4d5945e7e409f35f3b9622527b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyDetect: {fileID: 1929294154072071692}
-  bulletPrefab: {fileID: 1246987399585908641, guid: 0621a8193aa188a4988341d8722cf36c, type: 3}
-  attackSpeed: 1

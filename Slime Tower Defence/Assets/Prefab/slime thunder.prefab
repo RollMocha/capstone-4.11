@@ -48,7 +48,7 @@ MonoBehaviour:
   enemyDetect: {fileID: 8926929289257504524}
   bulletPrefab: {fileID: 1246987399585908641, guid: 0621a8193aa188a4988341d8722cf36c, type: 3}
   attackSpeed: 1
-  bulletSpeed: 0.1
+  bulletSpeed: 1
   state: 3
 --- !u!1 &1514352319171882535
 GameObject:
@@ -90,7 +90,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514352319171882535}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.50000006
   m_Height: 2
