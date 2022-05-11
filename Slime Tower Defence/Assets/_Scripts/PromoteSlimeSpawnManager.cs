@@ -8,9 +8,6 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
 
     List<Slime> slimeOnTile;
 
-    Slime firstSlime;
-    Slime secondSlime;
-
     SlimeState firstSlimeState;
     SlimeState secondSlimeState;
 
@@ -38,6 +35,7 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
         slimeOnTile.Add(slime);
     }
 
+    // 배치하려는 슬라임과 배치에 필요한 슬라임 확인
     public int CheckPromoteSlime(SlimeState buildSlimeState)
     {
         int checkNum = -2;
@@ -58,13 +56,10 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
     }
 
     // 상위 슬라임을 만들 조건이 되는지 확인
-    public int CheckCanBulidPromoteSlime(SlimeState firstSlimeState_, SlimeState secondSlimeState_)
+    public int CheckCanBulidPromoteSlime(SlimeState firstSlimeState, SlimeState secondSlimeState)
     {
-        firstSlime = null;
-        secondSlime = null;
-
-        firstSlimeState = firstSlimeState_;
-        secondSlimeState = secondSlimeState_;
+        Slime firstSlime = null;
+        Slime secondSlime = null;
 
         foreach (Slime slime in slimeOnTile)
         {
@@ -93,25 +88,5 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
 
         Debug.Log("Promote Slime in Game");
         return 1;
-    }
-
-    // 상위 슬라임을 만들 때 실행
-    void FindSlimeStateAtList()
-    {
-        foreach (Slime slime in slimeOnTile)
-        {
-            if (slime.state == firstSlimeState)
-            {
-                firstSlime = slime;
-                continue;
-            }
-
-            if (slime.state == secondSlimeState)
-            {
-                secondSlime = slime;
-                continue;
-            }
-            
-        }
     }
 }

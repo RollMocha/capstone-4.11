@@ -249,6 +249,13 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
             return;
         }
 
+        // 배치할 타일에 타워가 있는지 확인
+        if (tile.CheckSlime())
+        {
+            Debug.LogWarning("Tile.SetSlime : already tile have tower");
+            return;
+        }
+
         Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
         Debug.Log("tower Set");
 
