@@ -6,10 +6,13 @@ using UnityEngine;
 public class EnemyDetect : MonoBehaviour
 {
     public List<GameObject> enemyList; // 적 리스트
-    public Tower parentTower; // 부모의 타워
+    public Slime parentTower; // 부모의 타워
+    //Queue<GameObject> enemyList;
+
+
     void Start()
     {
-
+        enemyList = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -77,3 +80,4 @@ public class EnemyDetect : MonoBehaviour
         return target;
     }
 }
+
