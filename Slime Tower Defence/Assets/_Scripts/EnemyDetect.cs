@@ -7,6 +7,7 @@ public class EnemyDetect : MonoBehaviour
 {
     public List<GameObject> enemyList; // 적 리스트
     public Slime parentTower; // 부모의 타워
+    public GameObject target;
     //Queue<GameObject> enemyList;
 
 
@@ -18,7 +19,10 @@ public class EnemyDetect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (enemyList.Count <= 0)
+        {
 
+        }
     }
 
     // 적이 범위에 들어오면 정보 추가
@@ -33,10 +37,16 @@ public class EnemyDetect : MonoBehaviour
     // 적이 범위에서 나가면 정보 제거
     private void OnTriggerExit(Collider other)
     {
-
         if (other.tag == "Monster")
         {
-            enemyList.Remove(other.gameObject);
+            foreach (GameObject go in enemyList)
+            {
+                if (go == other.gameObject)
+                {
+                    enemyList.Remove(other.gameObject);
+                    break;
+                }
+            }
         }
     }
 
@@ -61,7 +71,7 @@ public class EnemyDetect : MonoBehaviour
     // 타워와 가장 가까운 적 찾기
     public GameObject FindEnemyClosestToTower()
     {
-        GameObject target = null;
+        GameObject target_ = null;
         float minDir = -1;
 
         foreach (GameObject enemy in enemyList)
@@ -73,11 +83,11 @@ public class EnemyDetect : MonoBehaviour
             if (minDir > dir || minDir == -1)
             {
                 minDir = dir;
-                target = enemy;
+                target_ = enemy;
             }
         }
 
-        return target;
+        return target_;
     }
 }
 

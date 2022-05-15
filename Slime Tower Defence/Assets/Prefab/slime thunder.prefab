@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 95103029528754007}
   - component: {fileID: 1636539416029152715}
+  - component: {fileID: 5101693229411897846}
   m_Layer: 0
   m_Name: slime thunder
   m_TagString: Untagged
@@ -46,10 +47,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDetect: {fileID: 8926929289257504524}
+  enemyList: []
   bulletPrefab: {fileID: 1246987399585908641, guid: 0621a8193aa188a4988341d8722cf36c, type: 3}
   attackSpeed: 1
   bulletSpeed: 1
   state: 3
+--- !u!114 &5101693229411897846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727910915838553581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08dfe49e0bd43b2468a8315819209532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyList: []
+  parentTower: {fileID: 0}
+  target: {fileID: 0}
 --- !u!1 &1514352319171882535
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyList: []
   parentTower: {fileID: 0}
+  target: {fileID: 0}
 --- !u!1 &2296974828092358751
 GameObject:
   m_ObjectHideFlags: 0

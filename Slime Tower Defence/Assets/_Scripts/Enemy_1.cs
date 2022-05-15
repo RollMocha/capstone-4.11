@@ -92,4 +92,15 @@ public class Enemy_1 : MonoBehaviour
             Instantiate(fruits[fruit_random], transform.position, transform.rotation);
         }
     }
+
+    // 공격 받을 시 체력이 줄어드는 함수
+    public void Damage(int damage)
+    {
+        enemy_hp -= damage;
+
+        if (enemy_hp <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

@@ -21,7 +21,6 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
     public bool isFruit = false; // 열매인지 확인
     public bool isPromote = false; // 상위 슬라임인지 확인
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -161,13 +160,14 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
         // 슬라임 정보가 있는지 확인
         if (slimePrefab == null)
         {
+            Debug.LogError("slime is not setting");
             return;
         }
 
         // 배치할 타일에 타워가 있는지 확인
         if (tile.CheckSlime())
         {
-            Debug.LogWarning("Tile.SetSlime : already tile have tower");
+            Debug.LogWarning("already tile have tower");
             return;
         }
 
@@ -183,6 +183,7 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
 
         // 타일에 설치한 타워 정보 전달
         tile.SetSlime(attachSlime);
+        attachSlime.AttachTileInfomation(tile);
         PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime);
     }
 
@@ -193,7 +194,7 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
         // 배치할 슬라임 정보가 있는지 확인
         if (slimePrefab == null)
         {
-            Debug.LogError("Tile.ChangeSlime : slime is not setting");
+            Debug.LogError("slime is not setting");
             return;
         }
 
@@ -202,14 +203,14 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
         // 배치할 타일에 타워가 있는지 확인
         if (pastSlime == null)
         {
-            Debug.LogWarning("Tile.ChangeSlime : no have target");
+            Debug.LogWarning("no have target");
             return;
         }
 
         // 타워가 기본이 맞는지 확인
         if (pastSlime.state != SlimeState.DEFAULT)
         {
-            Debug.LogWarning("Tile.ChangeSlime : slime is not default");
+            Debug.LogWarning("slime is not default");
             return;
         }
 
@@ -226,22 +227,32 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
 
         // 타일에 설치한 타워 정보 전달
         tile.SetSlime(attachSlime);
+        attachSlime.AttachTileInfomation(tile);
         PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime);
     }
 
     // 열매 슬라임 변경
     public void ChangeFruitSlime(Tile tile, Slime slimePrefab)
     {
-
         // 배치할 슬라임 정보가 있는지 확인
         if (slimePrefab == null)
         {
-            Debug.LogError("Tile.ChangeSlime : slime is not setting");
+            Debug.LogError("slime is not setting");
             return;
         }
 
+        // 배치할 타일에 타워가 있는지 확인
+        if (tile.CheckSlime())
+        {
+            Debug.LogWarning("already tile have tower");
+            return;
+        }
+
+        // 상위 슬라임 배치를 위한 열매 슬라임이 있는지 확인
+        // 가능할 경우 숫자 1을 반환 및 필요한 슬라임 제거
         int checkNum = PromoteSlimeSpawnManager.promoteSlimeSpawnManager.CheckPromoteSlime(slimePrefab.state);
 
+        // CheckPromoteSlime 함수에서 1 이외의 값이 반환될 경우 배치에 문제가 있는 경우
         if (checkNum != 1)
         {
             Debug.LogError("PromoteSlimeSpawnManager Error");
@@ -249,13 +260,7 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
             return;
         }
 
-        // 배치할 타일에 타워가 있는지 확인
-        if (tile.CheckSlime())
-        {
-            Debug.LogWarning("Tile.SetSlime : already tile have tower");
-            return;
-        }
-
+        // 슬라임 배치
         Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
         Debug.Log("tower Set");
 
@@ -268,6 +273,7 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
 
         // 타일에 설치한 타워 정보 전달
         tile.SetSlime(attachSlime);
+        attachSlime.AttachTileInfomation(tile);
         PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime);
     }
 

@@ -12,6 +12,7 @@ public class Tile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // 슬라임을 배치하기 위한 정보를 처음에 설정
         Vector3 tilePosition = transform.position;
         towerPosition = new Vector3(tilePosition.x, tilePosition.y + 3f,
             tilePosition.z);
@@ -44,8 +45,10 @@ public class Tile : MonoBehaviour
         {
             return;
         }
-        isSlime = true;
+
+        isSlime = true; // 슬라임 정보 변경
         attachSlime = slimePrefab;
+
     }
 
     // 슬라임 정보 가져오기
