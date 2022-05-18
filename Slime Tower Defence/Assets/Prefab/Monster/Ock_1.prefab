@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6752542047856132632}
   - component: {fileID: 6752542047856132635}
   - component: {fileID: 6752542047856132634}
+  - component: {fileID: 8920534271961494308}
+  - component: {fileID: 1954084050494010880}
   - component: {fileID: -1607585498603730168}
   m_Layer: 0
   m_Name: Ock_1
@@ -118,6 +120,40 @@ MonoBehaviour:
   - {fileID: 5219507884014033580, guid: 61fa0a3ad13008a4ba80f0578ede814f, type: 3}
   - {fileID: 2453179028945565423, guid: 371a60a28d8daee4aac949a839c3d6f0, type: 3}
   fruitspawnrandom: 20
+  rotatespeed: 5
+  fruitsindex: 3
+--- !u!114 &8920534271961494308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752542047856132629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 663954293cf328343812fdc4baf07d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruits:
+  - {fileID: 6622354647463748358, guid: 99e0ebdf3aeb63841a6f2dd14193b593, type: 3}
+  - {fileID: 5219507884014033580, guid: 61fa0a3ad13008a4ba80f0578ede814f, type: 3}
+  - {fileID: 2453179028945565423, guid: 371a60a28d8daee4aac949a839c3d6f0, type: 3}
+  fruitspawnrandom: 20
+  fruitsindex: 3
+--- !u!114 &1954084050494010880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752542047856132629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48855c02b5f23b140aaef2938b4816bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 200
+  Kill: 0
 --- !u!54 &-1607585498603730168
 Rigidbody:
   m_ObjectHideFlags: 0

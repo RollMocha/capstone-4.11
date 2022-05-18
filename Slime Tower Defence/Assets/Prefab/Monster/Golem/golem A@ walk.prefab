@@ -229,8 +229,10 @@ GameObject:
   - component: {fileID: 1502389855856990982}
   - component: {fileID: 1536305866061184368}
   - component: {fileID: -3207872866001348135}
+  - component: {fileID: 4774603839367957966}
   - component: {fileID: 1896006109851748727}
   - component: {fileID: 5779697346224946203}
+  - component: {fileID: -675058725312175714}
   m_Layer: 0
   m_Name: golem A@ walk
   m_TagString: Monster
@@ -285,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2187815f2bc989e468569fad3ea47424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_hp: 10
+  enemy_hp: 800
   speed: 8
   destroy_time: 0.1
   fruits:
@@ -294,6 +296,25 @@ MonoBehaviour:
   - {fileID: 0}
   fruitspawnrandom: 20
   rotatespeed: 5
+  fruitsindex: 3
+--- !u!114 &4774603839367957966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274985428823163324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 663954293cf328343812fdc4baf07d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruits:
+  - {fileID: 6622354647463748358, guid: 99e0ebdf3aeb63841a6f2dd14193b593, type: 3}
+  - {fileID: 5219507884014033580, guid: 61fa0a3ad13008a4ba80f0578ede814f, type: 3}
+  - {fileID: 2453179028945565423, guid: 371a60a28d8daee4aac949a839c3d6f0, type: 3}
+  fruitspawnrandom: 20
+  fruitsindex: 3
 --- !u!54 &1896006109851748727
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -324,6 +345,20 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-675058725312175714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274985428823163324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48855c02b5f23b140aaef2938b4816bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 800
+  Kill: 0
 --- !u!1 &2350452643991680256
 GameObject:
   m_ObjectHideFlags: 0

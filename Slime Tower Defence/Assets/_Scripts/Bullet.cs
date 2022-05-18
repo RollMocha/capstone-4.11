@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     GameObject attackTarget; // 공격해야할 적 정보
     public float destroyTime = 5f; // 공격이 맞지않을 경우 대비
     public float speed;
+    public float damage = 50f;
 
     void Start()
     {
@@ -63,6 +64,7 @@ public class Bullet : MonoBehaviour
 
         if (other.tag == "Monster")
         {
+            other.GetComponent<Enemy_HP>().TakeDamage(damage);
             Destroy(this.gameObject, 0.1f);
         }
     }

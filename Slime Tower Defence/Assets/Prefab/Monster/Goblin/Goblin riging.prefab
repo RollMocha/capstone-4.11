@@ -194,6 +194,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1376884480504188500}
   - component: {fileID: 8284044185751555113}
+  - component: {fileID: 6070547031346324300}
+  - component: {fileID: -1261428331263266525}
   - component: {fileID: 3019162866784995913}
   - component: {fileID: 3530064680825998478}
   m_Layer: 0
@@ -231,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2187815f2bc989e468569fad3ea47424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_hp: 10
+  enemy_hp: 100
   speed: 10
   destroy_time: 0.1
   fruits:
@@ -239,6 +241,40 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   fruitspawnrandom: 20
+  rotatespeed: 5
+  fruitsindex: 3
+--- !u!114 &6070547031346324300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752038309514908910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 663954293cf328343812fdc4baf07d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruits:
+  - {fileID: 6622354647463748358, guid: 99e0ebdf3aeb63841a6f2dd14193b593, type: 3}
+  - {fileID: 5219507884014033580, guid: 61fa0a3ad13008a4ba80f0578ede814f, type: 3}
+  - {fileID: 2453179028945565423, guid: 371a60a28d8daee4aac949a839c3d6f0, type: 3}
+  fruitspawnrandom: 20
+  fruitsindex: 3
+--- !u!114 &-1261428331263266525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752038309514908910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48855c02b5f23b140aaef2938b4816bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+  Kill: 0
 --- !u!54 &3019162866784995913
 Rigidbody:
   m_ObjectHideFlags: 0

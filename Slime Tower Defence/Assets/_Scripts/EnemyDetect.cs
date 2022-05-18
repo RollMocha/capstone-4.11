@@ -66,14 +66,17 @@ public class EnemyDetect : MonoBehaviour
 
         foreach (GameObject enemy in enemyList)
         {
-            // 아이템이 들어있는 리스트에서 아이템과 플레이어의 거리를 계산
-            float dir = Vector3.Distance(transform.position, enemy.transform.position);
-
-            // 첫 계산 또는 최소 거리보다 가까우면 해당 아이템으로 변경
-            if (minDir > dir || minDir == -1)
+            if (enemy)
             {
-                minDir = dir;
-                target = enemy;
+                // 아이템이 들어있는 리스트에서 아이템과 플레이어의 거리를 계산
+                float dir = Vector3.Distance(transform.position, enemy.transform.position);
+
+                // 첫 계산 또는 최소 거리보다 가까우면 해당 아이템으로 변경
+                if (minDir > dir || minDir == -1)
+                {
+                    minDir = dir;
+                    target = enemy;
+                }
             }
         }
 
