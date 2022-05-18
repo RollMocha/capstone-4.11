@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 28034751}
   - component: {fileID: 28034753}
   - component: {fileID: 28034752}
+  - component: {fileID: 28034754}
   m_Layer: 5
   m_Name: CurrentWave_UI
   m_TagString: Untagged
@@ -263,6 +264,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28034750}
   m_CullTransparentMesh: 1
+--- !u!114 &28034754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28034750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46f4892ca1870d42a16dbd8e29b9c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addwave: 1
+  currentWave: 0
+  MaxWave: 5
+  PlayerWave: {fileID: 28034752}
 --- !u!1 &37465303
 GameObject:
   m_ObjectHideFlags: 0
@@ -6109,7 +6126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &695777416
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10742,32 +10759,33 @@ MonoBehaviour:
     maxEnemyCount: 30
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
-    - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
+    - {fileID: 6752542047856132629, guid: 28f6ea3cfb2daae4aa3142e0fdcdad2e, type: 3}
     enemyPrefabnumbers: 0f0000000f000000
   - spawnTime: 1
     maxEnemyCount: 40
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
-    - {fileID: 6752542047856132629, guid: bf2ac5c5d18bbe747a0d5020dd77e6c8, type: 3}
-    - {fileID: 4906868231245794528, guid: 52490dc15e9724741b4440e12afad804, type: 3}
+    - {fileID: 6752542047856132629, guid: 28f6ea3cfb2daae4aa3142e0fdcdad2e, type: 3}
+    - {fileID: 4906868231245794528, guid: 322916f7d5f29a14aa0c2d089887fb4e, type: 3}
     enemyPrefabnumbers: 0a0000000f0000000f000000
   - spawnTime: 1
     maxEnemyCount: 25
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
     - {fileID: 2274985428823163324, guid: 42690b80fbd4584428025042a58cf29a, type: 3}
-    - {fileID: 4906868231245794528, guid: 52490dc15e9724741b4440e12afad804, type: 3}
+    - {fileID: 4906868231245794528, guid: 322916f7d5f29a14aa0c2d089887fb4e, type: 3}
     enemyPrefabnumbers: 05000000080000000c000000
   - spawnTime: 1
     maxEnemyCount: 35
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
-    - {fileID: 6752542047856132629, guid: bf2ac5c5d18bbe747a0d5020dd77e6c8, type: 3}
-    - {fileID: 4906868231245794528, guid: 52490dc15e9724741b4440e12afad804, type: 3}
+    - {fileID: 6752542047856132629, guid: 28f6ea3cfb2daae4aa3142e0fdcdad2e, type: 3}
+    - {fileID: 4906868231245794528, guid: 322916f7d5f29a14aa0c2d089887fb4e, type: 3}
     - {fileID: 2274985428823163324, guid: 42690b80fbd4584428025042a58cf29a, type: 3}
     enemyPrefabnumbers: 050000000a0000000a0000000a000000
   waveSpawner: {fileID: 1128967228}
-  CurrentWaves: {fileID: 28034752}
+  countdown: 2
+  timeBetweenWaves: 20
   currentWaveIndex: -1
 --- !u!114 &1128967232
 MonoBehaviour:
@@ -17612,6 +17630,7 @@ GameObject:
   - component: {fileID: 1584679854}
   - component: {fileID: 1584679856}
   - component: {fileID: 1584679855}
+  - component: {fileID: 1584679857}
   m_Layer: 5
   m_Name: ThunderFruit_UI
   m_TagString: Untagged
@@ -17677,6 +17696,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584679853}
   m_CullTransparentMesh: 1
+--- !u!114 &1584679857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584679853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711a993a97adea24882f427ef1bd9161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentfruit: 0
+  fruitText: {fileID: 844412109}
+  addfruit: 1
 --- !u!1 &1590227527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3731066062452165610, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
@@ -18616,6 +18650,7 @@ GameObject:
   - component: {fileID: 1765788928}
   - component: {fileID: 1765788930}
   - component: {fileID: 1765788929}
+  - component: {fileID: 1765788931}
   m_Layer: 5
   m_Name: IceFruit_UI
   m_TagString: Untagged
@@ -18681,6 +18716,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765788927}
   m_CullTransparentMesh: 1
+--- !u!114 &1765788931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765788927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57eb6a15c9bef34797927d8d5c88815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentfruit: 0
+  fruitText: {fileID: 765971402}
+  addfruit: 1
 --- !u!1 &1767494571
 GameObject:
   m_ObjectHideFlags: 0
@@ -20459,6 +20509,7 @@ GameObject:
   - component: {fileID: 1926266536}
   - component: {fileID: 1926266538}
   - component: {fileID: 1926266537}
+  - component: {fileID: 1926266539}
   m_Layer: 5
   m_Name: FireFruit_UI
   m_TagString: Untagged
@@ -20524,6 +20575,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926266535}
   m_CullTransparentMesh: 1
+--- !u!114 &1926266539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926266535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf482be843594544880c347e3ccf121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentfruit: 0
+  fruitText: {fileID: 798409980}
+  addfruit: 1
 --- !u!1 &1936378549 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3731066061834103092, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
