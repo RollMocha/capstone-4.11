@@ -42,6 +42,11 @@ public class Enemy_1 : MonoBehaviour
         FixedUpdate();
     }
 
+    private void Update()
+    {
+        DieCheck();
+    }
+
     private void FixedUpdate()
     {
         Vector3 dir = target.position - transform.position;// 목적지 방향을 구하는 식
@@ -86,5 +91,19 @@ public class Enemy_1 : MonoBehaviour
     public void OnDie()
     {
         waveSpawner.DestroyEnemy(this);
+    }
+
+    public void Damage(int damage)
+    {
+        enemy_hp -= damage;
+    }
+
+    public void DieCheck()
+    {
+        if (enemy_hp <= 0)
+        {
+            WaveSpawner.waveSpawner.EnemyList_1.Remove(this);
+            Destroy(this.gameObject);
+        }
     }
 }
