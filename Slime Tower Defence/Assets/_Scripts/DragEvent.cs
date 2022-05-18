@@ -184,7 +184,7 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
         // 타일에 설치한 타워 정보 전달
         tile.SetSlime(attachSlime);
         attachSlime.AttachTileInfomation(tile);
-        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime);
+        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime.gameObject);
     }
 
     // 기존 슬라임 변경
@@ -228,7 +228,7 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
         // 타일에 설치한 타워 정보 전달
         tile.SetSlime(attachSlime);
         attachSlime.AttachTileInfomation(tile);
-        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime);
+        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime.gameObject);
     }
 
     // 열매 슬라임 변경
@@ -274,7 +274,7 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
         // 타일에 설치한 타워 정보 전달
         tile.SetSlime(attachSlime);
         attachSlime.AttachTileInfomation(tile);
-        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime);
+        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime.gameObject);
     }
 
 }

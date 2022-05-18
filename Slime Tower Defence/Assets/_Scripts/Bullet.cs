@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     GameObject attackTarget; // 공격해야할 적 정보
     public float destroyTime = 10f; // 공격이 맞지않을 경우 대비
     public float speed;
+    public int damage;
 
     public bool isSplash = false;
 
@@ -33,11 +34,11 @@ public class Bullet : MonoBehaviour
     }
 
     // 적의 정보를 세팅하는 함수
-    public void SetTarget(GameObject target, float bulletSpeed)
+    public void SetTarget(GameObject target, float bulletSpeed, int bulletDamage)
     {
         attackTarget = target;
         speed = bulletSpeed;
-        
+        damage = bulletDamage;
     }
 
     // 적을 향해 날라가는 함수
@@ -67,14 +68,18 @@ public class Bullet : MonoBehaviour
         if (other.tag == "Monster")
         {
             // 스플래쉬 데미지 구현
-            Collider[] hitCol = Physics.OverlapSphere(transform.position, 3.0f);
-            Debug.Log("Monster out");
+            Collider[] hitCol = Physics.OverlapSphere(transform.position, 10.0f);
 
             foreach (Collider hit in hitCol)
             {
-                if (hit.gameObject.tag != "Monster") break;
+                Debug.Log(hit.gameObject.tag);
+                if (hit.gameObject.tag != "Monster")
+                {
+                    Debug.Log(hit.gameObject.tag);
+                    continue;
+                }
 
-                hit.gameObject.GetComponent<Enemy_1>().Damage(5);
+                hit.gameObject.GetComponent<Enemy_1>().Damage(damage);
 
                 Debug.Log("Monster Damage");
             }

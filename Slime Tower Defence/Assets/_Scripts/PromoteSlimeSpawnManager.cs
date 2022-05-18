@@ -5,7 +5,7 @@ using UnityEngine;
 // 상위 슬라임 소환을 위해 맵에 배치된 슬라임 정보를 관리하는 매니저 클래스
 public class PromoteSlimeSpawnManager : MonoBehaviour
 {
-    List<Slime> slimeOnTile; // 맵에 배치된 슬라임 리스트
+    List<GameObject> slimeOnTile; // 맵에 배치된 슬라임 리스트
 
     static public PromoteSlimeSpawnManager promoteSlimeSpawnManager;
 
@@ -17,7 +17,7 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slimeOnTile = new List<Slime>();
+        slimeOnTile = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -26,9 +26,14 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
         
     }
 
-    public void AddSlimeAtList(Slime slime)
+    public void AddSlimeAtList(GameObject slime)
     {
         slimeOnTile.Add(slime);
+    }
+
+    public void RemoveSlimeAtList(GameObject slime)
+    {
+        slimeOnTile.Remove(slime);
     }
 
     // 배치할 상위 슬라임에 필요한 슬라임 구분 
@@ -59,18 +64,26 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
     // 상위 슬라임을 만들 조건이 되는지 확인
     public int CheckCanBulidPromoteSlime(SlimeState firstSlimeState, SlimeState secondSlimeState)
     {
-        Slime firstSlime = null; // 재료 슬라임 1
-        Slime secondSlime = null; // 재료 슬라임 2
+        GameObject firstSlime = null; // 재료 슬라임 1
+        GameObject secondSlime = null; // 재료 슬라임 2
 
-        foreach (Slime slime in slimeOnTile) // 리스트에서 소환에 필요한 슬라임 검색
+        Debug.Log(slimeOnTile.Count);
+
+        foreach (GameObject slime in slimeOnTile) // 리스트에서 소환에 필요한 슬라임 검색
         {
-            if (slime.state == firstSlimeState)
+            
+            Slime slime_ = slime.GetComponent<Slime>();
+            SlimeState slimeState = slime_.state;
+
+            Debug.Log(slimeState);
+
+            if (slimeState == firstSlimeState)
             {
                 firstSlime = slime;
                 continue;
             }
 
-            if (slime.state == secondSlimeState)
+            if (slimeState == secondSlimeState)
             {
                 secondSlime = slime;
                 continue;
@@ -84,11 +97,13 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
         }
         // 슬라임 소환 조건 만족
 
-        firstSlime.ChangeTileCheckInfomation();
-        Destroy(firstSlime.gameObject);
+        firstSlime.GetComponent<Slime>().ChangeTileCheckInfomation();
+        RemoveSlimeAtList(firstSlime);
+        Destroy(firstSlime);
 
-        secondSlime.ChangeTileCheckInfomation();
-        Destroy(secondSlime.gameObject);
+        secondSlime.GetComponent<Slime>().ChangeTileCheckInfomation();
+        RemoveSlimeAtList(secondSlime);
+        Destroy(secondSlime);
 
         Debug.Log("Promote Slime in Game");
         return 1;

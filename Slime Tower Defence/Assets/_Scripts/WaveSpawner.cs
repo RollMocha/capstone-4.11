@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour//적 생성하는 코드
 {
+    public static WaveSpawner waveSpawner;
+
     //public Transform[] enemyPrefab_1;//Monster_1Prefab의 Transforms
     public Transform spawnPoint; //MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
     public float countdown = 2f;//시간
@@ -21,7 +23,8 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
 
     private void Awake()
     {
-        enemyList_1 = new List<Enemy_1>(); 
+        enemyList_1 = new List<Enemy_1>();
+        waveSpawner = this;
     }
 
 

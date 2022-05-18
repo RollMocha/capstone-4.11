@@ -21,10 +21,12 @@ public class Slime : MonoBehaviour
     public List<GameObject> enemyList; // 적 리스트
     public GameObject bulletPrefab; // 공격 프리팹
 
-    GameObject targetEnemy = null; // 목표 적 정보
+    Enemy_1 targetEnemy = null; // 목표 적 정보
 
     public float attackSpeed; // 공격 속도
     public float bulletSpeed; // 투사체 속도
+    public float attackRange; // 공격 범위 
+    public int attackDamage; // 공격력
 
     float timer = 0; // 공격 속도 조절을 위해 사용
 
@@ -40,15 +42,33 @@ public class Slime : MonoBehaviour
     {
         timer += Time.deltaTime; // 공격속도를 위해 사용
 
-        if (enemyList.Count > 0)
+        // 적이 맵에 있는지 확인
+        if (WaveSpawner.waveSpawner.EnemyList_1.Count <= 0)
         {
-            if (targetEnemy == null)
+            return;
+        }
+
+        // 추적 중인 적이 없으면 추가
+        if (targetEnemy == null)
+        {
+            targetEnemy = FindEnemyClosestToTower();
+            return;
+        }
+        else
+        {
+            // 적이 사거리 안에 있는지 확인
+            float dir = Vector3.Distance(transform.position, targetEnemy.transform.position);
+
+            if (dir > attackRange)
             {
-                targetEnemy = FindEnemyClosestToTower();
+                targetEnemy = null;
+                return;
             }
 
+            // 적 바라보기
             RotateToTarget(targetEnemy);
 
+            // 공격 시간 체크
             if (timer > attackSpeed)
             {
                 Attack(targetEnemy);
@@ -58,7 +78,7 @@ public class Slime : MonoBehaviour
     }
 
     // 공격을 위한 함수
-    void Attack(GameObject target)
+    void Attack(Enemy_1 target)
     {
         if (isAttack) // 공격이 가능한지 확인
         {
@@ -68,7 +88,8 @@ public class Slime : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x,
                 transform.position.y, transform.position.z), Quaternion.identity); // 공격 프리팹 생성
 
-            bullet.GetComponent<Bullet>().SetTarget(target, bulletSpeed); // 공격 프리팹에 적 정보 전달
+            bullet.GetComponent<Bullet>().SetTarget(target.gameObject, bulletSpeed, 
+                attackDamage); // 공격 프리팹에 적 정보 전달
 
             //isAttack = true; // 공격 종료
         }
@@ -76,7 +97,7 @@ public class Slime : MonoBehaviour
     }
 
     // 적을 바라보는 함수
-    void RotateToTarget(GameObject target)
+    void RotateToTarget(Enemy_1 target)
     {
         Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y, 
             target.transform.position.z);
@@ -101,53 +122,32 @@ public class Slime : MonoBehaviour
         tile.isSlime = false;
     }
 
-    // 적이 범위에 들어오면 정보 추가
-    private void OnTriggerEnter(Collider other)
+    // 가장 가까운 적 추적
+    public Enemy_1 FindEnemyClosestToTower()
     {
-        if (other.tag == "Monster")
+        Enemy_1 target_ = null; // 반환할 적 정보
+        float minDir = -1; // 가장 가까운 거리 저장용
+
+        // 적 리스트에서 가장 가까운 적 찾기
+        foreach (Enemy_1 enemy in WaveSpawner.waveSpawner.EnemyList_1)
         {
-            enemyList.Add(other.gameObject);
-        }
-    }
-
-    // 적이 범위에서 나가면 정보 제거
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Monster")
-        { 
-            foreach (GameObject go in enemyList)
-            {
-                if (go == other.gameObject)
-                {
-                    if (other.gameObject == targetEnemy)
-                    {
-                        targetEnemy = null;
-                    }
-                    enemyList.Remove(other.gameObject);
-                    break;
-                }
-            }
-        }
-    }
-
-    public GameObject FindEnemyClosestToTower()
-    {
-        GameObject target_ = null;
-        float minDir = -1;
-
-        foreach (GameObject enemy in enemyList)
-        {
-            // 아이템이 들어있는 리스트에서 아이템과 플레이어의 거리를 계산
+            // 적과의 거리 계산
             float dir = Vector3.Distance(transform.position, enemy.transform.position);
 
-            // 첫 계산 또는 최소 거리보다 가까우면 해당 아이템으로 변경
-            if (minDir > dir || minDir == -1)
+            // 적이 사거리 안에 있는지 확인
+            if (dir > attackRange)
+            {
+                continue;
+            }
+
+            // 적이 제일 가까이 있는지 확인
+            if (dir > minDir)
             {
                 minDir = dir;
                 target_ = enemy;
             }
         }
 
-        return target_;
+        return target_; // 마지막으로 적 반환
     }
 }

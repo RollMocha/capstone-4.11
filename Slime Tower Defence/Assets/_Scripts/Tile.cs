@@ -60,6 +60,7 @@ public class Tile : MonoBehaviour
     // 타일에 배치되어 있는 슬라임 제거
     public void DestroySlime()
     {
+        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.RemoveSlimeAtList(attachSlime.gameObject);
         Destroy(attachSlime.gameObject);
     }
 

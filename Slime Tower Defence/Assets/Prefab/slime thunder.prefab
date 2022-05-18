@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 95103029528754007}
   - component: {fileID: 1636539416029152715}
-  - component: {fileID: 5101693229411897846}
   m_Layer: 0
   m_Name: slime thunder
   m_TagString: Untagged
@@ -29,7 +28,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3283281336732381155}
   - {fileID: 4858559945318294729}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,88 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77175a4d5945e7e409f35f3b9622527b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDetect: {fileID: 8926929289257504524}
+  enemyDetect: {fileID: 0}
   enemyList: []
   bulletPrefab: {fileID: 1246987399585908641, guid: 0621a8193aa188a4988341d8722cf36c, type: 3}
   attackSpeed: 1
   bulletSpeed: 1
+  attackRange: 0
+  attackDamage: 0
   state: 3
---- !u!114 &5101693229411897846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 727910915838553581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08dfe49e0bd43b2468a8315819209532, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyList: []
-  parentTower: {fileID: 0}
-  target: {fileID: 0}
---- !u!1 &1514352319171882535
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3283281336732381155}
-  - component: {fileID: 6399696979054326037}
-  - component: {fileID: 8926929289257504524}
-  m_Layer: 0
-  m_Name: EnemyDetect
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3283281336732381155
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514352319171882535}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 20, y: 0.1, z: 20}
-  m_Children: []
-  m_Father: {fileID: 95103029528754007}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &6399696979054326037
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514352319171882535}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.50000006
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.00000005960464, y: 0, z: 0.0000037252896}
---- !u!114 &8926929289257504524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514352319171882535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08dfe49e0bd43b2468a8315819209532, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyList: []
-  parentTower: {fileID: 0}
-  target: {fileID: 0}
 --- !u!1 &2296974828092358751
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +82,7 @@ Transform:
   - {fileID: 2542694949981640633}
   - {fileID: 6896555621895771294}
   m_Father: {fileID: 95103029528754007}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &2862634262258152295
 GameObject:
