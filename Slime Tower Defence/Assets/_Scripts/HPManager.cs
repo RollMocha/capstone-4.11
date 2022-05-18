@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class HPManager : MonoBehaviour
 {
-    public int damage = 1; //몬스터 통과 시 데미지
-    static public int CurrentHP; //플레이어 현재 체력
-    public int MaxHP = 20; //플레이어 최대 체력
+    public float damage = 1f; //몬스터 통과 시 데미지
+    static public float CurrentHP; //플레이어 현재 체력
+    public float MaxHP = 20f; //플레이어 최대 체력
 
     public GameObject GameOverobj;
     public Text PlayerHP;
