@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSystem : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class WaveSystem : MonoBehaviour
     private Wave[] waves;              // 현재 스테이지의 모든 웨이브 정보
     [SerializeField]
     private WaveSpawner waveSpawner;
+
+    public Text CurrentWaves;
 
     public int currentWaveIndex = -1; // 현재 웨이브 인덱스
 
@@ -17,7 +20,8 @@ public class WaveSystem : MonoBehaviour
         {
             currentWaveIndex++;
             waveSpawner.StartWave(waves[currentWaveIndex]);
-            Debug.Log("Wave: " + currentWaveIndex);
+            CurrentWaves.text = (currentWaveIndex + 1) + " WAVE";
+            //Debug.Log((currentWaveIndex + 1) + " WAVE");
         }
     }
 }
