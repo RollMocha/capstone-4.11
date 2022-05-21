@@ -9,20 +9,24 @@ public class Enemy_1 : MonoBehaviour
     public float speed = 10f;//몬스터 속도
 
     public float destroy_time = 0.1f;//최종도착과 디스폰 사이 시간
-    public Transform[] fruits = new Transform[fruitsindex];//
+    public Transform[] fruits;//
     public int fruitspawnrandom = 20;
 
     Rigidbody E1_rigidbody; //Rigidbody를 저장하는 변수
     public int rotatespeed = 5; //회전속도
-    private static int fruitsindex = 3;
+    public int fruitsindex = 3;
     private Transform target;//Transform
     private int wavepointIndex = 0;//OneWaypoints의 인덱스
     private int Waypoint;
     private int wayPointCount; //이동 경로 갯수
+    private RedFruitUI redFruitUI;
+    private WaveSpawner waveSpawner;
 
     public void Start()
     {
         Waypoint = UnityEngine.Random.Range(0, 2);
+
+        fruits = new Transform[fruitsindex];
 
         switch (Waypoint)
         {
@@ -61,22 +65,27 @@ public class Enemy_1 : MonoBehaviour
 
     private void GetNextWaypoint()
     {
-        if(Waypoint == 0)
+        if (Waypoint == 0)
         {
             if (wavepointIndex >= OneWaypoints.opoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
             {
-                Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
+
+                //Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
+
+                WaveSpawner.waveSpawner.DestroyEnemy(this); // 이 스크랩트를 가지고 있는 게임 객체를 파괴
                 return;
             }
 
             wavepointIndex++;
             target = OneWaypoints.opoints[wavepointIndex];//목적지를 다음 목적지로 대입
         }
-       else if(Waypoint == 1)
+        else if (Waypoint == 1)
         {
             if (wavepointIndex >= TwoWaypoints.tpoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
             {
-                Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
+                //Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
+
+                WaveSpawner.waveSpawner.DestroyEnemy(this); // 이 스크랩트를 가지고 있는 게임 객체를 파괴
                 return;
             }
 
@@ -84,21 +93,11 @@ public class Enemy_1 : MonoBehaviour
             target = TwoWaypoints.tpoints[wavepointIndex];//목적지를 다음 목적지로 대입
         }
     }
-
-    private void SpawnFruit()
+    public void OnDie()
     {
-        int random = UnityEngine.Random.Range(0, 100);
-
-
-        if (random < fruitspawnrandom)
-        {
-            int fruit_random = UnityEngine.Random.Range(0, 2);
-
-            Instantiate(fruits[fruit_random], transform.position, transform.rotation);
-        }
+        waveSpawner.DestroyEnemy(this);
     }
 
-    // 공격 받을 시 체력이 줄어드는 함수
     public void Damage(int damage)
     {
         enemy_hp -= damage;

@@ -91,8 +91,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4677126495686397718}
   - component: {fileID: 8594517197404896342}
-  - component: {fileID: 8909149021313395967}
-  - component: {fileID: 8317287866016482332}
   m_Layer: 0
   m_Name: slime fire
   m_TagString: Untagged
@@ -132,35 +130,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1246987399585908641, guid: 0621a8193aa188a4988341d8722cf36c, type: 3}
   attackSpeed: 1
   bulletSpeed: 1
+  attackRange: 10
+  attackDamage: 5
   state: 2
---- !u!135 &8909149021313395967
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5450390640167015852}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 10
-  m_Center: {x: 0, y: 2, z: 0}
---- !u!114 &8317287866016482332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5450390640167015852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08dfe49e0bd43b2468a8315819209532, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyList: []
-  parentTower: {fileID: 0}
-  target: {fileID: 0}
 --- !u!1 &6877411869891242798
 GameObject:
   m_ObjectHideFlags: 0

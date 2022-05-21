@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour//적 생성하는 코드
 {
+
     public static WaveSpawner waveSpawner;
 
     //public Transform[] enemyPrefab_1;//Monster_1Prefab의 Transforms
@@ -39,7 +40,7 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
         int spawnEnemyCount = 0; // 현재 웨이브에서 생성한 적 숫자
 
         //현재 웨이브에서 생성되어야 하는 적의 숫자만큼 적을 생성하고 코루틴 종료
-        while(spawnEnemyCount < currentWave.maxEnemyCount)
+        while (spawnEnemyCount < currentWave.maxEnemyCount)
         {
             if (HPManager.CurrentHP > 0)
             {
@@ -58,5 +59,12 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
                 yield return new WaitForSeconds(currentWave.spawnTime);//spawnTime 시간 동안 기다리는 함수
             }
         }
+    }
+
+    // 
+    public void DestroyEnemy(Enemy_1 enemy_1)
+    {
+        enemyList_1.Remove(enemy_1);
+        Destroy(enemy_1.gameObject);
     }
 }

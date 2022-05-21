@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    GameObject attackTarget; // 공격해야할 적 정보
+    Enemy_1 attackTarget; // 공격해야할 적 정보
     public float destroyTime = 10f; // 공격이 맞지않을 경우 대비
     public float speed;
     public int damage;
@@ -34,7 +35,7 @@ public class Bullet : MonoBehaviour
     }
 
     // 적의 정보를 세팅하는 함수
-    public void SetTarget(GameObject target, float bulletSpeed, int bulletDamage)
+    public void SetTarget(Enemy_1 target, float bulletSpeed, int bulletDamage)
     {
         attackTarget = target;
         speed = bulletSpeed;
@@ -55,7 +56,7 @@ public class Bullet : MonoBehaviour
         }
 
         // 적 위치로 날라감
-        transform.position = 
+        transform.position =
             Vector3.MoveTowards(this.transform.position, attackTarget.transform.position, speed);
 
     }
@@ -63,30 +64,55 @@ public class Bullet : MonoBehaviour
     // 적과 부딪힐 때 사라지는 함수
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Monster hit");
-
-        if (other.tag == "Monster")
+        if (other.tag != "Monster")
         {
-            // 스플래쉬 데미지 구현
+            return;
+        }
+
+        if (isSplash == true)
+        {
             Collider[] hitCol = Physics.OverlapSphere(transform.position, 10.0f);
 
             foreach (Collider hit in hitCol)
-            {
-                Debug.Log(hit.gameObject.tag);
-                if (hit.gameObject.tag != "Monster")
-                {
-                    Debug.Log(hit.gameObject.tag);
-                    continue;
-                }
-
+            { 
                 hit.gameObject.GetComponent<Enemy_1>().Damage(damage);
 
-                Debug.Log("Monster Damage");
             }
-
-            // 스플래쉬 데미지 끝
-
-            Destroy(this.gameObject, 0.1f);
         }
+        
+        //at = other.gameObject.GetComponent<Enemy_1>()
+
+            /*
+            if (other.tag == "Monster")
+            {
+                at = other.gameObject.GetComponent<Enemy_1>()
+
+                HitMonster();
+
+                // 스플래쉬 데미지 구현
+                Collider[] hitCol = Physics.OverlapSphere(transform.position, 10.0f);
+
+                foreach (Collider hit in hitCol)
+                {
+                    if (hit.gameObject.tag != "Monster")
+                    {
+                        continue;
+                    }
+
+                    hit.gameObject.GetComponent<Enemy_1>().Damage(damage);
+
+                }
+
+                // 스플래쉬 데미지 끝
+
+                Destroy(this.gameObject, 0.1f);
+            }
+            */
+        Destroy(this.gameObject, 0.1f);
+    }
+
+    void HitMonster(Enemy_1 enemy)
+    {
+        enemy.Damage(damage);
     }
 }

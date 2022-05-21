@@ -1,23 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSystem : MonoBehaviour
 {
     [SerializeField]
-    private Wave[] waves;              // ÇöÀç ½ºÅ×ÀÌÁöÀÇ ¸ğµç ¿şÀÌºê Á¤º¸
+    private Wave[] waves;              // í˜„ì¬ ìŠ¤í…Œì´ì§€ì˜ ëª¨ë“  ì›¨ì´ë¸Œ ì •ë³´
     [SerializeField]
     private WaveSpawner waveSpawner;
+    [SerializeField]
+    private float countdown = 2f;
+    [SerializeField]
+    private float timeBetweenWaves = 20f;
 
-    public int currentWaveIndex = -1; // ÇöÀç ¿şÀÌºê ÀÎµ¦½º
+    private CurrentWave currentWave;
+
+    public Text CurrentWaves;
+
+    public int currentWaveIndex = -1; // í˜„ì¬ ì›¨ì´ë¸Œ ì¸ë±ìŠ¤
+
+    public void Start()
+    {
+        currentWave = GameObject.Find("CurrentWave_UI").GetComponent<CurrentWave>();
+        waveSpawner = GetComponent<WaveSpawner>();
+    }
+
+    private void Update()
+    {
+        if (countdown <= 0f)
+        {
+            StartWave();
+            countdown = timeBetweenWaves;
+        }
+        countdown -= Time.deltaTime;
+    }
 
     public void StartWave()
     {
-        if(currentWaveIndex < waves.Length - 1)
+        if (currentWaveIndex < waves.Length - 1)
         {
             currentWaveIndex++;
             waveSpawner.StartWave(waves[currentWaveIndex]);
-            Debug.Log("Wave: " + currentWaveIndex);
+            //CurrentWaves.text = (currentWaveIndex + 1) + " WAVE";
+            //Debug.Log((currentWaveIndex + 1) + " WAVE");
         }
     }
 }
@@ -25,8 +51,8 @@ public class WaveSystem : MonoBehaviour
 [System.Serializable]
 public struct Wave
 {
-    public float spawnTime;            // ÇöÀç ¿şÀÌºê Àû »ı¼º ÁÖ±â
-    public int maxEnemyCount;          // ÇöÀç ¿şÀÌºê Àû µîÀå ¼ıÀÚ
-    public GameObject[] enemyPrefabs;  // ÇöÀç ¿şÀÌºê Àû µîÀå Á¾·ù
-    public int[] enemyPrefabnumbers;   // ÇöÀç ¿şÀÌºê °¢°¢ Àû ¸¶¸® ¼ö
+    public float spawnTime;            // í˜„ì¬ ì›¨ì´ë¸Œ ì  ìƒì„± ì£¼ê¸°
+    public int maxEnemyCount;          // í˜„ì¬ ì›¨ì´ë¸Œ ì  ë“±ì¥ ìˆ«ì
+    public GameObject[] enemyPrefabs;  // í˜„ì¬ ì›¨ì´ë¸Œ ì  ë“±ì¥ ì¢…ë¥˜
+    public int[] enemyPrefabnumbers;   // í˜„ì¬ ì›¨ì´ë¸Œ ê°ê° ì  ë§ˆë¦¬ ìˆ˜
 }

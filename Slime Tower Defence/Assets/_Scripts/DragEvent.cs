@@ -21,6 +21,7 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
     public bool isFruit = false; // 열매인지 확인
     public bool isPromote = false; // 상위 슬라임인지 확인
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -139,142 +140,19 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
             // 슬라임 생성 및 확인
             if (isFruit)
             {
-                ChangeDefultSlime(targetTile, slimePrefab);
+                PromoteSlimeSpawnManager.promoteSlimeSpawnManager.ChangeDefultSlime(targetTile, slimePrefab);
             }
             else if (isPromote)
             {
-                ChangeFruitSlime(targetTile, slimePrefab);
+                PromoteSlimeSpawnManager.promoteSlimeSpawnManager.ChangeFruitSlime(targetTile, slimePrefab);
             }
             else
             {
-                SpawnDefultSlime(targetTile, slimePrefab);
+                PromoteSlimeSpawnManager.promoteSlimeSpawnManager.SpawnDefultSlime(targetTile, slimePrefab);
+                //SpawnDefultSlime(targetTile, slimePrefab);
             }
 
             return;
         }
     }
-
-    // 기본 슬라임 배치
-    public void SpawnDefultSlime(Tile tile, Slime slimePrefab)
-    {
-        // 슬라임 정보가 있는지 확인
-        if (slimePrefab == null)
-        {
-            Debug.LogError("slime is not setting");
-            return;
-        }
-
-        // 배치할 타일에 타워가 있는지 확인
-        if (tile.CheckSlime())
-        {
-            Debug.LogWarning("already tile have tower");
-            return;
-        }
-
-        // 슬라임을 생성
-        Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
-        Debug.Log("tower Set");
-
-        // 슬라임 정보 체크
-        if (attachSlime == null)
-        {
-            return;
-        }
-
-        // 타일에 설치한 타워 정보 전달
-        tile.SetSlime(attachSlime);
-        attachSlime.AttachTileInfomation(tile);
-        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime.gameObject);
-    }
-
-    // 기존 슬라임 변경
-    public void ChangeDefultSlime(Tile tile, Slime slimePrefab)
-    {
-
-        // 배치할 슬라임 정보가 있는지 확인
-        if (slimePrefab == null)
-        {
-            Debug.LogError("slime is not setting");
-            return;
-        }
-
-        Slime pastSlime = tile.GetSlime();
-
-        // 배치할 타일에 타워가 있는지 확인
-        if (pastSlime == null)
-        {
-            Debug.LogWarning("no have target");
-            return;
-        }
-
-        // 타워가 기본이 맞는지 확인
-        if (pastSlime.state != SlimeState.DEFAULT)
-        {
-            Debug.LogWarning("slime is not default");
-            return;
-        }
-
-        tile.DestroySlime();
-
-        Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
-        Debug.Log("tower Set");
-
-        // 슬라임 정보 체크
-        if (attachSlime == null)
-        {
-            return;
-        }
-
-        // 타일에 설치한 타워 정보 전달
-        tile.SetSlime(attachSlime);
-        attachSlime.AttachTileInfomation(tile);
-        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime.gameObject);
-    }
-
-    // 열매 슬라임 변경
-    public void ChangeFruitSlime(Tile tile, Slime slimePrefab)
-    {
-        // 배치할 슬라임 정보가 있는지 확인
-        if (slimePrefab == null)
-        {
-            Debug.LogError("slime is not setting");
-            return;
-        }
-
-        // 배치할 타일에 타워가 있는지 확인
-        if (tile.CheckSlime())
-        {
-            Debug.LogWarning("already tile have tower");
-            return;
-        }
-
-        // 상위 슬라임 배치를 위한 열매 슬라임이 있는지 확인
-        // 가능할 경우 숫자 1을 반환 및 필요한 슬라임 제거
-        int checkNum = PromoteSlimeSpawnManager.promoteSlimeSpawnManager.CheckPromoteSlime(slimePrefab.state);
-
-        // CheckPromoteSlime 함수에서 1 이외의 값이 반환될 경우 배치에 문제가 있는 경우
-        if (checkNum != 1)
-        {
-            Debug.LogError("PromoteSlimeSpawnManager Error");
-            Debug.Log(checkNum);
-            return;
-        }
-
-        // 슬라임 배치
-        Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
-        Debug.Log("tower Set");
-
-        // 슬라임 정보 체크
-        if (attachSlime == null)
-        {
-            Debug.LogError("Slime is not Attaching");
-            return;
-        }
-
-        // 타일에 설치한 타워 정보 전달
-        tile.SetSlime(attachSlime);
-        attachSlime.AttachTileInfomation(tile);
-        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.AddSlimeAtList(attachSlime.gameObject);
-    }
-
 }

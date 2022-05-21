@@ -12,7 +12,6 @@ public class Tile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // 슬라임을 배치하기 위한 정보를 처음에 설정
         Vector3 tilePosition = transform.position;
         towerPosition = new Vector3(tilePosition.x, tilePosition.y + 3f,
             tilePosition.z);
@@ -22,13 +21,6 @@ public class Tile : MonoBehaviour
     void Update()
     {
 
-    }
-
-    // 타일의 위치정보 전달, Drag 이벤트에 사용
-    public Vector3 GetPosition()
-    {
-        Vector3 tilePosition = this.gameObject.transform.position;
-        return tilePosition;
     }
 
     // 슬라임이 있는지 체크
@@ -45,10 +37,8 @@ public class Tile : MonoBehaviour
         {
             return;
         }
-
-        isSlime = true; // 슬라임 정보 변경
+        isSlime = true;
         attachSlime = slimePrefab;
-
     }
 
     // 슬라임 정보 가져오기
@@ -60,7 +50,6 @@ public class Tile : MonoBehaviour
     // 타일에 배치되어 있는 슬라임 제거
     public void DestroySlime()
     {
-        PromoteSlimeSpawnManager.promoteSlimeSpawnManager.RemoveSlimeAtList(attachSlime.gameObject);
         Destroy(attachSlime.gameObject);
     }
 

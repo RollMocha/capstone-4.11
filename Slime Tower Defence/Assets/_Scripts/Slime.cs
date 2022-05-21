@@ -17,7 +17,6 @@ public class Slime : MonoBehaviour
 {
     bool isAttack = true; // 공격이 가능한지 확인
 
-    public EnemyDetect enemyDetect; // 적 확인을 위한 컴포넌트
     public List<GameObject> enemyList; // 적 리스트
     public GameObject bulletPrefab; // 공격 프리팹
 
@@ -88,7 +87,7 @@ public class Slime : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x,
                 transform.position.y, transform.position.z), Quaternion.identity); // 공격 프리팹 생성
 
-            bullet.GetComponent<Bullet>().SetTarget(target.gameObject, bulletSpeed, 
+            bullet.GetComponent<Bullet>().SetTarget(target, bulletSpeed,
                 attackDamage); // 공격 프리팹에 적 정보 전달
 
             //isAttack = true; // 공격 종료
@@ -99,7 +98,7 @@ public class Slime : MonoBehaviour
     // 적을 바라보는 함수
     void RotateToTarget(Enemy_1 target)
     {
-        Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y, 
+        Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y,
             target.transform.position.z);
 
         transform.LookAt(targetPosition);
