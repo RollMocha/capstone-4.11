@@ -111,4 +111,39 @@ public class Enemy_1 : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    public void SlowDebuff(int slowPercent, int slowTime)
+    {
+        float defaultSpeed = speed;
+
+        StartCoroutine(Slow(defaultSpeed, slowPercent, slowTime));
+    }
+
+    IEnumerator Slow(float defaultSpeed, int slowPercent, int slowTime)
+    {
+        speed = speed / slowPercent;
+
+        yield return new WaitForSeconds(slowTime);
+
+        speed = defaultSpeed;
+    }
+
+    public void StopDebuff(int stopTime)
+    {
+        float defaultSpeed = speed;
+
+        StartCoroutine(Stop(defaultSpeed, stopTime));
+    }
+
+    IEnumerator Stop(float defaultSpeed, int stopTime)
+    {
+        yield return new WaitForSeconds(stopTime);
+
+        speed = defaultSpeed;
+    }
+
+    public void KnockBackDebuff()
+    {
+
+    }
 }
