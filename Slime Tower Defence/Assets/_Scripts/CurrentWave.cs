@@ -18,8 +18,7 @@ public class CurrentWave : MonoBehaviour
 
     void Update()
     {
-        PlayerWave.text = currentWave + " Wave";
-        //화면에 현재웨이브 표시
+        
     }
 
     public void GetAddWave()
