@@ -17,7 +17,6 @@ public class Slime : MonoBehaviour
 {
     bool isAttack = true; // 공격이 가능한지 확인
 
-    public EnemyDetect enemyDetect; // 적 확인을 위한 컴포넌트
     public List<GameObject> enemyList; // 적 리스트
     public GameObject bulletPrefab; // 공격 프리팹
 
@@ -31,7 +30,6 @@ public class Slime : MonoBehaviour
     float timer = 0; // 공격 속도 조절을 위해 사용
 
     public SlimeState state; // 슬라임의 종류 확인
-    Tile tile; // 본인이 소환된 타일 정보
 
     void Start()
     {
@@ -82,16 +80,12 @@ public class Slime : MonoBehaviour
     {
         if (isAttack) // 공격이 가능한지 확인
         {
-            //isAttack = false; // 공격이 이미 실행 중이므로 막기
-
             //RotateToTarget(target); // 적 바라보기
             GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x,
                 transform.position.y, transform.position.z), Quaternion.identity); // 공격 프리팹 생성
 
-            bullet.GetComponent<Bullet>().SetTarget(target.gameObject, bulletSpeed,
+            bullet.GetComponent<Bullet>().SetTarget(target, bulletSpeed,
                 attackDamage); // 공격 프리팹에 적 정보 전달
-
-            //isAttack = true; // 공격 종료
         }
 
     }
@@ -103,23 +97,6 @@ public class Slime : MonoBehaviour
             target.transform.position.z);
 
         transform.LookAt(targetPosition);
-    }
-
-    // 본인이  배치된 타일의 정보를 설정
-    public void AttachTileInfomation(Tile tile_)
-    {
-        if (tile_ == null)
-        {
-            Debug.Log("no tile infomation");
-            return;
-        }
-
-        tile = tile_;
-    }
-
-    public void ChangeTileCheckInfomation()
-    {
-        tile.isSlime = false;
     }
 
     // 가장 가까운 적 추적

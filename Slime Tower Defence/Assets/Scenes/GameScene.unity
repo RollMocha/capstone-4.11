@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 95103029528754007, guid: cf9a50f745156fe4ca134a7ae947f9c2, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 95103029528754007, guid: cf9a50f745156fe4ca134a7ae947f9c2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -390,7 +390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &42674619
 GameObject:
@@ -502,7 +501,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &56866253
 GameObject:
@@ -823,7 +821,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &83455302
 GameObject:
@@ -1083,7 +1080,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &89583092
 GameObject:
@@ -1195,7 +1191,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &102449361
 GameObject:
@@ -1386,7 +1381,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &115461587 stripped
 GameObject:
@@ -1534,7 +1528,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &121155883
 GameObject:
@@ -1646,7 +1639,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &125962477
 GameObject:
@@ -1933,7 +1925,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &159562677 stripped
 GameObject:
@@ -2063,7 +2054,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &185419148
 GameObject:
@@ -2175,7 +2165,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &188668338
 GameObject:
@@ -2287,7 +2276,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &190845290
 GameObject:
@@ -2399,7 +2387,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &217810194
 GameObject:
@@ -2511,7 +2498,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &240566428
 GameObject:
@@ -2623,7 +2609,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &241334300
 GameObject:
@@ -2828,7 +2813,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &263643117
 GameObject:
@@ -3021,7 +3005,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &274418792
 GameObject:
@@ -3279,7 +3262,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &306311072 stripped
 GameObject:
@@ -3409,7 +3391,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &318279890
 GameObject:
@@ -3521,7 +3502,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &321743357
 GameObject:
@@ -3818,7 +3798,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &351139405
 GameObject:
@@ -3930,7 +3909,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &369878258
 GameObject:
@@ -4090,7 +4068,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &378668951
 GameObject:
@@ -4202,7 +4179,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &379287206
 GameObject:
@@ -4757,7 +4733,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &480666055 stripped
 GameObject:
@@ -5056,7 +5031,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &510667514 stripped
 GameObject:
@@ -5204,7 +5178,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &524081365
 GameObject:
@@ -5255,7 +5228,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &524081369
 BoxCollider:
@@ -5445,7 +5417,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &527222079
 GameObject:
@@ -5666,7 +5637,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &547064692 stripped
 GameObject:
@@ -5814,7 +5784,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &569351093 stripped
 GameObject:
@@ -6100,7 +6069,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &693726120 stripped
 GameObject:
@@ -6381,7 +6349,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &701699425 stripped
 GameObject:
@@ -6789,7 +6756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &732928525 stripped
 GameObject:
@@ -6937,7 +6903,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &741840959 stripped
 GameObject:
@@ -7067,7 +7032,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &765971400
 GameObject:
@@ -7259,7 +7223,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &781429093
 MonoBehaviour:
@@ -7275,7 +7238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &783009177
 GameObject:
@@ -7387,7 +7349,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &788604348
 GameObject:
@@ -7662,7 +7623,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &819642624
 GameObject:
@@ -8029,7 +7989,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &836483721 stripped
 GameObject:
@@ -8431,7 +8390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &874326163 stripped
 GameObject:
@@ -8561,7 +8519,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &879042994 stripped
 GameObject:
@@ -8691,7 +8648,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &896581930
 GameObject:
@@ -8921,7 +8877,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &933462884 stripped
 GameObject:
@@ -9051,7 +9006,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &935006552 stripped
 GameObject:
@@ -9189,7 +9143,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 53.52, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -9335,7 +9289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &994392493
 MonoBehaviour:
@@ -9499,7 +9452,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1021364943 stripped
 GameObject:
@@ -9665,7 +9617,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1028922977
 GameObject:
@@ -9777,7 +9728,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1030973279
 GameObject:
@@ -9889,7 +9839,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1032128558
 GameObject:
@@ -10145,7 +10094,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1067777661
 GameObject:
@@ -10257,7 +10205,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1070990774
 GameObject:
@@ -10369,7 +10316,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1077017820
 GameObject:
@@ -10668,7 +10614,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1112729045
 GameObject:
@@ -11004,7 +10949,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1141188079
 PrefabInstance:
@@ -13346,7 +13290,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1157590787
 GameObject:
@@ -13537,7 +13480,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1171189730
 GameObject:
@@ -13746,7 +13688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1199493322
 GameObject:
@@ -13858,7 +13799,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1199574486
 GameObject:
@@ -14000,7 +13940,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1203115192
 GameObject:
@@ -14112,7 +14051,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1206403634
 GameObject:
@@ -14224,7 +14162,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1213353260 stripped
 GameObject:
@@ -14563,7 +14500,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1236961317 stripped
 GameObject:
@@ -14693,7 +14629,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1242522365
 GameObject:
@@ -14884,7 +14819,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1251162911 stripped
 GameObject:
@@ -15153,7 +15087,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1288773582
 PrefabInstance:
@@ -15326,7 +15259,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1291793700 stripped
 GameObject:
@@ -15474,7 +15406,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1317500363
 GameObject:
@@ -15586,7 +15517,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1340104331
 GameObject:
@@ -15847,7 +15777,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1355377427 stripped
 GameObject:
@@ -15977,7 +15906,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1388200416
 GameObject:
@@ -16185,7 +16113,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1400810922
 GameObject:
@@ -16297,7 +16224,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1412675087
 PrefabInstance:
@@ -16570,7 +16496,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1460397693
 GameObject:
@@ -16682,7 +16607,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1462686320 stripped
 GameObject:
@@ -16812,7 +16736,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1486881390 stripped
 GameObject:
@@ -17014,7 +16937,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1533283410
 GameObject:
@@ -17284,7 +17206,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1553809020
 GameObject:
@@ -17396,7 +17317,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1562172336
 GameObject:
@@ -17660,7 +17580,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1573700241 stripped
 GameObject:
@@ -17975,7 +17894,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1606160229 stripped
 GameObject:
@@ -18279,7 +18197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1710726575
 GameObject:
@@ -18663,7 +18580,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1752492677 stripped
 GameObject:
@@ -18903,7 +18819,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1779139840
 GameObject:
@@ -19015,7 +18930,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1785206049
 GameObject:
@@ -19405,7 +19319,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1841767827 stripped
 GameObject:
@@ -19571,7 +19484,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1882405923
 GameObject:
@@ -19683,7 +19595,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1883899455
 GameObject:
@@ -19795,7 +19706,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1884278429
 GameObject:
@@ -19907,7 +19817,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1894574601 stripped
 GameObject:
@@ -20037,7 +19946,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1902624397
 GameObject:
@@ -20149,7 +20057,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1904704727
 GameObject:
@@ -20261,7 +20168,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1910815088 stripped
 GameObject:
@@ -20409,7 +20315,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1919067014
 GameObject:
@@ -21230,7 +21135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2057319094
 GameObject:
@@ -21342,7 +21246,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2058404952 stripped
 GameObject:
@@ -21472,7 +21375,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2065378273 stripped
 GameObject:
@@ -21602,7 +21504,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2075377393 stripped
 GameObject:
@@ -21732,7 +21633,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2092778659
 GameObject:
@@ -21844,7 +21744,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoad: 0
   isSlime: 0
-  attachSlime: {fileID: 0}
   towerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2100935249
 GameObject:

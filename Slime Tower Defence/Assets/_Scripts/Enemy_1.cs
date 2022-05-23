@@ -69,7 +69,7 @@ public class Enemy_1 : MonoBehaviour
         {
             if (wavepointIndex >= OneWaypoints.opoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
             {
-                Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
+                WaveSpawner.waveSpawner.DestroyEnemy(this); // 이 스크랩트를 가지고 있는 게임 객체를 파괴
                 return;
             }
 
@@ -80,7 +80,7 @@ public class Enemy_1 : MonoBehaviour
         {
             if (wavepointIndex >= TwoWaypoints.tpoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
             {
-                Destroy(gameObject, destroy_time);//이 스크랩트를 가지고 있는 게임 객체를 파괴
+                WaveSpawner.waveSpawner.DestroyEnemy(this); // 이 스크랩트를 가지고 있는 게임 객체를 파괴
                 return;
             }
 
@@ -105,5 +105,45 @@ public class Enemy_1 : MonoBehaviour
             WaveSpawner.waveSpawner.EnemyList_1.Remove(this);
             Destroy(this.gameObject);
         }
+    }
+
+    // 슬로우 디버프
+    public void SlowDebuff(int slowPercent, int slowTime)
+    {
+        float defaultSpeed = speed;
+
+        StartCoroutine(Slow(defaultSpeed, slowPercent, slowTime));
+    }
+
+    // 슬로우 실행
+    IEnumerator Slow(float defaultSpeed, int slowPercent, int slowTime)
+    {
+        speed = speed / slowPercent;
+
+        yield return new WaitForSeconds(slowTime);
+
+        speed = defaultSpeed;
+    }
+
+    // 속박 디버프
+    public void StopDebuff(int stopTime)
+    {
+        float defaultSpeed = speed;
+
+        StartCoroutine(Stop(defaultSpeed, stopTime));
+    }
+
+    // 속박 실행
+    IEnumerator Stop(float defaultSpeed, int stopTime)
+    {
+        yield return new WaitForSeconds(stopTime);
+
+        speed = defaultSpeed;
+    }
+
+    // 넉백 디버프
+    public void KnockBackDebuff()
+    {
+
     }
 }
