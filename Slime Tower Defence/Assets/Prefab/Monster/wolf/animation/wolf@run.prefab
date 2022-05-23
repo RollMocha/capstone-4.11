@@ -385,9 +385,11 @@ GameObject:
   - component: {fileID: 77014421474554933}
   - component: {fileID: 7152916317479117998}
   - component: {fileID: 4471483723698265641}
+  - component: {fileID: -210338242770184990}
+  - component: {fileID: 7788507421236333479}
   m_Layer: 0
   m_Name: wolf@run
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,8 +422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2187815f2bc989e468569fad3ea47424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_hp: 10
-  speed: 10
+  enemy_hp: 150
+  speed: 14
   destroy_time: 0.1
   fruits:
   - {fileID: 0}
@@ -429,6 +431,7 @@ MonoBehaviour:
   - {fileID: 0}
   fruitspawnrandom: 20
   rotatespeed: 5
+  fruitsindex: 3
 --- !u!136 &77014421474554933
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -478,6 +481,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-210338242770184990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4822174369362786919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48855c02b5f23b140aaef2938b4816bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 150
+  Kill: 0
+--- !u!114 &7788507421236333479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4822174369362786919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 663954293cf328343812fdc4baf07d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruits:
+  - {fileID: 6622354647463748358, guid: 99e0ebdf3aeb63841a6f2dd14193b593, type: 3}
+  - {fileID: 5219507884014033580, guid: 61fa0a3ad13008a4ba80f0578ede814f, type: 3}
+  - {fileID: 2453179028945565423, guid: 371a60a28d8daee4aac949a839c3d6f0, type: 3}
+  fruitspawnrandom: 20
+  fruitsindex: 3
 --- !u!1 &4884410473185820002
 GameObject:
   m_ObjectHideFlags: 0

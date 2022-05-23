@@ -14,6 +14,7 @@ public class WaveSystem : MonoBehaviour
     [SerializeField]
     private float timeBetweenWaves = 20f;
 
+    public Text CurrentWaveText;
     private CurrentWave currentWave;
 
     public int currentWaveIndex = -1; // 현재 웨이브 인덱스
@@ -26,6 +27,7 @@ public class WaveSystem : MonoBehaviour
 
     private void Update()
     {
+        CurrentWaveText.text = (currentWaveIndex + 1) + " WAVE";
         if (countdown <= 0f)
         {
             StartWave();
@@ -41,7 +43,6 @@ public class WaveSystem : MonoBehaviour
             currentWaveIndex++;
             waveSpawner.StartWave(waves[currentWaveIndex]);
             currentWave.GetAddWave();
-            //Debug.Log((currentWaveIndex + 1) + " WAVE");
         }
     }
 }

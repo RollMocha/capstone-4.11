@@ -14,29 +14,31 @@ public class HPManager : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1;
         CurrentHP = MaxHP; //현재체력을 최대체력으로 초기화
+        PlayerHP.text = "HP: " + CurrentHP;
     }
 
     void Update()
     {
         PlayerHP.text = "HP: " + CurrentHP;
-        //화면에 현재체력 표시
     }
 
     void CheckGameOver() //플레이어 체력이 0 이하로 내려가면 게임오버
     {
         if (CurrentHP <= 0)
         {
+            Time.timeScale = 0;
             GameOverobj.SetActive(true);//게임오버 버튼 및 텍스트 활성화
         }
     }
 
     void OnTriggerEnter(Collider other) //몬스터와 충돌 감지, 몬스터 파괴 및 플레이어 체력 감소
     {
-        if (other.tag == "Monster" || HPManager.CurrentHP > 0)
+        if (other.tag == "Monster" && HPManager.CurrentHP > 0)
         {
             CurrentHP = CurrentHP - damage; //플레이어 체력감소
-            Destroy(other.gameObject); //몬스터 파괴
+            //Destroy(other.gameObject); //몬스터 파괴
             CheckGameOver();//게임오버 판별
 
             return;
