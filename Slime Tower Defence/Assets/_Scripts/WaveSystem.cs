@@ -16,8 +16,6 @@ public class WaveSystem : MonoBehaviour
 
     private CurrentWave currentWave;
 
-    public Text CurrentWaves;
-
     public int currentWaveIndex = -1; // 현재 웨이브 인덱스
 
     public void Start()
@@ -42,7 +40,7 @@ public class WaveSystem : MonoBehaviour
         {
             currentWaveIndex++;
             waveSpawner.StartWave(waves[currentWaveIndex]);
-            CurrentWaves.text = (currentWaveIndex + 1) + " WAVE";
+            currentWave.GetAddWave();
             //Debug.Log((currentWaveIndex + 1) + " WAVE");
         }
     }
