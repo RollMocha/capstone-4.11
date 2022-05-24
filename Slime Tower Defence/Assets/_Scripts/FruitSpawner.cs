@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class FruitSpawner : MonoBehaviour
 {
-    public Transform[] fruits;
-    public int fruitspawnrandom = 20;
-    public int fruitsindex = 3;
+    public Transform[] fruits;// 열매
+    public int fruitspawnrandom = 20;//열매 확률
+    public int fruitsindex = 3;//열매 종류 숫자
     private Enemy_1 enemy_1;
-    private RedFruitUI redFruitUI;
-    private YellowFruitUI yellowFruitUI;
-    private BlueFruitUI blueFruitUI;
+    private RedFruitUI redFruitUI;//빨간 열매 관련 UI
+    private YellowFruitUI yellowFruitUI;//노란 열매 관련 UI
+    private BlueFruitUI blueFruitUI;//파란 열매 관련 UI
 
     public void Start()
     {
@@ -22,24 +22,24 @@ public class FruitSpawner : MonoBehaviour
 
     public void SpawnFruit()
     {
-        int random = UnityEngine.Random.Range(0, 100);
+        int random = UnityEngine.Random.Range(0, 100);//렌덤 수 생성
 
-        if (random < fruitspawnrandom)
+        if (random < fruitspawnrandom)//fruitspawnrandom보다 작으면
         {
             Debug.Log("당첨");
-            int fruit_random = UnityEngine.Random.Range(0, 2);
+            int fruit_random = UnityEngine.Random.Range(0, fruitsindex);//열매 종류 렌덤 설정
 
-            Instantiate(fruits[fruit_random], enemy_1.transform.position, enemy_1.transform.rotation);
+            Instantiate(fruits[fruit_random], enemy_1.transform.position, enemy_1.transform.rotation);//열매 소환
 
-            if (fruit_random == 0)
+            if (fruit_random == 0)//빨간 열매
             {
                 redFruitUI.GetAddFruit();
             }
-            if (fruit_random == 1)
+            if (fruit_random == 1)//노란 열매
             {
                 yellowFruitUI.GetAddFruit();
             }
-            if (fruit_random == 2)
+            if (fruit_random == 2)//파란 열매
             {
                 blueFruitUI.GetAddFruit();
             }

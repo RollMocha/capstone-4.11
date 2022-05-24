@@ -4204,7 +4204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379287206}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 58.5, y: -7, z: 33}
+  m_LocalPosition: {x: 58.5, y: -7, z: 34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435044232}
@@ -7374,7 +7374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788604348}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3, y: 2.8, z: 7.5}
+  m_LocalPosition: {x: -4, y: 2.8, z: 7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1604203258}
@@ -9864,7 +9864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032128558}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3, y: -7, z: 7.5}
+  m_LocalPosition: {x: -4, y: -7, z: 7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1604203258}
@@ -10773,12 +10773,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - spawnTime: 1
-    maxEnemyCount: 15
+    maxEnemyCount: 20
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
     - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
-    - {fileID: 2274985428823163324, guid: 42690b80fbd4584428025042a58cf29a, type: 3}
-    enemyPrefabnumbers: 050000000500000005000000
+    enemyPrefabnumbers: 0a0000000a000000
   - spawnTime: 1
     maxEnemyCount: 15
     enemyPrefabs:
@@ -10794,19 +10793,17 @@ MonoBehaviour:
     maxEnemyCount: 25
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
-    - {fileID: 2274985428823163324, guid: 42690b80fbd4584428025042a58cf29a, type: 3}
     - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
-    enemyPrefabnumbers: 05000000080000000c000000
+    enemyPrefabnumbers: 050000000c000000
   - spawnTime: 1
     maxEnemyCount: 25
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
     - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
-    - {fileID: 2274985428823163324, guid: 42690b80fbd4584428025042a58cf29a, type: 3}
-    enemyPrefabnumbers: 050000000a0000000a000000
+    enemyPrefabnumbers: 050000000a000000
   waveSpawner: {fileID: 1128967228}
   countdown: 2
-  timeBetweenWaves: 20
+  timeBetweenWaves: 5
   CurrentWaveText: {fileID: 28034752}
   currentWaveIndex: -1
 --- !u!114 &1128967232
@@ -17955,7 +17952,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651185429}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 58.5, y: 2.8, z: 33}
+  m_LocalPosition: {x: 58.5, y: 2.8, z: 34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435044232}

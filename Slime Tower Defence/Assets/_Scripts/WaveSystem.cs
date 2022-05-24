@@ -27,7 +27,7 @@ public class WaveSystem : MonoBehaviour
 
     private void Update()
     {
-        CurrentWaveText.text = (currentWaveIndex + 1) + " WAVE";
+        //CurrentWaveText.text = (currentWaveIndex + 1) + " WAVE";
         if (countdown <= 0f)
         {
             StartWave();
@@ -38,7 +38,7 @@ public class WaveSystem : MonoBehaviour
 
     public void StartWave()
     {
-        if (currentWaveIndex < waves.Length - 1)
+        if (waveSpawner.EnemyList_1.Count == 0 && currentWaveIndex < waves.Length - 1)
         {
             currentWaveIndex++;
             waveSpawner.StartWave(waves[currentWaveIndex]);
