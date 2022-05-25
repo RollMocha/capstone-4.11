@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy_1 : MonoBehaviour
 {
-    public int enemy_hp = 10;
+    public int enemy_hp = 10;//몬스터 체력
     public float speed = 10f;//몬스터 속도
 
     public float destroy_time = 0.1f;//최종도착과 디스폰 사이 시간
@@ -17,16 +17,22 @@ public class Enemy_1 : MonoBehaviour
     public int fruitsindex = 3;
     private Transform target;//Transform
     private int wavepointIndex = 0;//OneWaypoints의 인덱스
-    private int Waypoint;
+    private int Waypoint;// 웨이브 경로 종류
     private int wayPointCount; //이동 경로 갯수
-    private RedFruitUI redFruitUI;
     private WaveSpawner waveSpawner;
+    private FruitSpawner fruitSpawner;
+
+    private void Awake()
+    {
+        fruitSpawner = GetComponent<FruitSpawner>();
+        waveSpawner = GameObject.Find("GameManager(1)").GetComponent<WaveSpawner>();
+    }
 
     public void Start()
     {
-        Waypoint = UnityEngine.Random.Range(0, 2);
+        Waypoint = UnityEngine.Random.Range(0, 2);//웨이브 경로 렌덤 설정
 
-        fruits = new Transform[fruitsindex];
+        //fruits = new Transform[fruitsindex];
 
         switch (Waypoint)
         {
@@ -69,7 +75,7 @@ public class Enemy_1 : MonoBehaviour
         {
             if (wavepointIndex >= OneWaypoints.opoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
             {
-                WaveSpawner.waveSpawner.DestroyEnemy(this); // 이 스크랩트를 가지고 있는 게임 객체를 파괴
+                waveSpawner.DestroyEnemy(this); // 이 스크랩트를 가지고 있는 게임 객체를 파괴
                 return;
             }
 
@@ -80,30 +86,31 @@ public class Enemy_1 : MonoBehaviour
         {
             if (wavepointIndex >= TwoWaypoints.tpoints.Length - 1)//현재 목적지(wavepointIndex)가 마지막 목적지(Waypoints.points.Length -1)이라면
             {
-                WaveSpawner.waveSpawner.DestroyEnemy(this); // 이 스크랩트를 가지고 있는 게임 객체를 파괴
+                waveSpawner.DestroyEnemy(this); // 이 스크랩트를 가지고 있는 게임 객체를 파괴
                 return;
             }
-
             wavepointIndex++;
             target = TwoWaypoints.tpoints[wavepointIndex];//목적지를 다음 목적지로 대입
         }
     }
+    /*
     public void OnDie()
     {
         waveSpawner.DestroyEnemy(this);
     }
-
-    public void Damage(int damage)
+    */
+    public void Damage(int damage)// 적 체력 깎는 함수
     {
         enemy_hp -= damage;
     }
 
-    public void DieCheck()
+    public void DieCheck()//적이 피가 0 이하면
     {
         if (enemy_hp <= 0)
         {
-            WaveSpawner.waveSpawner.EnemyList_1.Remove(this);
-            Destroy(this.gameObject);
+            waveSpawner.EnemyList_1.Remove(this);
+            fruitSpawner.SpawnFruit();//열매 소환
+            Destroy(this.gameObject);//몬스터 삭제
         }
     }
 
