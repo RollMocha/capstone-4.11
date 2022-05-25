@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,8 +17,8 @@ public class Bullet : MonoBehaviour
     public int slowPercent; // 슬로우 수치
     public int slowTime; // 슬로우 시간
 
-    public bool isStop = false; // 속박 공격인지 확인
-    public int stopTime; // 속박 시간
+    public bool isBondage = false; // 속박 공격인지 확인
+    public int bondageTime; // 속박 시간
 
     public bool isKnockBack = false; // 넉백 공격인지 확인
     public int knockBackPower; // 넉백 수치
@@ -28,11 +27,6 @@ public class Bullet : MonoBehaviour
     {
         // 공격이 맞지 않을 경우를 위해 destroyTime시간이 지나면 제거
         Destroy(this.gameObject, destroyTime);
-    }
-
-    void Update()
-    {
-
     }
 
     // 탄환의 속도를 일정하게 맞추기 위해 사용
@@ -114,19 +108,19 @@ public class Bullet : MonoBehaviour
                     enemy_.SlowDebuff(slowPercent, slowTime);
                 }
 
-                if (isStop) // 속박 실행
+                if (isBondage) // 속박 실행
                 {
-                    enemy_.StopDebuff(stopTime);
+                    enemy_.BondageDebuff(bondageTime);
                 }
 
                 if (isKnockBack) // 넉백 실행
                 {
-
+                    //enemy.KnockBackDebuff(transform.position);
                 }
 
-                enemy_.Damage(damage);
+                enemy_.Damage(damage); // 적에게 데미지 전달
             }
-            Debug.Log("Splash bullet");
+
         }
         else
         {
@@ -135,17 +129,17 @@ public class Bullet : MonoBehaviour
                 enemy.SlowDebuff(slowPercent, slowTime);
             }
 
-            if (isStop) // 속박 실행
+            if (isBondage) // 속박 실행
             {
-                enemy.StopDebuff(stopTime);
+                enemy.BondageDebuff(bondageTime);
             }
 
             if (isKnockBack) // 넉백 실행
             {
-
+                //enemy.KnockBackDebuff(transform.position);
             }
 
-            enemy.Damage(damage);
+            enemy.Damage(damage); // 적에게 데미지 전달
         }
 
         // 적에게 부딫힌 bullet 제거

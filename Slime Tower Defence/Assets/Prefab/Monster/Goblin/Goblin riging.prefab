@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752038309514908910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.655314, y: 4.288439, z: -1.34}
+  m_LocalPosition: {x: 10.655314, y: 3, z: -1.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2299119771831303010}
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_hp: 100
-  speed: 10
+  defaultSpeed: 10
   destroy_time: 0.1
   fruits:
   - {fileID: 0}
@@ -243,6 +243,7 @@ MonoBehaviour:
   fruitspawnrandom: 20
   rotatespeed: 5
   fruitsindex: 3
+  speed: 0
 --- !u!114 &6070547031346324300
 MonoBehaviour:
   m_ObjectHideFlags: 0

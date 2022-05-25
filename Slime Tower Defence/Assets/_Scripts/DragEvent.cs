@@ -4,14 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class DragEvent : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    //Transform defultTransform;
-
-    //public Image data;
-    //public Sprite data2;
-    //public DragContainer dragContainer;
-
     public GameObject dragObject; // 드래그에 쓸 오브젝트
     // 드래그에 쓸 오브젝트의 경우 GameScene_UI에 미리 배치한 뒤 SetActive를 false로 설정할 것
 
@@ -20,26 +14,6 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
     public bool isDragging = false; // 드래그 중인지 확인
     public bool isFruit = false; // 열매인지 확인
     public bool isPromote = false; // 상위 슬라임인지 확인
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        //defultTransform = this.transform;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    // 드래그 이후 드롭 이벤트 때 사용
-    public void OnDrop(PointerEventData eventData)
-    {
-        // throw new System.NotImplementedException();
-    }
 
     // 드래그 시작 시 사용
     public void OnBeginDrag(PointerEventData eventData)
@@ -99,35 +73,6 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
                 continue;
             }
 
-
-            // 가리킨 타일을 투명으로 변경
-            // 이때 타일의 Materials의 RenderingMode를 변경할 필요가 있음
-            /*
-            GameObject hitTile = hit.collider.gameObject; // 현재 이미지가 있는 타일
-
-            Renderer renderer = hitTile.GetComponentInChildren<Renderer>();
-
-            if (renderer == null)
-            {
-                Debug.Log("renderer null");
-            }
-
-            MeshRenderer mesh = hitTile.GetComponent<MeshRenderer>();
-
-            if (mesh == null)
-            {
-                Debug.Log("mesh null");
-            }
-
-            Material material = renderer.material;
-            Color color = material.color;
-
-            Debug.Log(color.a);
-
-            color.a = 0.1f;
-            material.color = color;
-            */
-
             // 배치할 슬라임 정보가 설정되어 있는지 확인
             if (slimePrefab == null)
             {
@@ -140,16 +85,18 @@ public class DragEvent : MonoBehaviour, IDropHandler, IDragHandler, IBeginDragHa
             // 슬라임 생성 및 확인
             if (isFruit)
             {
+                // 열매 슬라임의 경우
                 PromoteSlimeSpawnManager.promoteSlimeSpawnManager.ChangeDefultSlime(targetTile, slimePrefab);
             }
             else if (isPromote)
             {
+                // 상위 슬라임의 경우
                 PromoteSlimeSpawnManager.promoteSlimeSpawnManager.ChangeFruitSlime(targetTile, slimePrefab);
             }
             else
             {
+                // 기본 슬라임의 경우
                 PromoteSlimeSpawnManager.promoteSlimeSpawnManager.SpawnDefultSlime(targetTile, slimePrefab);
-                //SpawnDefultSlime(targetTile, slimePrefab);
             }
 
             return;

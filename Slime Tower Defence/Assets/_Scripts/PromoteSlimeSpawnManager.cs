@@ -5,7 +5,7 @@ using UnityEngine;
 // 상위 슬라임 소환을 위해 맵에 배치된 슬라임 정보를 관리하는 매니저 클래스
 public class PromoteSlimeSpawnManager : MonoBehaviour
 {
-    Dictionary<Tile, Slime> slimeAndTile; // 
+    Dictionary<Tile, Slime> slimeAndTile; // 맵상에 있는 슬라임과 슬라임이 배치된 타일
 
     static public PromoteSlimeSpawnManager promoteSlimeSpawnManager;
 
@@ -59,19 +59,6 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
                 return SlimeState.DEFAULT;
         }
     }
-
-    /*
-    public bool CheckInListSlimeAndTile(GameObject slime, Tile tile)
-    {
-        for (int i = 0; i < slimeAndTile.Count; i++)
-        {
-            if (slimeAndTile.Values.)
-            {
-
-            }
-        }
-    }
-    */
 
     // 기본 슬라임 배치
     public void SpawnDefultSlime(Tile tile, Slime slimePrefab)
@@ -159,7 +146,7 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
 
         // 상위 슬라임을 배치할 때 해당 타일에 재료 슬라임이 있을 경우를 확인
         // 재료 슬라임이 있을 경우 생성 중 사라질 것이기 때문에 isSlime 체크가 필요 없다.
-        bool tileHaveMaterialSlime = false; 
+        bool tileHaveMaterialSlime = false;
 
         // 상위 슬라임 배치를 위해 필요한 재료 슬라임 찾기
         foreach (KeyValuePair<Tile, Slime> pair in slimeAndTile)
@@ -203,7 +190,7 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
         // 배치할 위치에 재료 슬라임 이외의 슬라임이 있는 경우
         if (tile.isSlime)
         {
-            if(!tileHaveMaterialSlime)
+            if (!tileHaveMaterialSlime)
             {
                 Debug.LogWarning("already tile have tower");
                 return;

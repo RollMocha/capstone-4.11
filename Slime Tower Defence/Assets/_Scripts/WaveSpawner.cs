@@ -61,7 +61,6 @@ public class WaveSpawner : MonoBehaviour//利 积己窍绰 内靛
         }
     }
 
-    // 
     public void DestroyEnemy(Enemy_1 enemy_1)
     {
         enemyList_1.Remove(enemy_1);
