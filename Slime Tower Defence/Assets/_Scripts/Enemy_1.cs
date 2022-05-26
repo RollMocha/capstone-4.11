@@ -6,7 +6,7 @@ using UnityEngine;
 public class Enemy_1 : MonoBehaviour
 {
     public int enemy_hp = 10;//몬스터 체력
-    public float speed = 10f;//몬스터 속도
+    public float defaultSpeed = 10f;//몬스터 기본 속도 : 2022.5.27 추가
 
     public float destroy_time = 0.1f;//최종도착과 디스폰 사이 시간
     public Transform[] fruits;//
@@ -21,6 +21,12 @@ public class Enemy_1 : MonoBehaviour
     private int wayPointCount; //이동 경로 갯수
     private WaveSpawner waveSpawner;
     private FruitSpawner fruitSpawner;
+
+    float speed; // 현재 몬스터 속도 : 2022.5.27 추가
+    int slowPercent; // 슬로우 크기 : 2022.5.27 추가
+    int knockbackPower; // 넉백 차워 : 2022.5.27 추가
+    float[] debuffCheckTimer; // 디버트 시간 체크용 배열 : 2022.5.27 추가
+    bool[] debuffCheck; // 디버트 활성화 확인용 배열 : 2022.5.27 추가
 
     private void Awake()
     {
@@ -44,13 +50,28 @@ public class Enemy_1 : MonoBehaviour
                 break;
         }
 
+        speed = defaultSpeed; // 기본 속도 설정
+        debuffCheckTimer = new float[3] { 0, 0, 0 }; // 
+        debuffCheck = new bool[3] { false, false, false };
+
         E1_rigidbody = GetComponent<Rigidbody>();
         FixedUpdate();
     }
 
     private void Update()
     {
-        DieCheck();
+
+        DebuffCheck(); // 매 프레임마다 디버프 체크 : 2022.5.27 추가
+
+        if (debuffCheck[0]) // 슬로우 상태일 경우 슬로우 실행 : 2022.5.27 추가
+        {
+            Slow();
+        }
+        
+        if (debuffCheck[1]) // 속박 상태일 경우 속박 실행 : 2022.5.27 추가
+        {
+            Bondage();
+        }
     }
 
     private void FixedUpdate()
@@ -93,20 +114,14 @@ public class Enemy_1 : MonoBehaviour
             target = TwoWaypoints.tpoints[wavepointIndex];//목적지를 다음 목적지로 대입
         }
     }
-    /*
-    public void OnDie()
-    {
-        waveSpawner.DestroyEnemy(this);
-    }
-    */
+
+
     public void Damage(int damage)// 적 체력 깎는 함수
     {
         enemy_hp -= damage;
-    }
 
-    public void DieCheck()//적이 피가 0 이하면
-    {
-        if (enemy_hp <= 0)
+        // 기존의 Die Check 함수 내용을 Damage 안으로 이동 : 2022.5.27 추가
+        if (enemy_hp <= 0)//적이 피가 0 이하면
         {
             waveSpawner.EnemyList_1.Remove(this);
             fruitSpawner.SpawnFruit();//열매 소환
@@ -115,42 +130,102 @@ public class Enemy_1 : MonoBehaviour
     }
 
     // 슬로우 디버프
-    public void SlowDebuff(int slowPercent, int slowTime)
+    public void SlowDebuff(int slowPercent_, int slowTime)
     {
-        float defaultSpeed = speed;
-
-        StartCoroutine(Slow(defaultSpeed, slowPercent, slowTime));
+        debuffCheckTimer[0] = slowTime; // 슬로우 시간 적용
+        debuffCheck[0] = true; // 슬로우 상태 켜기
+        slowPercent = slowPercent_; // 슬로우 퍼샌트 저장
     }
 
     // 슬로우 실행
-    IEnumerator Slow(float defaultSpeed, int slowPercent, int slowTime)
+    void Slow()
     {
-        speed = speed / slowPercent;
+        if (slowPercent <= 0) // 슬로우 퍼샌트가 0 보다 작을 경우
+        {
+            return;
+        }
 
-        yield return new WaitForSeconds(slowTime);
+        if (speed < defaultSpeed || speed <= 0) // 이미 속도저하 디버프가 걸려 있는 경우
+        {
+            return;
+        }
 
-        speed = defaultSpeed;
+        speed = speed / slowPercent; // 슬로우 퍼샌트 만큼 적용
     }
 
     // 속박 디버프
-    public void StopDebuff(int stopTime)
+    public void BondageDebuff(int stopTime)
     {
-        float defaultSpeed = speed;
-
-        StartCoroutine(Stop(defaultSpeed, stopTime));
+        debuffCheckTimer[1] = stopTime; // 속박 시간 적용
+        debuffCheck[1] = true; // 속박 상태 켜기
     }
 
     // 속박 실행
-    IEnumerator Stop(float defaultSpeed, int stopTime)
+    void Bondage()
     {
-        yield return new WaitForSeconds(stopTime);
+        if (speed <= 0) // 이미 속도가 0이거나 보다 작은 경우
+        {
+            return;
+        }
 
-        speed = defaultSpeed;
+        speed = 0; // 속도를 0으로 변경
     }
 
     // 넉백 디버프
-    public void KnockBackDebuff()
+    public void KnockBackDebuff(Vector3 bulletPosition) // 현재 테스트 중
     {
 
+        Vector3 knockbackPosition = transform.position - bulletPosition;
+        knockbackPosition = knockbackPosition.normalized;
+        knockbackPosition += Vector3.back;
+
+        transform.Translate(knockbackPosition * 5);
+
+        Debug.Log("NnockBack");
+    }
+
+    void KnockBack() // 현재 테스트 중
+    {
+        if (!debuffCheck[1])
+        {
+            return;
+        }
+
+        if (speed <= 0)
+        {
+            return;
+        }
+
+        speed = 0;
+    }
+
+    // 현재 디버프 상태와 시간을 체크하는 함수
+    public void DebuffCheck()
+    {
+        // 디버프가 하나도 켜져있지 않은 경우
+        if (!debuffCheck[0] && !debuffCheck[1] && !debuffCheck[2])
+        {
+            speed = defaultSpeed; // 기본 속도를 대입
+            return;
+        }
+
+        // 디버프 상태를 체크
+        for (int i = 0; i < debuffCheck.Length; i++)
+        {
+            if (!debuffCheck[i]) // 디버프가 켜져있지 않은 경우
+            {
+                continue;
+            }
+
+            // 디버트 시간 체크 배열에서 지나간 시간만큼 계속 빼기
+            debuffCheckTimer[i] -= Time.deltaTime;
+
+            // 디버프 시간이 0이거나 0일 경우 디버프 해제
+            if (debuffCheckTimer[i] <= 0)
+            {
+                debuffCheckTimer[i] = 0;
+                debuffCheck[i] = false;
+            }
+        }
     }
 }

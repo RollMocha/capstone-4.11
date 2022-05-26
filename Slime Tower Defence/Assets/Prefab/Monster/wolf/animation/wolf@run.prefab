@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_hp: 150
-  speed: 14
+  defaultSpeed: 14
   destroy_time: 0.1
   fruits:
   - {fileID: 0}

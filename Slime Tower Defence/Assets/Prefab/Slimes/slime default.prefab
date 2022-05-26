@@ -49,7 +49,7 @@ MonoBehaviour:
   attackSpeed: 1
   bulletSpeed: 1
   attackRange: 10
-  attackDamage: 100
+  attackDamage: 50
   state: 0
 --- !u!1 &4048240534682147667
 GameObject:

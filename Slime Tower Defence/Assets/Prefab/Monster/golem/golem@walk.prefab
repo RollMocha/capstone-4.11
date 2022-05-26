@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 2461252513888404115}
   m_Layer: 0
   m_Name: golem@walk
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -378,12 +378,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_hp: 10
-  speed: 10
+  defaultSpeed: 10
   destroy_time: 0.1
   fruits: []
   fruitspawnrandom: 20
   rotatespeed: 5
   fruitsindex: 3
+  speed: 10
 --- !u!114 &2461252513888404115
 MonoBehaviour:
   m_ObjectHideFlags: 0

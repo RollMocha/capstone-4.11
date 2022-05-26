@@ -17,8 +17,8 @@ public class Bullet : MonoBehaviour
     public int slowPercent; // 슬로우 수치
     public int slowTime; // 슬로우 시간
 
-    public bool isStop = false; // 속박 공격인지 확인
-    public int stopTime; // 속박 시간
+    public bool isBondage = false; // 속박 공격인지 확인
+    public int bondageTime; // 속박 시간
 
     public bool isKnockBack = false; // 넉백 공격인지 확인
     public int knockBackPower; // 넉백 수치
@@ -74,9 +74,14 @@ public class Bullet : MonoBehaviour
 
     }
 
-    // 적과 부딪힐 때 사라지는 함수
+    // 적과 부딪힐 때 공격을 실행하는 함수
     private void OnTriggerEnter(Collider other)
     {
+        if (!other.gameObject.CompareTag("Monster")) // 몬스터 테그를 가지지 않았을 경우
+        {
+            return;
+        }
+
         // 부딫힌 적 정보 가져오기
         Enemy_1 enemy = other.GetComponent<Enemy_1>();
 
@@ -108,19 +113,19 @@ public class Bullet : MonoBehaviour
                     enemy_.SlowDebuff(slowPercent, slowTime);
                 }
 
-                if (isStop) // 속박 실행
+                if (isBondage) // 속박 실행
                 {
-                    enemy_.StopDebuff(stopTime);
+                    enemy_.BondageDebuff(bondageTime);
                 }
 
                 if (isKnockBack) // 넉백 실행
                 {
-                    enemy.KnockBackDebuff();
+                    //enemy.KnockBackDebuff(transform.position);
                 }
 
                 enemy_.Damage(damage); // 적에게 데미지 전달
             }
-            Debug.Log("Splash bullet");
+
         }
         else
         {
@@ -129,14 +134,14 @@ public class Bullet : MonoBehaviour
                 enemy.SlowDebuff(slowPercent, slowTime);
             }
 
-            if (isStop) // 속박 실행
+            if (isBondage) // 속박 실행
             {
-                enemy.StopDebuff(stopTime);
+                enemy.BondageDebuff(bondageTime);
             }
 
             if (isKnockBack) // 넉백 실행
             {
-                enemy.KnockBackDebuff();
+                //enemy.KnockBackDebuff(transform.position);
             }
 
             enemy.Damage(damage); // 적에게 데미지 전달

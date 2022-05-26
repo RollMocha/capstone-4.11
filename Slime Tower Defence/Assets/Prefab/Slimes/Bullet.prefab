@@ -111,12 +111,12 @@ MonoBehaviour:
   destroyTime: 5
   speed: 0
   damage: 0
-  isSplash: 1
+  isSplash: 0
   hitRange: 7
   isSlow: 0
-  slowPercent: 0
-  slowTime: 0
-  isStop: 0
-  stopTime: 0
+  slowPercent: 2
+  slowTime: 30
+  isBondage: 1
+  bondageTime: 3
   isKnockBack: 0
   knockBackPower: 0

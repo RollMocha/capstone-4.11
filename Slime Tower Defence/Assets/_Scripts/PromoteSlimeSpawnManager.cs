@@ -7,11 +7,11 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
 {
     Dictionary<Tile, Slime> slimeAndTile; // 맵상에 있는 슬라임과 슬라임이 배치된 타일
 
-    static public PromoteSlimeSpawnManager promoteSlimeSpawnManager;
+    static public PromoteSlimeSpawnManager promoteSlimeSpawnManager; // 싱글톤 패턴
 
     private void Awake()
     {
-        promoteSlimeSpawnManager = this;
+        promoteSlimeSpawnManager = this; // 싱글톤 패턴
     }
 
     // Start is called before the first frame update

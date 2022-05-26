@@ -80,7 +80,6 @@ public class Slime : MonoBehaviour
     {
         if (isAttack) // 공격이 가능한지 확인
         {
-            //RotateToTarget(target); // 적 바라보기
             GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x,
                 transform.position.y, transform.position.z), Quaternion.identity); // 공격 프리팹 생성
 
