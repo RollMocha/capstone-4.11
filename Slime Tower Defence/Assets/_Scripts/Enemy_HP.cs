@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class Enemy_HP : MonoBehaviour
 {
     [SerializeField]
@@ -34,3 +34,4 @@ public class Enemy_HP : MonoBehaviour
         }
     }
 }
+*/

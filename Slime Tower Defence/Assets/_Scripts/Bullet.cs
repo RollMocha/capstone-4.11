@@ -74,9 +74,14 @@ public class Bullet : MonoBehaviour
 
     }
 
-    // 적과 부딪힐 때 사라지는 함수
+    // 적과 부딪힐 때 공격을 실행하는 함수
     private void OnTriggerEnter(Collider other)
     {
+        if (!other.gameObject.CompareTag("Monster")) // 몬스터 테그를 가지지 않았을 경우
+        {
+            return;
+        }
+
         // 부딫힌 적 정보 가져오기
         Enemy_1 enemy = other.GetComponent<Enemy_1>();
 

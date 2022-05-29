@@ -385,7 +385,6 @@ GameObject:
   - component: {fileID: 77014421474554933}
   - component: {fileID: 7152916317479117998}
   - component: {fileID: 4471483723698265641}
-  - component: {fileID: -210338242770184990}
   - component: {fileID: 7788507421236333479}
   m_Layer: 0
   m_Name: wolf@run
@@ -423,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_hp: 150
-  defaultSpeed: 10
+  defaultSpeed: 14
   destroy_time: 0.1
   fruits:
   - {fileID: 0}
@@ -432,7 +431,7 @@ MonoBehaviour:
   fruitspawnrandom: 20
   rotatespeed: 5
   fruitsindex: 3
-  speed: 0
+  hpBarPrefab: {fileID: 60010600430847361, guid: 44e3edf9775908745bda2e6bc9471eb5, type: 3}
 --- !u!136 &77014421474554933
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -482,20 +481,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-210338242770184990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4822174369362786919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48855c02b5f23b140aaef2938b4816bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 150
-  Kill: 0
 --- !u!114 &7788507421236333479
 MonoBehaviour:
   m_ObjectHideFlags: 0

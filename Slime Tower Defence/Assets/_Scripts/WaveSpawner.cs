@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour//적 생성하는 코드
 {
 
-    public static WaveSpawner waveSpawner;
+    public static WaveSpawner waveSpawner; // 싱글톤 패턴
 
     //public Transform[] enemyPrefab_1;//Monster_1Prefab의 Transforms
     public Transform spawnPoint; //MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
@@ -25,7 +25,7 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
     private void Awake()
     {
         enemyList_1 = new List<Enemy_1>();
-        waveSpawner = this;
+        waveSpawner = this; // 싱글톤 패턴
     }
 
 
@@ -61,6 +61,7 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
         }
     }
 
+    // 도착 지점에 도착 시 적 제거 
     public void DestroyEnemy(Enemy_1 enemy_1)
     {
         enemyList_1.Remove(enemy_1);

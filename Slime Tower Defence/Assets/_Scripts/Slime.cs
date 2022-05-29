@@ -33,7 +33,7 @@ public class Slime : MonoBehaviour
 
     void Start()
     {
-        //slimeAnim = this.GetComponent<Animator>();
+
     }
 
     void Update()
@@ -80,15 +80,11 @@ public class Slime : MonoBehaviour
     {
         if (isAttack) // 공격이 가능한지 확인
         {
-            //RotateToTarget(target); // 적 바라보기
             GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x,
                 transform.position.y, transform.position.z), Quaternion.identity); // 공격 프리팹 생성
 
             bullet.GetComponent<Bullet>().SetTarget(target, bulletSpeed,
                 attackDamage); // 공격 프리팹에 적 정보 전달
-
-
-            //slimeAnim.SetTrigger("isAttack");
         }
 
     }
