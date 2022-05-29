@@ -2,10 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy_1 : MonoBehaviour
 {
-    public int enemy_hp = 10;//몬스터 체력
+    public int maxHp = 10;//몬스터 체력
+    int currentHp; // 현재 체력
     public float defaultSpeed = 10f;//몬스터 기본 속도 : 2022.5.27 추가
 
     public float destroy_time = 0.1f;//최종도착과 디스폰 사이 시간
@@ -22,11 +24,18 @@ public class Enemy_1 : MonoBehaviour
     private WaveSpawner waveSpawner;
     private FruitSpawner fruitSpawner;
 
-    float speed; // 현재 몬스터 속도 : 2022.5.27 추가
-    int slowPercent; // 슬로우 크기 : 2022.5.27 추가
-    int knockbackPower; // 넉백 차워 : 2022.5.27 추가
-    float[] debuffCheckTimer; // 디버트 시간 체크용 배열 : 2022.5.27 추가
-    bool[] debuffCheck; // 디버트 활성화 확인용 배열 : 2022.5.27 추가
+    float speed; // 현재 몬스터 속도
+    int slowPercent; // 슬로우 크기
+    int knockbackPower; // 넉백 차워
+    float[] debuffCheckTimer; // 디버트 시간 체크용 배열
+    bool[] debuffCheck; // 디버트 활성화 확인용 배열
+
+    Canvas hpCanvas; // hp UI가 표시될 캔버스
+    public GameObject hpBarPrefab; // hpBar 프리팹
+    GameObject hpBar; // 설치된 본인의 hp 정보
+    Slider hpSlider; // hp 슬라이더 정보
+    MonsterUIManager hpBarManager; // hp bar의 컴포넌트
+    float curHp;
 
     private void Awake()
     {
@@ -51,8 +60,16 @@ public class Enemy_1 : MonoBehaviour
         }
 
         speed = defaultSpeed; // 기본 속도 설정
-        debuffCheckTimer = new float[3] { 0, 0, 0 }; // 
-        debuffCheck = new bool[3] { false, false, false };
+        debuffCheckTimer = new float[3] { 0, 0, 0 }; // 디버프 시간 체크 배열
+        debuffCheck = new bool[3] { false, false, false }; // 디버프 활성화 체크 배열
+
+        hpCanvas = GameObject.Find("GameScene_UI").GetComponent<Canvas>(); // 게임내 캔버스 정보 가져오기
+        hpBar = Instantiate<GameObject>(hpBarPrefab, hpCanvas.transform); // hpbar 배치
+        hpSlider = hpBar.GetComponent<Slider>();
+        hpBarManager = hpBar.GetComponent<MonsterUIManager>();
+
+        hpBarManager.HpBarSetInMonster(this); // 소환된 hpbar의 정보 가져오기
+        currentHp = maxHp;
 
         E1_rigidbody = GetComponent<Rigidbody>();
         FixedUpdate();
@@ -60,17 +77,22 @@ public class Enemy_1 : MonoBehaviour
 
     private void Update()
     {
+        DebuffCheck(); // 매 프레임마다 디버프 체크
 
-        DebuffCheck(); // 매 프레임마다 디버프 체크 : 2022.5.27 추가
-
-        if (debuffCheck[0]) // 슬로우 상태일 경우 슬로우 실행 : 2022.5.27 추가
+        if (debuffCheck[0]) // 슬로우 상태일 경우 슬로우 실행
         {
             Slow();
         }
         
-        if (debuffCheck[1]) // 속박 상태일 경우 속박 실행 : 2022.5.27 추가
+        if (debuffCheck[1]) // 속박 상태일 경우 속박 실행
         {
             Bondage();
+        }
+
+        if (currentHp > 0)
+        {
+            hpSlider.value = Mathf.Lerp(hpSlider.value, (float)currentHp / (float)maxHp, 
+                Time.deltaTime * 10);
         }
     }
 
@@ -118,10 +140,11 @@ public class Enemy_1 : MonoBehaviour
 
     public void Damage(int damage)// 적 체력 깎는 함수
     {
-        enemy_hp -= damage;
+        currentHp -= damage;
+        hpSlider.value = currentHp;
 
-        // 기존의 Die Check 함수 내용을 Damage 안으로 이동 : 2022.5.27 추가
-        if (enemy_hp <= 0)//적이 피가 0 이하면
+        // 기존의 Die Check 함수 내용을 Damage 안으로 이동
+        if (currentHp <= 0)//적이 피가 0 이하면
         {
             waveSpawner.EnemyList_1.Remove(this);
             fruitSpawner.SpawnFruit();//열매 소환

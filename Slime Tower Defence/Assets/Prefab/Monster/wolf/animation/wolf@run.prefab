@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2187815f2bc989e468569fad3ea47424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_hp: 150
+  maxHp: 10
   defaultSpeed: 14
   destroy_time: 0.1
   fruits:
@@ -431,6 +431,7 @@ MonoBehaviour:
   fruitspawnrandom: 20
   rotatespeed: 5
   fruitsindex: 3
+  hpBarPrefab: {fileID: 5947547730188073559, guid: 44e3edf9775908745bda2e6bc9471eb5, type: 3}
 --- !u!136 &77014421474554933
 CapsuleCollider:
   m_ObjectHideFlags: 0

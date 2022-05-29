@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 상위 슬라임 소환을 위해 맵에 배치된 슬라임 정보를 관리하는 매니저 클래스
-public class PromoteSlimeSpawnManager : MonoBehaviour
+public class SlimeSpawnManager : MonoBehaviour
 {
     Dictionary<Tile, Slime> slimeAndTile; // 맵상에 있는 슬라임과 슬라임이 배치된 타일
+    public int maxSlimeCount; // 최대 슬라임 배치 수
 
-    static public PromoteSlimeSpawnManager promoteSlimeSpawnManager; // 싱글톤 패턴
+    static public SlimeSpawnManager slimeSpawnManager; // 싱글톤 패턴
 
     private void Awake()
     {
-        promoteSlimeSpawnManager = this; // 싱글톤 패턴
+        slimeSpawnManager = this; // 싱글톤 패턴
     }
 
     // Start is called before the first frame update
@@ -63,6 +64,13 @@ public class PromoteSlimeSpawnManager : MonoBehaviour
     // 기본 슬라임 배치
     public void SpawnDefultSlime(Tile tile, Slime slimePrefab)
     {
+        // 슬라임 소환 수 제한을 넘겼는지 확인
+        if (slimeAndTile.Count >= maxSlimeCount)
+        {
+            Debug.Log("max Slime Spawn Count");
+            return;
+        }
+
         // 슬라임 정보가 있는지 확인
         if (slimePrefab == null || tile == null)
         {

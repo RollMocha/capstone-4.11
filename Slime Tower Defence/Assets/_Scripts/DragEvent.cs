@@ -86,17 +86,17 @@ public class DragEvent : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
             if (isFruit)
             {
                 // 열매 슬라임의 경우
-                PromoteSlimeSpawnManager.promoteSlimeSpawnManager.ChangeDefultSlime(targetTile, slimePrefab);
+                SlimeSpawnManager.slimeSpawnManager.ChangeDefultSlime(targetTile, slimePrefab);
             }
             else if (isPromote)
             {
                 // 상위 슬라임의 경우
-                PromoteSlimeSpawnManager.promoteSlimeSpawnManager.ChangeFruitSlime(targetTile, slimePrefab);
+                SlimeSpawnManager.slimeSpawnManager.ChangeFruitSlime(targetTile, slimePrefab);
             }
             else
             {
                 // 기본 슬라임의 경우
-                PromoteSlimeSpawnManager.promoteSlimeSpawnManager.SpawnDefultSlime(targetTile, slimePrefab);
+                SlimeSpawnManager.slimeSpawnManager.SpawnDefultSlime(targetTile, slimePrefab);
             }
 
             return;
