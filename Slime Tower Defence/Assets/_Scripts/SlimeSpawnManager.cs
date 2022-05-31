@@ -9,6 +9,9 @@ public class SlimeSpawnManager : MonoBehaviour
     public int maxSlimeCount; // 최대 슬라임 배치 수
 
     static public SlimeSpawnManager slimeSpawnManager; // 싱글톤 패턴
+    private RedFruitUI redFruitUI;//빨간 열매 관련 UI
+    private YellowFruitUI yellowFruitUI;//노란 열매 관련 UI
+    private BlueFruitUI blueFruitUI;//파란 열매 관련 UI
 
     private void Awake()
     {
@@ -19,6 +22,9 @@ public class SlimeSpawnManager : MonoBehaviour
     void Start()
     {
         slimeAndTile = new Dictionary<Tile, Slime>();
+        redFruitUI = GameObject.Find("FireFruit_UI").GetComponent<RedFruitUI>();
+        yellowFruitUI = GameObject.Find("ThunderFruit_UI").GetComponent<YellowFruitUI>();
+        blueFruitUI = GameObject.Find("IceFruit_UI").GetComponent<BlueFruitUI>();
     }
 
     // Update is called once per frame
@@ -125,6 +131,39 @@ public class SlimeSpawnManager : MonoBehaviour
             return;
         }
 
+        if (slimePrefab.state == SlimeState.ICE && blueFruitUI.currentfruit != 0)
+        {
+            // 기존의 기본 슬라임을 제거
+            slimeAndTile.Remove(tile);
+            Destroy(pastSlime.gameObject);
+            // 슬라임을 생성 및 리스트에 추가
+            Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
+            slimeAndTile.Add(tile, attachSlime);
+            blueFruitUI.GetRemoveFruit();
+        }
+
+        if (slimePrefab.state == SlimeState.FIRE && redFruitUI.currentfruit != 0)
+        {
+            // 기존의 기본 슬라임을 제거
+            slimeAndTile.Remove(tile);
+            Destroy(pastSlime.gameObject);
+            // 슬라임을 생성 및 리스트에 추가
+            Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
+            slimeAndTile.Add(tile, attachSlime);
+            redFruitUI.GetRemoveFruit();
+        }
+
+        if (slimePrefab.state == SlimeState.THUNDER && yellowFruitUI.currentfruit != 0)
+        {
+            // 기존의 기본 슬라임을 제거
+            slimeAndTile.Remove(tile);
+            Destroy(pastSlime.gameObject);
+            // 슬라임을 생성 및 리스트에 추가
+            Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
+            slimeAndTile.Add(tile, attachSlime);
+            yellowFruitUI.GetRemoveFruit();
+        }
+        /*
         // 기존의 기본 슬라임을 제거
         slimeAndTile.Remove(tile);
         Destroy(pastSlime.gameObject);
@@ -132,6 +171,7 @@ public class SlimeSpawnManager : MonoBehaviour
         // 슬라임을 생성 및 리스트에 추가
         Slime attachSlime = Instantiate(slimePrefab, tile.towerPosition, Quaternion.identity);
         slimeAndTile.Add(tile, attachSlime);
+        */
     }
 
     // 열매 슬라임 변경

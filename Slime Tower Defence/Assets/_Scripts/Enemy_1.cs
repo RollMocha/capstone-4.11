@@ -43,6 +43,36 @@ public class Enemy_1 : MonoBehaviour
         waveSpawner = GameObject.Find("GameManager(1)").GetComponent<WaveSpawner>();
     }
 
+    public void StartWayPoint(int waypoint)
+    {
+        Waypoint = waypoint;
+
+        switch (Waypoint)
+        {
+            case 0:
+                target = OneWaypoints.opoints[0];//첫번째 OneWaypoint 설정
+                break;
+            case 1:
+                target = TwoWaypoints.tpoints[0];//두번째 twoWaypoint 설정
+                break;
+        }
+
+        speed = defaultSpeed; // 기본 속도 설정
+        debuffCheckTimer = new float[3] { 0, 0, 0 }; // 
+        debuffCheck = new bool[3] { false, false, false };
+
+        hpCanvas = GameObject.Find("GameScene_UI").GetComponent<Canvas>(); // 게임내 캔버스 정보 가져오기
+        hpBar = Instantiate<GameObject>(hpBarPrefab, hpCanvas.transform); // hpbar 배치
+        hpSlider = hpBar.GetComponent<Slider>();
+        hpBarManager = hpBar.GetComponent<MonsterUIManager>();
+
+        hpBarManager.HpBarSetInMonster(this); // 소환된 hpbar의 정보 가져오기
+        currentHp = maxHp;
+
+        E1_rigidbody = GetComponent<Rigidbody>();
+        FixedUpdate();
+    }
+    /*
     public void Start()
     {
         Waypoint = UnityEngine.Random.Range(0, 2);//웨이브 경로 렌덤 설정
@@ -74,7 +104,7 @@ public class Enemy_1 : MonoBehaviour
         E1_rigidbody = GetComponent<Rigidbody>();
         FixedUpdate();
     }
-
+    */
     private void Update()
     {
         DebuffCheck(); // 매 프레임마다 디버프 체크
