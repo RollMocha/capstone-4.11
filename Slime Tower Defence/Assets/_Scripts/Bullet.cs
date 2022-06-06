@@ -23,6 +23,8 @@ public class Bullet : MonoBehaviour
     public bool isKnockBack = false; // 넉백 공격인지 확인
     public int knockBackPower; // 넉백 수치
 
+    public ParticleSystem hitEffact; // 피격 시 효과
+
     void Start()
     {
         // 공격이 맞지 않을 경우를 위해 destroyTime시간이 지나면 제거
@@ -145,6 +147,12 @@ public class Bullet : MonoBehaviour
             }
 
             enemy.Damage(damage); // 적에게 데미지 전달
+        }
+
+        if (hitEffact != null)
+        {
+            ParticleSystem particle = Instantiate(hitEffact, transform.position, Quaternion.identity);
+            particle.Play();
         }
 
         // 적에게 부딫힌 bullet 제거

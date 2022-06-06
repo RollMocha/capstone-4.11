@@ -120,3 +120,4 @@ MonoBehaviour:
   bondageTime: 3
   isKnockBack: 0
   knockBackPower: 0
+  hitEffact: {fileID: 19800000, guid: 77ec3c4e07a36814fb3169ecef41b50a, type: 3}
