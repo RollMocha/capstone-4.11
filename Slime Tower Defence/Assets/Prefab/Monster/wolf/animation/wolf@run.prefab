@@ -421,8 +421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2187815f2bc989e468569fad3ea47424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 10
-  defaultSpeed: 14
+  maxHp: 150
+  defaultSpeed: 12
   destroy_time: 0.1
   fruits:
   - {fileID: 0}

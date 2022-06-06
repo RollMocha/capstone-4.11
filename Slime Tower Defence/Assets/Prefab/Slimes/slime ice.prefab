@@ -44,13 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77175a4d5945e7e409f35f3b9622527b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDetect: {fileID: 0}
   enemyList: []
-  bulletPrefab: {fileID: 1246987399585908641, guid: 0621a8193aa188a4988341d8722cf36c, type: 3}
+  bulletPrefab: {fileID: 5173794109005655487, guid: 3fa281ea291574c4e8d132529f624a40, type: 3}
   attackSpeed: 1
   bulletSpeed: 1
   attackRange: 10
-  attackDamage: 5
+  attackDamage: 15
   state: 1
 --- !u!1 &943981259993521606
 GameObject:
