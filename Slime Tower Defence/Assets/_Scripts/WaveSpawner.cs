@@ -8,9 +8,11 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
     public static WaveSpawner waveSpawner; // 싱글톤 패턴
 
     //public Transform[] enemyPrefab_1;//Monster_1Prefab의 Transforms
-    public Transform spawnPoint; //MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
+    public Transform spawnPoint_1; //MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
+    public Transform spawnPoint_2; //MonsterSpawnWaypoint(적 스폰 GameObject)의 Transform
     public float countdown = 2f;//시간
     public float timeBetweenWaves = 10f; //적들이 생성되는 시간 간격
+    public int point;
 
     [SerializeField]
     private Transform[] wayPoints;
@@ -28,7 +30,6 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
         waveSpawner = this; // 싱글톤 패턴
     }
 
-
     public void StartWave(Wave wave)
     {
         currentWave = wave; // 매개변수로 받아온 웨이브 정보 저장
@@ -44,15 +45,25 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
         {
             if (HPManager.CurrentHP > 0)
             {
-                //GameObject cl
                 int enemy_random = UnityEngine.Random.Range(0, currentWave.enemyPrefabs.Length);
-
+                point = UnityEngine.Random.Range(0, 2);//웨이브 경로 렌덤 설정
                 if (currentWave.enemyPrefabnumbers[enemy_random] != 0)
                 {
-                    GameObject clone = Instantiate(currentWave.enemyPrefabs[enemy_random], spawnPoint.position, spawnPoint.rotation);
-                    Enemy_1 enemy_1 = clone.GetComponent<Enemy_1>();
+                    if (point == 0)
+                    {
+                        GameObject clone_1 = Instantiate(currentWave.enemyPrefabs[enemy_random], spawnPoint_1.position, spawnPoint_1.rotation);
+                        Enemy_1 enemy_1 = clone_1.GetComponent<Enemy_1>();
+                        enemy_1.StartWayPoint(point);
+                        enemyList_1.Add(enemy_1);
+                    }
+                    if (point == 1)
+                    {
+                        GameObject clone_2 = Instantiate(currentWave.enemyPrefabs[enemy_random], spawnPoint_2.position, spawnPoint_2.rotation);
+                        Enemy_1 enemy_1 = clone_2.GetComponent<Enemy_1>();
+                        enemy_1.StartWayPoint(point);
+                        enemyList_1.Add(enemy_1);
+                    }
                     currentWave.enemyPrefabnumbers[enemy_random] -= 1;
-                    enemyList_1.Add(enemy_1);
                     spawnEnemyCount++; // 현재 웨이브에서 생성한 적의 숫자 + 1
                 }
 

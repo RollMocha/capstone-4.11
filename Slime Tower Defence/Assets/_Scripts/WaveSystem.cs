@@ -14,6 +14,9 @@ public class WaveSystem : MonoBehaviour
     [SerializeField]
     private float timeBetweenWaves = 20f;
 
+    public GameObject gameclear;
+    public GameObject gameclear_button;
+
     public Text CurrentWaveText;
     private CurrentWave currentWave;
 
@@ -27,9 +30,10 @@ public class WaveSystem : MonoBehaviour
 
     private void Update()
     {
-        //CurrentWaveText.text = (currentWaveIndex + 1) + " WAVE";
+        CurrentWaveText.text = (currentWaveIndex + 1) + " WAVE";
         if (countdown <= 0f)
         {
+            EndWave();
             StartWave();
             countdown = timeBetweenWaves;
         }
@@ -43,6 +47,15 @@ public class WaveSystem : MonoBehaviour
             currentWaveIndex++;
             waveSpawner.StartWave(waves[currentWaveIndex]);
             currentWave.GetAddWave();
+        }
+    }
+
+    public void EndWave()
+    {
+        if (waveSpawner.EnemyList_1.Count == 0 && currentWaveIndex == waves.Length - 1)
+        {
+            gameclear.SetActive(true);
+            gameclear_button.SetActive(true);
         }
     }
 }

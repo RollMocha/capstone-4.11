@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MonsterUIManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class MonsterUIManager : MonoBehaviour
     RectTransform rectParent; // 캔버스의 위치 값
     RectTransform rectHp; // hp Bar의 캔버스 상의 위치 값
     Camera mainCamera; // 메인 카메라
+    Slider slider;
 
     public Vector3 offset;
 
@@ -20,6 +22,7 @@ public class MonsterUIManager : MonoBehaviour
         hpCanvas = GetComponentInParent<Canvas>();
         rectParent = hpCanvas.GetComponent<RectTransform>();
         rectHp = this.gameObject.GetComponent<RectTransform>();
+        slider = this.GetComponent<Slider>();
         mainCamera = hpCanvas.worldCamera;
 
         offset = new Vector3(0, 5f, -1.5f); // 몬스터 기준 hp bar 배치 위치
@@ -56,5 +59,6 @@ public class MonsterUIManager : MonoBehaviour
     public void HpBarSetInMonster(Enemy_1 enemy)
     {
         target = enemy;
+        //slider.maxValue = (float)enemy.maxHp;
     }
 }

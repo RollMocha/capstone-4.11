@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class Enemy_1 : MonoBehaviour
 {
-    public int enemy_hp = 10;//몬스터 체력
+    public int maxHp = 10;//몬스터 체력
+    int currentHp; // 현재 체력
     public float defaultSpeed = 10f;//몬스터 기본 속도 : 2022.5.27 추가
 
     public float destroy_time = 0.1f;//최종도착과 디스폰 사이 시간
@@ -34,6 +35,7 @@ public class Enemy_1 : MonoBehaviour
     GameObject hpBar; // 설치된 본인의 hp 정보
     Slider hpSlider; // hp 슬라이더 정보
     MonsterUIManager hpBarManager; // hp bar의 컴포넌트
+    float curHp;
 
     private void Awake()
     {
@@ -41,6 +43,36 @@ public class Enemy_1 : MonoBehaviour
         waveSpawner = GameObject.Find("GameManager(1)").GetComponent<WaveSpawner>();
     }
 
+    public void StartWayPoint(int waypoint)
+    {
+        Waypoint = waypoint;
+
+        switch (Waypoint)
+        {
+            case 0:
+                target = OneWaypoints.opoints[0];//첫번째 OneWaypoint 설정
+                break;
+            case 1:
+                target = TwoWaypoints.tpoints[0];//두번째 twoWaypoint 설정
+                break;
+        }
+
+        speed = defaultSpeed; // 기본 속도 설정
+        debuffCheckTimer = new float[3] { 0, 0, 0 }; // 
+        debuffCheck = new bool[3] { false, false, false };
+
+        hpCanvas = GameObject.Find("GameScene_UI").GetComponent<Canvas>(); // 게임내 캔버스 정보 가져오기
+        hpBar = Instantiate<GameObject>(hpBarPrefab, hpCanvas.transform); // hpbar 배치
+        hpSlider = hpBar.GetComponent<Slider>();
+        hpBarManager = hpBar.GetComponent<MonsterUIManager>();
+
+        hpBarManager.HpBarSetInMonster(this); // 소환된 hpbar의 정보 가져오기
+        currentHp = maxHp;
+
+        E1_rigidbody = GetComponent<Rigidbody>();
+        FixedUpdate();
+    }
+    /*
     public void Start()
     {
         Waypoint = UnityEngine.Random.Range(0, 2);//웨이브 경로 렌덤 설정
@@ -63,18 +95,18 @@ public class Enemy_1 : MonoBehaviour
 
         hpCanvas = GameObject.Find("GameScene_UI").GetComponent<Canvas>(); // 게임내 캔버스 정보 가져오기
         hpBar = Instantiate<GameObject>(hpBarPrefab, hpCanvas.transform); // hpbar 배치
-        hpSlider = hpBar.GetComponentInChildren<Slider>();
+        hpSlider = hpBar.GetComponent<Slider>();
         hpBarManager = hpBar.GetComponent<MonsterUIManager>();
 
         hpBarManager.HpBarSetInMonster(this); // 소환된 hpbar의 정보 가져오기
+        currentHp = maxHp;
 
         E1_rigidbody = GetComponent<Rigidbody>();
         FixedUpdate();
     }
-
+    */
     private void Update()
     {
-
         DebuffCheck(); // 매 프레임마다 디버프 체크
 
         if (debuffCheck[0]) // 슬로우 상태일 경우 슬로우 실행
@@ -85,6 +117,12 @@ public class Enemy_1 : MonoBehaviour
         if (debuffCheck[1]) // 속박 상태일 경우 속박 실행
         {
             Bondage();
+        }
+
+        if (currentHp > 0)
+        {
+            hpSlider.value = Mathf.Lerp(hpSlider.value, (float)currentHp / (float)maxHp, 
+                Time.deltaTime * 10);
         }
     }
 
@@ -132,10 +170,11 @@ public class Enemy_1 : MonoBehaviour
 
     public void Damage(int damage)// 적 체력 깎는 함수
     {
-        enemy_hp -= damage;
+        currentHp -= damage;
+        hpSlider.value = currentHp;
 
-        // 기존의 Die Check 함수 내용을 Damage 안으로 이동 : 2022.5.27 추가
-        if (enemy_hp <= 0)//적이 피가 0 이하면
+        // 기존의 Die Check 함수 내용을 Damage 안으로 이동
+        if (currentHp <= 0)//적이 피가 0 이하면
         {
             waveSpawner.EnemyList_1.Remove(this);
             fruitSpawner.SpawnFruit();//열매 소환

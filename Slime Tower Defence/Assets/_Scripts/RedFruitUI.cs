@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class RedFruitUI : MonoBehaviour
 {
     [SerializeField]
-    private int currentfruit = 0; // 현재 갯수
+    public int currentfruit = 0; // 현재 갯수
     private FruitSpawner fruitSpawner;
 
     public Text fruitText; // 열매 텍스트
@@ -25,5 +25,10 @@ public class RedFruitUI : MonoBehaviour
     public void GetAddFruit()
     {
         currentfruit = currentfruit + addfruit; //열매 갯수 포함
+    }
+
+    public void GetRemoveFruit()
+    {
+        currentfruit = currentfruit - addfruit; //열매 갯수 포함
     }
 }

@@ -23,10 +23,27 @@ public class Bullet : MonoBehaviour
     public bool isKnockBack = false; // 넉백 공격인지 확인
     public int knockBackPower; // 넉백 수치
 
+    public ParticleSystem hitEffact; // 피격 시 효과
+
+    public Transform[] childTransform; // 자식 개체 존재 시
+
     void Start()
     {
         // 공격이 맞지 않을 경우를 위해 destroyTime시간이 지나면 제거
         Destroy(this.gameObject, destroyTime);
+
+        /*
+        if (transform.childCount > 0)
+        {
+            int childCount_ = transform.childCount;
+
+            childTransform = new Transform[childCount_];
+            for (int i = 0; i < childCount_; i++)
+            {
+                childTransform[i] = transform.GetChild(i);
+            }
+        }
+        */
     }
 
     // 탄환의 속도를 일정하게 맞추기 위해 사용
@@ -146,6 +163,24 @@ public class Bullet : MonoBehaviour
 
             enemy.Damage(damage); // 적에게 데미지 전달
         }
+
+        if (hitEffact != null)
+        {
+            ParticleSystem particle = Instantiate(hitEffact, transform.position, Quaternion.identity);
+            particle.Play();
+        }
+
+        /*
+        if (transform.childCount > 0)
+        {
+            int childCount_ = transform.childCount;
+
+            for (int i = 0; i < childCount_; i++)
+            {
+                Destroy(childTransform[i].gameObject, 3f);
+            }
+        }
+        */
 
         // 적에게 부딫힌 bullet 제거
         Destroy(this.gameObject, 0.1f);
