@@ -71,7 +71,7 @@ public class WaveSpawner : MonoBehaviour//적 생성하는 코드
             }
         }
     }
-
+    
     // 도착 지점에 도착 시 적 제거 
     public void DestroyEnemy(Enemy_1 enemy_1)
     {

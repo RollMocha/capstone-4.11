@@ -21,6 +21,8 @@ public class Slime : MonoBehaviour
     public GameObject bulletPrefab; // 공격 프리팹
 
     Enemy_1 targetEnemy = null; // 목표 적 정보
+    private AudioSource audioSource;
+    public AudioClip audio;
 
     public float attackSpeed; // 공격 속도
     public float bulletSpeed; // 투사체 속도
@@ -33,7 +35,9 @@ public class Slime : MonoBehaviour
 
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = audio;
+        audioSource.Play();
     }
 
     void Update()
