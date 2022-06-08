@@ -122,7 +122,7 @@ public class Bullet : MonoBehaviour
 
                 if (isKnockBack) // 넉백 실행
                 {
-                    //enemy.KnockBackDebuff(transform.position);
+                    enemy.KnockBackDebuff(transform.position, knockBackPower);
                 }
 
                 enemy_.Damage(damage); // 적에게 데미지 전달
@@ -143,7 +143,7 @@ public class Bullet : MonoBehaviour
 
             if (isKnockBack) // 넉백 실행
             {
-                //enemy.KnockBackDebuff(transform.position);
+                enemy.KnockBackDebuff(transform.position, knockBackPower);
             }
 
             enemy.Damage(damage); // 적에게 데미지 전달

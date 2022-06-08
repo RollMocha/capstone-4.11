@@ -62,7 +62,7 @@ public class Enemy_1 : MonoBehaviour
         debuffCheckTimer = new float[3] { 0, 0, 0 }; // 
         debuffCheck = new bool[3] { false, false, false };
 
-        hpCanvas = GameObject.Find("GameScene_UI").GetComponent<Canvas>(); // 게임내 캔버스 정보 가져오기
+        hpCanvas = GameObject.Find("MonsterHPCanvas").GetComponent<Canvas>(); // 게임내 캔버스 정보 가져오기
         hpBar = Instantiate<GameObject>(hpBarPrefab, hpCanvas.transform); // hpbar 배치
         hpSlider = hpBar.GetComponent<Slider>();
         hpBarManager = hpBar.GetComponent<MonsterUIManager>();
@@ -90,8 +90,7 @@ public class Enemy_1 : MonoBehaviour
 
         if (currentHp > 0)
         {
-            hpSlider.value = Mathf.Lerp(hpSlider.value, (float)currentHp / (float)maxHp, 
-                Time.deltaTime * 10);
+            //hpSlider.value = Mathf.Lerp(hpSlider.value, (float)currentHp / (float)maxHp, Time.deltaTime * 10);
         }
     }
 
@@ -140,7 +139,7 @@ public class Enemy_1 : MonoBehaviour
     public void Damage(int damage)// 적 체력 깎는 함수
     {
         currentHp -= damage;
-        hpSlider.value = currentHp;
+        hpSlider.value = (float)currentHp / (float)maxHp;
 
         // 기존의 Die Check 함수 내용을 Damage 안으로 이동
         if (currentHp <= 0)//적이 피가 0 이하면
@@ -194,31 +193,18 @@ public class Enemy_1 : MonoBehaviour
     }
 
     // 넉백 디버프
-    public void KnockBackDebuff(Vector3 bulletPosition) // 현재 테스트 중
+    public void KnockBackDebuff(Vector3 bulletPosition, int knockBackPower) // 현재 테스트 중
     {
 
         Vector3 knockbackPosition = transform.position - bulletPosition;
         knockbackPosition = knockbackPosition.normalized;
-        knockbackPosition += Vector3.back;
 
-        transform.Translate(knockbackPosition * 5);
+        Debug.Log("knockbackPosition : " + knockbackPosition);
+
+        E1_rigidbody.AddForce(knockbackPosition * knockBackPower, ForceMode.Impulse);
+        //transform.Translate(knockbackPosition * knockBackPower);
 
         Debug.Log("NnockBack");
-    }
-
-    void KnockBack() // 현재 테스트 중
-    {
-        if (!debuffCheck[1])
-        {
-            return;
-        }
-
-        if (speed <= 0)
-        {
-            return;
-        }
-
-        speed = 0;
     }
 
     // 현재 디버프 상태와 시간을 체크하는 함수

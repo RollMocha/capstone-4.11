@@ -119,4 +119,5 @@ MonoBehaviour:
   isBondage: 0
   bondageTime: 3
   isKnockBack: 1
-  knockBackPower: 0
+  knockBackPower: 7
+  hitEffact: {fileID: 0}
