@@ -38,6 +38,9 @@ public class Enemy_1 : MonoBehaviour
     float curHp;
     private HPManager hPManager;
 
+    public GameObject slowEffact; // 슬로우 시 효과
+    public GameObject bondageEffact; // 속박 시 효과
+
     private void Awake()
     {
         fruitSpawner = GetComponent<FruitSpawner>();
@@ -81,11 +84,21 @@ public class Enemy_1 : MonoBehaviour
         if (debuffCheck[0]) // 슬로우 상태일 경우 슬로우 실행
         {
             Slow();
+            slowEffact.SetActive(true);
+        }
+        else
+        {
+            slowEffact.SetActive(false);
         }
         
         if (debuffCheck[1]) // 속박 상태일 경우 속박 실행
         {
             Bondage();
+            bondageEffact.SetActive(true);
+        }
+        else
+        {
+            bondageEffact.SetActive(false);
         }
 
         if (currentHp > 0)
