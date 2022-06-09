@@ -249,4 +249,14 @@ public class Enemy_1 : MonoBehaviour
             }
         }
     }
+    //몬스터가 데스존에 부딫이면, 몬스터가 삭제됨
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "DeadZone")
+        {
+            waveSpawner.EnemyList_1.Remove(this);
+            Destroy(this.gameObject);//몬스터 삭제
+            return;
+        }
+    }
 }

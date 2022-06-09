@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Monster
   - Tile
+  - FxTemporaire
+  - DeadZone
   layers:
   - Default
   - TransparentFX
