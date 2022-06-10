@@ -114,10 +114,10 @@ MonoBehaviour:
   isSplash: 1
   hitRange: 7
   isSlow: 0
-  slowPercent: 2
-  slowTime: 30
+  slowPercent: 0
+  slowTime: 0
   isBondage: 0
-  bondageTime: 3
+  bondageTime: 0
   isKnockBack: 1
   knockBackPower: 7
   hitEffact: {fileID: 19800000, guid: 352304b7fbe11f445970df6ae36e6227, type: 3}
