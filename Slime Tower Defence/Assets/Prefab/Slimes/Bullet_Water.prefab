@@ -114,7 +114,7 @@ MonoBehaviour:
   isSplash: 1
   hitRange: 7
   isSlow: 1
-  slowPercent: 15
+  slowPercent: 30
   slowTime: 2
   isBondage: 0
   bondageTime: 3

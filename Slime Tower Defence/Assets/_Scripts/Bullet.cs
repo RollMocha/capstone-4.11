@@ -14,11 +14,11 @@ public class Bullet : MonoBehaviour
     public float hitRange; // 스플레시 범위
 
     public bool isSlow = false; // 슬로우 공격인지 확인
-    public int slowPercent; // 슬로우 수치
+    public float slowPercent; // 슬로우 수치
     public int slowTime; // 슬로우 시간
 
     public bool isBondage = false; // 속박 공격인지 확인
-    public int bondageTime; // 속박 시간
+    public float bondageTime; // 속박 시간
 
     public bool isKnockBack = false; // 넉백 공격인지 확인
     public int knockBackPower; // 넉백 수치

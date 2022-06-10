@@ -117,7 +117,7 @@ MonoBehaviour:
   slowPercent: 2
   slowTime: 30
   isBondage: 0
-  bondageTime: 3
+  bondageTime: 0
   isKnockBack: 0
   knockBackPower: 0
   hitEffact: {fileID: 19800000, guid: 77ec3c4e07a36814fb3169ecef41b50a, type: 3}

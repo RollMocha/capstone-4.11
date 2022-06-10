@@ -24,8 +24,8 @@ public class Enemy_1 : MonoBehaviour
     private WaveSpawner waveSpawner;
     private FruitSpawner fruitSpawner;
 
-    float speed; // 현재 몬스터 속도
-    int slowPercent; // 슬로우 크기
+    public float speed; // 현재 몬스터 속도
+    float slowPercent; // 슬로우 크기
     int knockbackPower; // 넉백 차워
     float[] debuffCheckTimer; // 디버트 시간 체크용 배열
     bool[] debuffCheck; // 디버트 활성화 확인용 배열
@@ -164,7 +164,7 @@ public class Enemy_1 : MonoBehaviour
     }
 
     // 슬로우 디버프
-    public void SlowDebuff(int slowPercent_, int slowTime)
+    public void SlowDebuff(float slowPercent_, int slowTime)
     {
         debuffCheckTimer[0] = slowTime; // 슬로우 시간 적용
         debuffCheck[0] = true; // 슬로우 상태 켜기
@@ -184,11 +184,11 @@ public class Enemy_1 : MonoBehaviour
             return;
         }
 
-        speed = speed / slowPercent; // 슬로우 퍼샌트 만큼 적용
+        speed = speed * (slowPercent/100); // 슬로우 퍼샌트 만큼 적용
     }
 
     // 속박 디버프
-    public void BondageDebuff(int stopTime)
+    public void BondageDebuff(float stopTime)
     {
         debuffCheckTimer[1] = stopTime; // 속박 시간 적용
         debuffCheck[1] = true; // 속박 상태 켜기

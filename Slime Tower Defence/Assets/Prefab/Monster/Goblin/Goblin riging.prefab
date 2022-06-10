@@ -241,7 +241,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  fruitspawnrandom: 20
+  fruitspawnrandom: 30
   rotatespeed: 5
   fruitsindex: 3
   hpBarPrefab: {fileID: 5947547730188073559, guid: 44e3edf9775908745bda2e6bc9471eb5, type: 3}
@@ -263,7 +263,7 @@ MonoBehaviour:
   - {fileID: 6622354647463748358, guid: 99e0ebdf3aeb63841a6f2dd14193b593, type: 3}
   - {fileID: 5219507884014033580, guid: 61fa0a3ad13008a4ba80f0578ede814f, type: 3}
   - {fileID: 2453179028945565423, guid: 371a60a28d8daee4aac949a839c3d6f0, type: 3}
-  fruitspawnrandom: 20
+  fruitspawnrandom: 30
   fruitsindex: 3
 --- !u!136 &3530064680825998478
 CapsuleCollider:
