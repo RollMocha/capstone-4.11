@@ -326,6 +326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -381,6 +385,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -495,6 +507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -550,6 +566,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -2048,6 +2072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -2103,6 +2131,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -2673,6 +2709,24 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ce6846b6b5ba77f4e83630cc67fcd60d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6810d6654be8544f9195fa0f6d1121a, type: 3}
+--- !u!1 &118421488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061300634857, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &118421493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118421488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: -0.000000029802322, z: -0.00000023841858}
 --- !u!1 &118742148
 GameObject:
   m_ObjectHideFlags: 0
@@ -3383,6 +3437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3439,6 +3497,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -3455,6 +3521,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -3511,6 +3581,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -3598,6 +3676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -3653,6 +3735,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -3922,6 +4012,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c869d248c07099445b26f966a64c3672, type: 3}
   m_PrefabInstance: {fileID: 1698225950}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &182507963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061656180838, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &182507968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182507963}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.000000059604645}
 --- !u!1 &185419148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4596,6 +4704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -4651,6 +4763,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -5308,6 +5428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -5363,6 +5487,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -7045,6 +7177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -7100,6 +7236,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -7252,6 +7396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -7307,6 +7455,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -7519,6 +7675,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.6, z: 0.6}
   m_Center: {x: 0, y: 0.000000054838665, z: 0}
+--- !u!1 &374924696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061034112657, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &374924701
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374924696}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: -0.00000011920929}
 --- !u!1 &375113113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3731066061950605727, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
@@ -8237,6 +8411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -8293,6 +8471,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -8327,6 +8513,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -8384,6 +8574,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -8405,6 +8603,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4351478612477126, guid: f584b4d5076829f4799f9d4dcf6de929, type: 3}
   m_PrefabInstance: {fileID: 667410150}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &423352464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061593469290, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &423352469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423352464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: -0.000000029802322, z: -0.00000023841858}
 --- !u!1001 &423812622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8791,6 +9007,24 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   towerPosition: {x: 0, y: 0, z: 0}
+--- !u!1 &460699883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061260485444, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &460699888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460699883}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: -0.000000029802322, z: -0.00000023841858}
 --- !u!4 &462702456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5905055955105611364, guid: 3b4b3c93d232f495b8e73e50190a8ca9, type: 3}
@@ -9064,6 +9298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 59
@@ -9119,6 +9357,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -9735,6 +9981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -9790,6 +10040,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -9950,6 +10208,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8465c36704a3545e5a0bd5d43f85682e, type: 3}
+--- !u!1 &511168726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061089483029, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &511168731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511168726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &515111011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9960,6 +10236,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -10017,6 +10297,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -10028,6 +10316,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c869d248c07099445b26f966a64c3672, type: 3}
   m_PrefabInstance: {fileID: 206981995}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &519254256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061802976776, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &519254261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519254256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: -0.00000047683716, y: 0.000000029802322, z: -0.000000059604645}
 --- !u!1001 &519554150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10573,6 +10879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -10628,6 +10938,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -11081,6 +11399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11136,6 +11458,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -11351,6 +11681,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1960576834135945633, guid: 0ef02a9e40f5e4fa7b74fb487cfd465d, type: 3}
   m_PrefabInstance: {fileID: 216724913}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &570655022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062059067476, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &570655027
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570655022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: -0.000000029802322, z: -0.00000023841858}
 --- !u!1 &574665655
 GameObject:
   m_ObjectHideFlags: 0
@@ -11632,6 +11980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -11687,6 +12039,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -11790,6 +12150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -11845,6 +12209,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -11990,6 +12362,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a686628cb22874182b3bd44b0aa559b4, type: 3}
+--- !u!1 &628686521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062202662849, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &628686526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628686521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: -0.00000047683716, y: -0.000000029802322, z: -0.00000023841858}
 --- !u!4 &629397742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7542095686203045002, guid: 69ab566a0e872416ab46459a6f263a1d, type: 3}
@@ -12082,6 +12472,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.6, z: 0.6}
   m_Center: {x: -0.00000047683716, y: 0.00000003814776, z: 0.00000011920929}
+--- !u!1 &650900525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061166212831, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &650900530
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650900525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &651735312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12232,6 +12640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -12287,6 +12699,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -13581,6 +14001,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 668012578795024453, guid: 08afda74bea724bb495dd1963cd43114, type: 3}
   m_PrefabInstance: {fileID: 1805530540}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &725233676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062809765953, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &725233681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725233676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: 0}
 --- !u!1 &730088978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e9527e11317ed141b5e94087635556c, type: 3}
@@ -13896,6 +14334,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0bd7523e1445f147886c60f88830141, type: 3}
+--- !u!1 &745162421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061992667200, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &745162426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745162421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: -0.000000029802322, z: -0.00000023841858}
 --- !u!4 &749318227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a0bd7523e1445f147886c60f88830141, type: 3}
@@ -14738,6 +15194,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74f1e8b0d3a51422ca762da3f9187ec1, type: 3}
+--- !u!1 &791453464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062203294952, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &791453469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791453464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.000000059604645}
 --- !u!1001 &794585033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14971,6 +15445,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7783005458647124454, guid: fa112b1d166774679a87fca9880fecce, type: 3}
   m_PrefabInstance: {fileID: 1550571351}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &811041470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062837736513, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &811041475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811041470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: -0.000000029802322, z: -0.00000023841858}
 --- !u!4 &812551479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
@@ -16205,6 +16697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -16261,12 +16757,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+--- !u!1 &875164047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061453414329, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &875164052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875164047}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &876923306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16277,6 +16799,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -16334,6 +16860,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -16350,6 +16884,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -16406,6 +16944,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -16786,6 +17332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -16841,6 +17391,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -16910,6 +17468,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c869d248c07099445b26f966a64c3672, type: 3}
   m_PrefabInstance: {fileID: 1391338178}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &890834190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062769188168, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &890834195
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890834190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.000000059604645}
 --- !u!1001 &896252088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17337,11 +17913,47 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8165136090476346949, guid: df98d49cad8fc4f7eb97a173332f86a7, type: 3}
   m_PrefabInstance: {fileID: 854220960}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &913356303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061715882031, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &913356308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913356303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &916105596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 663846738}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &916462844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061494554010, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &916462849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916462844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &916641457 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 668012578795024453, guid: 08afda74bea724bb495dd1963cd43114, type: 3}
@@ -17749,6 +18361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -17804,6 +18420,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -18177,6 +18801,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
   m_PrefabInstance: {fileID: 87191054}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &948892656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061988295606, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &948892661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948892656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &950102785
 GameObject:
   m_ObjectHideFlags: 0
@@ -18277,6 +18919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -18332,6 +18978,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -18876,6 +19530,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c869d248c07099445b26f966a64c3672, type: 3}
   m_PrefabInstance: {fileID: 1818591774}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1005685459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062849194298, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1005685464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005685459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.000000059604645}
 --- !u!4 &1007113619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 668012578795024453, guid: 08afda74bea724bb495dd1963cd43114, type: 3}
@@ -19031,6 +19703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -19087,6 +19763,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -19103,6 +19787,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -19159,6 +19847,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -19585,6 +20281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -19641,12 +20341,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+--- !u!1 &1036492442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066063009084406, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1036492447
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036492442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: -0.000000029802322, z: -0.00000023841858}
 --- !u!4 &1036854126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4511177118366547317, guid: 58363587a2b6e4ee7b0ec99bd270f264, type: 3}
@@ -19881,6 +20607,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c869d248c07099445b26f966a64c3672, type: 3}
+--- !u!1 &1050557983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061010739811, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1050557988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050557983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.000000059604645}
 --- !u!4 &1050940792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
@@ -19955,6 +20699,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbb10ca490d364e2e8c2c62ea0f928c7, type: 3}
+--- !u!1 &1054033495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062615006078, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1054033500
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054033495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.00000023841858}
 --- !u!4 &1058066800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 668012578795024453, guid: 08afda74bea724bb495dd1963cd43114, type: 3}
@@ -20071,6 +20833,24 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   towerPosition: {x: 0, y: 0, z: 0}
+--- !u!1 &1065336312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061060770463, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1065336317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065336312}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: -0.00000011920929}
 --- !u!1 &1067777661
 GameObject:
   m_ObjectHideFlags: 0
@@ -20451,6 +21231,24 @@ Transform:
   m_Father: {fileID: 1604203258}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1078272904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061668332747, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1078272909
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078272904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1083778396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23021,6 +23819,154 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3731066061010739811, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061034112657, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061060770463, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061080471106, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061089483029, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061161975304, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061166212831, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061233701753, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061260485444, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061300634857, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061453414329, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061489925521, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061494554010, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061533337570, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061593469290, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061656180838, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061668332747, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061686245674, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061715882031, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061751092645, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061802976776, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061988295606, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066061992667200, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062059067476, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062172886763, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062202662849, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062203294952, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062351414604, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062512295548, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062532845137, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062615006078, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062769188168, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062809765953, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062837736513, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066062849194298, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066063009084406, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731066063076349709, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 3743431550285914503, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
       propertyPath: m_Size.x
       value: 0.6
@@ -25393,6 +26339,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7783005458647124454, guid: fa112b1d166774679a87fca9880fecce, type: 3}
   m_PrefabInstance: {fileID: 494982794}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1162979907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061233701753, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1162979912
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162979907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: -0.00000011920929}
 --- !u!1 &1163912532 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3731066062512244916, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
@@ -25411,6 +26375,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.73798496, z: 0.43}
   m_Center: {x: 0, y: 0, z: -0.08018764}
+--- !u!1 &1166629897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061533337570, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1166629902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166629897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: -0.00000011920929}
 --- !u!1001 &1168034155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25491,6 +26473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -25546,6 +26532,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -25643,6 +26637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -25699,6 +26697,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -25715,6 +26721,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -25771,6 +26781,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -26651,6 +27669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -26706,6 +27728,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -27027,6 +28057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -27082,6 +28116,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -27809,6 +28851,24 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   towerPosition: {x: 0, y: 0, z: 0}
+--- !u!1 &1252092868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062512295548, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1252092873
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252092868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1256714171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28033,6 +29093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -28089,6 +29153,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -28123,6 +29195,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -28179,6 +29255,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -28641,6 +29725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -28696,6 +29784,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -28779,6 +29875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -28835,6 +29935,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -28856,6 +29964,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -28913,6 +30025,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -28929,6 +30049,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -28985,6 +30109,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -29524,6 +30656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -29579,6 +30715,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -29726,6 +30870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -29782,6 +30930,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -29798,6 +30954,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -29854,6 +31014,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -29957,6 +31125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -30012,6 +31184,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -30958,6 +32138,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b10818c5d5ab48098b2fb54bf1dbb8b, type: 3}
+--- !u!1 &1433885756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061489925521, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1433885761
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433885756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: -0.00000023841858}
 --- !u!1 &1435044230
 GameObject:
   m_ObjectHideFlags: 0
@@ -31060,6 +32258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -31116,6 +32318,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -31132,6 +32342,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -31188,6 +32402,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -31306,6 +32528,24 @@ MonoBehaviour:
   isRoad: 0
   isSlime: 0
   towerPosition: {x: 0, y: 0, z: 0}
+--- !u!1 &1452831403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061161975304, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1452831408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452831403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: -0.00000023841858}
 --- !u!1 &1453514414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3731066062207076192, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
@@ -31801,6 +33041,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.6, z: 0.6}
   m_Center: {x: 0, y: 0.000000021456884, z: -0.00000011920929}
+--- !u!1 &1487378583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062351414604, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1487378588
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487378583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1488325483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31811,6 +33069,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -31868,12 +33130,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+--- !u!1 &1490217510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062172886763, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1490217515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490217510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.000000059604645}
 --- !u!1001 &1495281517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33340,6 +34628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -33395,6 +34687,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -33524,6 +34824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -33580,6 +34884,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -33601,6 +34913,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -33657,6 +34973,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -34220,6 +35544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -34275,6 +35603,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -34517,6 +35853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -34572,6 +35912,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -35556,6 +36904,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b4b3c93d232f495b8e73e50190a8ca9, type: 3}
+--- !u!1 &1718302129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066063076349709, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1718302134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718302129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: 0}
 --- !u!1001 &1720799209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36247,6 +37613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -36302,6 +37672,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -36381,6 +37759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -36436,6 +37818,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -36623,6 +38013,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08afda74bea724bb495dd1963cd43114, type: 3}
+--- !u!1 &1782777187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061686245674, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1782777192
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782777187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0, z: -0.00000023841858}
+--- !u!1 &1783325364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066062532845137, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1783325369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783325364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: 0}
 --- !u!1001 &1783372981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36633,6 +38059,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -36689,6 +38119,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -36855,6 +38293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -36910,6 +38352,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -36978,6 +38428,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef02a9e40f5e4fa7b74fb487cfd465d, type: 3}
+--- !u!1 &1796030997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061751092645, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1796031002
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796030997}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.00000023841858}
 --- !u!4 &1800844477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 308675458873542960, guid: b3ca94229dd174bca99cf1be8603ff45, type: 3}
@@ -37057,6 +38525,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 668012578795024453, guid: 08afda74bea724bb495dd1963cd43114, type: 3}
   m_PrefabInstance: {fileID: 1044130548}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1803868871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731066061080471106, guid: 088e734b79a6d2849a4335e9367f6688, type: 3}
+  m_PrefabInstance: {fileID: 1141188079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1803868876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803868871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.00000023841858}
 --- !u!1001 &1805530540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39269,6 +40755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 62
@@ -39325,6 +40815,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -39341,6 +40839,10 @@ PrefabInstance:
     - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Name
       value: RiverQuadCombined (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
@@ -39397,6 +40899,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -39512,6 +41022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -39567,6 +41081,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -39723,6 +41245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -39778,6 +41304,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -40132,6 +41666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -40187,6 +41725,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -41605,6 +43151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -41660,6 +43210,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -41757,6 +43315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -41812,6 +43374,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -41986,6 +43556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -42041,6 +43615,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
@@ -42393,6 +43975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverQuadCombined (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1915119254101614, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -42448,6 +44034,14 @@ PrefabInstance:
     - target: {fileID: 4695608386412040, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64514851263548322, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199964410450040422, guid: 7fe364418169a2e4f9dd663ecb4d5311, type: 3}
       propertyPath: m_Materials.Array.size
