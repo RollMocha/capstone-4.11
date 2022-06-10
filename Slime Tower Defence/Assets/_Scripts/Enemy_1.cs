@@ -206,18 +206,15 @@ public class Enemy_1 : MonoBehaviour
     }
 
     // 넉백 디버프
-    public void KnockBackDebuff(Vector3 bulletPosition, int knockBackPower) // 현재 테스트 중
+    public void KnockBackDebuff(Vector3 bulletPosition, int knockBackPower)
     {
-
+        // 탄환 위치와 적 위치를 통해 날아갈 방향 계산
         Vector3 knockbackPosition = transform.position - bulletPosition;
         knockbackPosition = knockbackPosition.normalized;
 
-        Debug.Log("knockbackPosition : " + knockbackPosition);
-
+        // 방향에 힘을 주어 날리기 실행
         E1_rigidbody.AddForce(knockbackPosition * knockBackPower, ForceMode.Impulse);
         //transform.Translate(knockbackPosition * knockBackPower);
-
-        Debug.Log("NnockBack");
     }
 
     // 현재 디버프 상태와 시간을 체크하는 함수

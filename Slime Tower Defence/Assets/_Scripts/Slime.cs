@@ -33,11 +33,29 @@ public class Slime : MonoBehaviour
 
     public SlimeState state; // 슬라임의 종류 확인
 
+    Animator slimeAnimator; // 슬라임 애니메이션 적용
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audio;
         audioSource.Play();
+
+        // 애니메이션이 있는지 확인
+        slimeAnimator = GetComponentInChildren<Animator>();
+        if (slimeAnimator == null)
+        {
+            Debug.Log("ani war"); // 애니메이션 없음
+        }
+        else
+        {
+            // 애니메이션이 있는 경우
+            Debug.Log("ani ok : " + gameObject.name);
+
+            // 공격 속도에 맞춰 애니메이션 속도 조정
+            slimeAnimator.SetFloat("attack", attackSpeed);
+            slimeAnimator.speed = slimeAnimator.speed * 3 / attackSpeed;
+        }
     }
 
     void Update()
@@ -89,6 +107,12 @@ public class Slime : MonoBehaviour
 
             bullet.GetComponent<Bullet>().SetTarget(target, bulletSpeed,
                 attackDamage); // 공격 프리팹에 적 정보 전달
+
+            // 애니메이션이 있으면 실행
+            if (slimeAnimator != null)
+            {
+                slimeAnimator.SetTrigger("attack");
+            }
         }
 
     }
