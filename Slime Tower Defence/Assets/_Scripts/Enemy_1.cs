@@ -184,7 +184,7 @@ public class Enemy_1 : MonoBehaviour
             return;
         }
 
-        speed = speed * (slowPercent/100); // 슬로우 퍼샌트 만큼 적용
+        speed -= speed * (slowPercent/100); // 슬로우 퍼샌트 만큼 적용
     }
 
     // 속박 디버프
