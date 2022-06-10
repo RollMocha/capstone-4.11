@@ -50,10 +50,7 @@ public class Slime : MonoBehaviour
         else
         {
             // 애니메이션이 있는 경우
-            Debug.Log("ani ok : " + gameObject.name);
-
             // 공격 속도에 맞춰 애니메이션 속도 조정
-            slimeAnimator.SetFloat("attack", attackSpeed);
             slimeAnimator.speed = slimeAnimator.speed * 3 / attackSpeed;
         }
     }
