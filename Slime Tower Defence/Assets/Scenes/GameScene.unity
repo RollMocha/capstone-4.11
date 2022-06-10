@@ -3149,7 +3149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragObject: {fileID: 241334300}
-  slimePrefab: {fileID: 3041626291312936124, guid: 2c308a6bdee909a449c9b3a15d278e3f, type: 3}
+  slimePrefab: {fileID: 7085342690634944442, guid: 0b3c4060af8b99447ae70223baadaae4, type: 3}
   isDragging: 0
   isFruit: 0
   isPromote: 0
@@ -16543,7 +16543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragObject: {fileID: 271021707}
-  slimePrefab: {fileID: 8594517197404896342, guid: 2f977f2b369a0a14c90feff7ead23ebe, type: 3}
+  slimePrefab: {fileID: 6260915284889065397, guid: 2f977f2b369a0a14c90feff7ead23ebe, type: 3}
   isDragging: 0
   isFruit: 1
   isPromote: 0
@@ -21602,7 +21602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragObject: {fileID: 1133991194}
-  slimePrefab: {fileID: 2191753425107744244, guid: a02ba027467c3ee42b2b51f752ad59e2, type: 3}
+  slimePrefab: {fileID: 8205261303703386729, guid: a02ba027467c3ee42b2b51f752ad59e2, type: 3}
   isDragging: 0
   isFruit: 1
   isPromote: 0
