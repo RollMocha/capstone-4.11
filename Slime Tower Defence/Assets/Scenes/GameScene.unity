@@ -18869,7 +18869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.24528301, g: 0.24181202, b: 0.24181202, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22243,7 +22243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a44eb4229f5054983a7d28354aa42f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSlimeCount: 10
+  maxSlimeCount: 12
 --- !u!114 &1128967231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22257,41 +22257,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - spawnTime: 1
+  - spawnTime: 2
+    maxEnemyCount: 15
+    enemyPrefabs:
+    - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
+    enemyPrefabnumbers: 0f000000
+  - spawnTime: 1.6
     maxEnemyCount: 20
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
-    enemyPrefabnumbers: 14000000
-  - spawnTime: 1
-    maxEnemyCount: 30
-    enemyPrefabs:
-    - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
     - {fileID: 9156045868538470868, guid: 375429fff21746945a679ec072f0ad96, type: 3}
-    enemyPrefabnumbers: 0f0000000f000000
-  - spawnTime: 1
+    enemyPrefabnumbers: 0a0000000a000000
+  - spawnTime: 1.4
     maxEnemyCount: 40
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
     - {fileID: 9156045868538470868, guid: 375429fff21746945a679ec072f0ad96, type: 3}
     - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
-    enemyPrefabnumbers: 0a0000000f0000000f000000
-  - spawnTime: 1
-    maxEnemyCount: 25
+    enemyPrefabnumbers: 05000000140000000f000000
+  - spawnTime: 1.3
+    maxEnemyCount: 30
     enemyPrefabs:
     - {fileID: 9156045868538470868, guid: 375429fff21746945a679ec072f0ad96, type: 3}
     - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
     - {fileID: 3380314148269604804, guid: 938a5c228c9b02f4c9758b1215b61ce6, type: 3}
-    enemyPrefabnumbers: 050000000c00000008000000
-  - spawnTime: 1
-    maxEnemyCount: 35
+    enemyPrefabnumbers: 050000001100000008000000
+  - spawnTime: 1.1
+    maxEnemyCount: 40
     enemyPrefabs:
     - {fileID: 1752038309514908910, guid: 352c50fa4420f4441b3947741c71fe1b, type: 3}
-    - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
     - {fileID: 9156045868538470868, guid: 375429fff21746945a679ec072f0ad96, type: 3}
+    - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
     - {fileID: 3380314148269604804, guid: 938a5c228c9b02f4c9758b1215b61ce6, type: 3}
-    enemyPrefabnumbers: 050000000a0000000a0000000a000000
+    enemyPrefabnumbers: 050000000a0000000d0000000c000000
   waveSpawner: {fileID: 1128967228}
-  countdown: 2
+  countdown: 5
   timeBetweenWaves: 5
   gameclear: {fileID: 950102785}
   gameclear_button: {fileID: 86167733}
