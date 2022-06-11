@@ -200,7 +200,7 @@ public class SlimeSpawnManager : MonoBehaviour
         foreach (KeyValuePair<Tile, Slime> pair in slimeAndTile)
         {
             // 첫 번째 재료 슬라임 찾기
-            if (pair.Value.state == materialSlimeState_1)
+            if (pair.Value.state == materialSlimeState_1 && materialSlime_1 == null)
             {
                 materialSlime_1 = pair.Value;
                 materialSlimeTile_1 = pair.Key;
@@ -214,7 +214,7 @@ public class SlimeSpawnManager : MonoBehaviour
             }
 
             // 두 번째 재료 슬라임 찾기
-            if (pair.Value.state == materialSlimeState_2)
+            if (pair.Value.state == materialSlimeState_2 && materialSlime_2 == null)
             {
                 materialSlime_2 = pair.Value;
                 materialSlimeTile_2 = pair.Key;
