@@ -386,6 +386,7 @@ MonoBehaviour:
   fruitspawnrandom: 20
   rotatespeed: 5
   fruitsindex: 3
+  speed: 0
   hpBarPrefab: {fileID: 5947547730188073559, guid: 44e3edf9775908745bda2e6bc9471eb5, type: 3}
   slowEffact: {fileID: 6421534477636227194}
   bondageEffact: {fileID: 6557929231786121131}
@@ -1113,6 +1114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CFX3_Vortex_Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3d4907e6bd39f474b8fd8220920e65c4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3d4907e6bd39f474b8fd8220920e65c4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1207,6 +1212,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: db50ab1c866680e4bb870bf5eb72dd3d, type: 3}
       propertyPath: m_Name
       value: CFX4 Disruptive Force
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: db50ab1c866680e4bb870bf5eb72dd3d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: db50ab1c866680e4bb870bf5eb72dd3d, type: 3}
       propertyPath: m_RootOrder
