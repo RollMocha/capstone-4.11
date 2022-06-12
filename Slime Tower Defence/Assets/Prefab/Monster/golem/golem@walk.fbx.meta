@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: STONE
+    second: {fileID: 2100000, guid: 172b99cf527735042a0f1114399a24ca, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
