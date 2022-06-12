@@ -22280,7 +22280,7 @@ MonoBehaviour:
     enemyPrefabs:
     - {fileID: 8023060557811983777, guid: 375429fff21746945a679ec072f0ad96, type: 3}
     - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
-    - {fileID: 3380314148269604804, guid: 938a5c228c9b02f4c9758b1215b61ce6, type: 3}
+    - {fileID: 2984275186035185863, guid: ef4a3251e59889b4491acddd1e661ac5, type: 3}
     enemyPrefabnumbers: 050000001100000008000000
   - spawnTime: 1.1
     maxEnemyCount: 40
@@ -22288,7 +22288,7 @@ MonoBehaviour:
     - {fileID: 1247868376629937731, guid: 19ca608f0976d4545abada2f907c9b1f, type: 3}
     - {fileID: 8023060557811983777, guid: 375429fff21746945a679ec072f0ad96, type: 3}
     - {fileID: 4822174369362786919, guid: 4ae78ca74e9dc5d418cc98866207b18d, type: 3}
-    - {fileID: 3380314148269604804, guid: 938a5c228c9b02f4c9758b1215b61ce6, type: 3}
+    - {fileID: 2984275186035185863, guid: ef4a3251e59889b4491acddd1e661ac5, type: 3}
     enemyPrefabnumbers: 050000000a0000000d0000000c000000
   waveSpawner: {fileID: 1128967228}
   countdown: 5
