@@ -6,14 +6,14 @@ using UnityEngine;
 public class SetActiveHTP : MonoBehaviour
 {
     public GameObject HowToPlayobj;
-    public GameObject Titleobj;
+    //public GameObject Titleobj;
     public GameObject Describe2obj;
 
     public void ClickHTPButton()//HowToPlayButton 클릭시
     {
         HowToPlayobj.SetActive(true);
         //HowToPlayDiscribe오브젝트 활성화
-        Titleobj.SetActive(false);
+        //Titleobj.SetActive(false);
     }
 
     public void ClickHTP()//HowToPlayDescribe 클릭시
@@ -27,6 +27,6 @@ public class SetActiveHTP : MonoBehaviour
     {
         Describe2obj.SetActive(false);
         //Describe2 비활성화
-        Titleobj.SetActive(true);
+        //Titleobj.SetActive(true);
     }
 }
